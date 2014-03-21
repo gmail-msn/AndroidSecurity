@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:duplicateParentState="false"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/linear_focuse">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:textColor="@color/white" android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+
+			</LinearLayout>
+			<TextView android:gravity="center" android:textColor="@color/white"
+				android:textSize="18dip" android:text="@string/softmanage_installed_tab"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true" />
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:padding="6dp">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="5dip" android:layout_weight="1"
+			android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="3dip" android:textColor="@color/light_black"
+				android:layout_height="wrap_content" android:text="@string/softmanage_installed_sum" />
+			<TextView android:id="@+id/installed_sum_tv"
+				android:layout_width="wrap_content" android:textColor="#80B119"
+				android:textSize="18dip" android:layout_height="wrap_content" />
+
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp">
+			<LinearLayout android:id="@+id/installed_action_linear"
+				android:layout_width="wrap_content" android:background="@drawable/button_bg_selector"
+				android:layout_height="wrap_content" android:focusable="true"
+				android:gravity="center">
+
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/icon_shanchu"
+					android:focusable="false" />
+				<TextView android:layout_width="wrap_content"
+					android:gravity="center" android:layout_marginLeft="3dip"
+					android:textColor="@color/white" android:layout_height="wrap_content"
+					android:text="@string/softmanage_uninstall_text" android:focusable="false" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp" android:layout_marginTop="5dp"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:layout_alignParentLeft="true" android:layout_width="match_parent">
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="match_parent" android:layout_weight="1"
+				android:gravity="center" android:layout_marginLeft="6dp">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/privacy_icon"
+					android:layout_marginRight="3dp"></ImageView>
+				<TextView android:textColor="@color/black"
+					android:text="@string/security_audit_privacy" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="match_parent" android:layout_weight="1"
+				android:gravity="center" android:layout_marginLeft="6dp">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/cost_icon"
+					android:layout_marginRight="3dp"></ImageView>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:text="@string/security_audit_cost"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="match_parent" android:layout_weight="1"
+				android:gravity="center" android:layout_marginLeft="6dp">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/gps_icon"
+					android:layout_marginRight="3dp"></ImageView>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:text="@string/security_audit_gps"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="match_parent" android:layout_weight="1"
+				android:gravity="center" android:layout_marginLeft="6dp">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/network_icon"
+					android:layout_marginRight="3dp"></ImageView>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:text="@string/security_audit_network"></TextView>
+			</LinearLayout>
+
+		</LinearLayout>
+		<!-- 
+		<LinearLayout android:gravity="right"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_alignParentRight="true">
+
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/light_black" android:layout_marginRight="5dip"
+				android:layout_height="wrap_content" android:text="@string/all_select" />
+			<CheckBox android:id="@+id/select_al_cb"
+				android:layout_width="35dip" android:layout_height="40dip"
+				android:focusable="false" android:textColor="@color/black"
+				android:text="      " android:background="@null" android:button="@drawable/checkbox_button"
+				android:layout_marginLeft="5dip" />
+
+		</LinearLayout>
+		-->
+	</RelativeLayout>
+	<ImageView android:src="@drawable/virus_scan_line01"
+		android:layout_width="match_parent" android:layout_height="1dp"></ImageView>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_weight="1" android:layout_height="match_parent">
+		<LinearLayout android:layout_width="match_parent"
+			android:orientation="vertical" android:padding="12dp"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:id="@+id/loading_linear" android:layout_centerInParent="true" android:visibility="gone">
+			<RelativeLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:layout_gravity="center_horizontal"
+				android:layout_weight="1" android:layout_marginTop="10dp">
+				<LinearLayout android:gravity="center"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:id="@+id/linearLayout2" android:layout_width="match_parent">
+					<TextView android:id="@+id/prompt_dialog_text"
+						android:text="@string/softmanage_scan_installed_text"
+						android:textColor="@color/black" android:layout_width="wrap_content"
+						android:gravity="center" android:layout_height="wrap_content"></TextView>
+					<TextView android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_height="wrap_content"
+						android:id="@+id/prompt_progress_text" android:visibility="gone"
+						android:textColor="@color/green" android:textSize="16sp"></TextView>
+				</LinearLayout>
+			</RelativeLayout>
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_marginTop="10dp" android:paddingTop="5dip">
+
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_one" android:layout_width="13dip"
+						android:layout_centerInParent="true" android:visibility="invisible"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_one_copy"
+						android:layout_width="17dip" android:layout_height="17dip"
+						android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_two" android:layout_width="13dip"
+						android:layout_centerInParent="true" android:layout_height="13dip"
+						android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_two_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_three"
+						android:layout_centerInParent="true" android:layout_width="13dip"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_three_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_four"
+						android:layout_width="13dip" android:layout_centerInParent="true"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_four_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_five"
+						android:layout_width="13dip" android:layout_centerInParent="true"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_five_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+		<ListView android:layout_width="fill_parent"
+			android:cacheColorHint="#00000000"
+			android:divider="@null" android:id="@id/android:list"
+			android:layout_alignParentTop="true" android:layout_height="wrap_content"/>
+		<LinearLayout android:background="@color/black"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:id="@+id/installed_menu_linear" android:layout_alignParentBottom="true" android:visibility="gone">
+			<LinearLayout android:layout_weight="1"
+				android:layout_width="fill_parent" android:paddingTop="7dip"
+				android:orientation="vertical" android:gravity="center"
+				android:background="@drawable/menu_item_focuse" android:id="@+id/installed_left_menu"
+				android:layout_height="wrap_content">
+				<TextView android:textColor="#5B983E" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/installed_left_menu_icon" android:background="@drawable/menu_size_sort_icon"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/white"
+					android:id="@+id/installed_left_menu_text" android:text="@string/softmanage_size_sort_text" android:paddingBottom="3dp" android:paddingTop="2dp"/>
+			</LinearLayout>
+			<LinearLayout android:gravity="center"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:paddingTop="7dip" android:orientation="vertical"
+				android:background="@drawable/menu_item_unfocuse" android:id="@+id/installed_right_menu"
+				android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/menu_installed_icon_desp" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/white"
+					android:paddingTop="2dp" android:paddingBottom="3dp" android:text="@string/installed_icon_desp_menu"/>
+			</LinearLayout>
+
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

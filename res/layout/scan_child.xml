@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:focusable="false"
+		android:id="@+id/appCheck" android:layout_marginRight="5dp" android:layout_alignParentLeft="true" 
+		android:layout_centerVertical="true"></CheckBox>    
+	<ImageView android:id="@+id/appIcon" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="5dp" android:padding="8dp" android:layout_toRightOf="@id/appCheck"/>
+	<LinearLayout android:orientation="vertical" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/appIcon" >
+		<TextView android:layout_height="wrap_content" android:id="@+id/appName" android:textSize="15sp" android:textColor="#000000" android:layout_width="fill_parent"></TextView>	
+		<TextView android:layout_height="wrap_content" android:id="@+id/textDescription" android:textSize="12sp" android:textColor="#000000" android:layout_width="fill_parent"></TextView>
+	</LinearLayout>
+</RelativeLayout>

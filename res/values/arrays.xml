@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="graphTypes">
+		<item>Last 30 days</item>
+		<item>Last 12 months</item>
+	</string-array>
+
+	<string-array name="counterTypes">
+		<item>Total</item>
+		<item>Monthly</item>
+		<item>Last month</item>
+		<item>Weekly</item>
+		<item>Last days</item>
+		<item>Single day</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterLastMonth">
+		<item>Last month</item>
+		<item>Previous month</item>
+	</string-array>
+
+	<string-array name="counterSingleDay">
+		<item>Today</item>
+		<item>Yesterday</item>
+		<item>2 days ago</item>
+		<item>3 days ago</item>
+		<item>4 days ago</item>
+		<item>5 days ago</item>
+		<item>6 days ago</item>
+		<item>7 days ago</item>
+	</string-array>
+
+	<string-array name="help_title">
+		<item>Anti-Spam</item>
+		<item>Remote Anti-Theft</item>
+		<item>Backup and Restore</item>
+		<item>Anti-Virus</item>
+		<item>Network Traffic Monitoring</item>
+		<item>Application Management</item>
+		<item>Task Management</item>
+		<item>Power Ranking</item>
+		<item>Cache Clean</item>
+		<item>Boot Optimize</item>
+		<item>Self-Exam</item>
+		<item>Firewall</item>
+	</string-array>
+
+
+	<string-array name="help_content">
+		<item>Spam messages intelligence block. Or automatically block messages and calls according to customed rules.
+		</item>
+		<item>Lock the lost mobile and immediately send SMS to a safe number
+			set by you after SIM card replaced. In additional, remote wipe
+			personal information such as contacts, SMS and call logs.
+		</item>
+		<item>Free online backup and encrypted storage your personal
+			information and application list to cloud server. You can restore all
+			the information to a new mobile if needed.
+		</item>
+
+		<item>Timely, precisely scan and kill all viruses with one click.
+		</item>
+		<item>Real-time monitor to each process, showing 3G/2G charge network
+			traffic and WIFI network traffic separately. Clearly display every
+			day/ month used and remain traffic data. Set remind function when a
+			set traffic limitation reached.</item>
+		<item>Check application amount, version, size and authority
+			information. Quick uninstall of any application. APK management
+			enable fast scan, install and delete operation to those already
+			existed APK packages.</item>
+		<item>Quick check and manage operating software processes and service
+			processes; end selected or all processes to release memory in order
+			to fasten mobile speed.</item>
+		<item>Statistical power and time consuming rate of each process; order
+			according to power consumption ratio.</item>
+		<item>Clean the cache brought by application running. Quick scan the 
+			applications with cache and click “clean” to release more memory 
+			through clear application, file, search and browser cache</item>
+		<item>Scan all the applications start at boot, forbid those unnecessary 
+			ones to accelerate booting time. One click on optimize to automatically 
+			adjust start at boot applications makes booting time faster.</item>
+		<item>Inspect mobile system condition in an all-round way, once click on optimize, those items need to be optimized would form into a list with a system score and a detailed system report. Self-exam eliminates the potential risks easily and quickly.</item>
+		<item>Firewall is to limit network access of installed applications. Turn on or turn off 3G/ WIFI network access of the applications. Make your mobile network traffic under proper control. Precondition is mobile has rooted.</item>
+
+	</string-array>
+
+
+
+
+
+	<string-array name="counterLastDays">
+		<item>7 days</item>
+		<item>14 days</item>
+		<item>30 days</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 month</item>
+		<item>2 months</item>
+		<item>3 months</item>
+		<item>4 months</item>
+		<item>5 months</item>
+		<item>6 months</item>
+		<item>7 months</item>
+		<item>8 months</item>
+		<item>9 months</item>
+		<item>10 months</item>
+		<item>11 months</item>
+		<item>12 months</item>
+	</string-array>
+	<!-- <string-array name="counterWeeklyStart"> <item>Sunday</item> <item>Monday</item> 
+		<item>Tuesday</item> <item>Wednesday</item> <item>Thursday</item> <item>Friday</item> 
+		<item>Saturday</item> </string-array> -->
+	<string-array name="counterWeekly">
+		<item>1 week</item>
+		<item>2 weeks</item>
+		<item>3 weeks</item>
+		<item>4 weeks</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+	<string-array name="fuc_list_string">
+
+		<item>Network Traffic</item>
+		<item>Anti-Spam</item>
+		<item>Anti-Virus</item>
+
+		<!-- <item>Firewall</item> -->
+		<item>Applications</item>
+		<item>Task Manager</item>
+		<item>Battery Consume Rank</item>
+		<item>Backup</item>
+		<item>Anti-Theft</item>
+		<item>Cache Clean</item>
+		<item>Boot Optimize</item>
+		<item>Self-Exam</item>
+		<item>Firewall</item>
+
+		<!-- <item>Setting</item> -->
+	</string-array>
+
+	<string-array name="feeback_list_string">
+		<item> General </item>
+		<item>Anti-Virus</item>
+		<item>Network Traffic</item>
+		<item>Anti-Spam</item>
+		<item>Task Manager</item>
+		<item>Applications</item>
+		<item>Backup</item>
+		<item>Anti-Theft</item>
+		<item>Account</item>
+		<item>Software</item>
+		<item>Update</item>
+		<item>Cache Clean</item>
+		<item>Boot Optimize</item>
+		<item>Self-Exam</item>
+		<item>Firewall</item>
+		<item>others</item>
+	</string-array>
+	<string-array name="intercept_mode_name">
+		<item>OFF</item>
+		<item>Default</item>
+		<item>Contact Mode</item>
+		<item>White List Mode</item>
+		<item>Accept All</item>
+		<item>Block All</item>
+		<item>Call Block</item>
+	</string-array>
+	<string-array name="intercept_mode_desp">
+		<item>Close DND Mode</item>
+		<item>Accept white list and contacts; block black list and the
+			keywords; do not block calls from strangers</item>
+		<item>Only accept SMS and calls from contacts, block others</item>
+		<item>Only accept SMS and calls from white list</item>
+		<item>Close block function, accept all SMS and calls</item>
+		<item>Caution! Block all SMS and calls!</item>
+		<item>Block all incoming calls</item>
+	</string-array>
+	<string-array name="intercept_tream_mode">
+		<item>Prompt busy tone</item>
+		<item>Silence, no vibration</item>
+		<item>Prompt power-off</item>
+		<item>Prompt out of service</item>
+		<item>Prompt not existing number</item>
+	</string-array>
+	<string-array name="nodisturb_day_unit">
+		<item>Mon</item>
+		<item>Tue</item>
+		<item>Wed</item>
+		<item>Thur</item>
+		<item>Fri</item>
+		<item>Sat</item>
+		<item>Sun</item>
+	</string-array>
+	<string-array name="intercept_day_setting">
+		<item>Monday</item>
+		<item>Tuesday</item>
+		<item>Wednsday</item>
+		<item>Thursday</item>
+		<item>Friday</item>
+		<item>Saturday</item>
+		<item>Sunday</item>
+	</string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

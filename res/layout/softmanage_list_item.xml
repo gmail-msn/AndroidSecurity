@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center_vertical" android:focusable="false"
+	android:background="@drawable/listselect" android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/softmanage_app_info_layout"
+		android:layout_marginRight="5dp" android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true" android:focusable="false"
+		android:gravity="center_vertical" android:layout_toLeftOf="@+id/softmanage_action_layout">
+		<ImageView android:id="@+id/softmanage_app_icon"
+			android:focusable="false"
+			android:padding="3dp" android:layout_margin="3dp" android:layout_height="50dp" android:layout_width="50dp"></ImageView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:orientation="vertical" android:focusable="false"
+			android:id="@+id/softmanage_info_layout" android:layout_gravity="center_vertical"
+			android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/softmanage_label_layout"
+				android:layout_gravity="center_vertical">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/softmanage_app_label"
+					android:textColor="#000000" android:layout_gravity="center_vertical"
+					android:textSize="15sp" android:focusable="false" android:minLines="1"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/softmanage_descrip_layout"
+				android:layout_gravity="center_vertical" android:layout_marginTop="5dp"
+				android:gravity="bottom">
+				<LinearLayout android:layout_height="match_parent"
+					android:layout_width="wrap_content" android:gravity="bottom">
+					<TextView android:id="@+id/softmanage_app_version"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+						android:textColor="#000000" android:focusable="false"
+						android:textSize="12sp"></TextView>
+				</LinearLayout>
+
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:gravity="bottom" android:layout_height="match_parent">
+					<TextView android:id="@+id/softmanage_app_size"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:layout_gravity="center_vertical" android:textColor="#000000"
+						android:focusable="false" android:textSize="12sp"></TextView>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_alignParentRight="true"
+		android:layout_centerVertical="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/softmanage_action_layout">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="match_parent" android:gravity="right|center_vertical">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/privacy_icon"
+				android:layout_marginLeft="5dp" android:visibility="gone"
+				android:id="@+id/audit_privacy_icon"></ImageView>
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/cost_icon"
+				android:layout_marginLeft="2dp" android:visibility="gone"
+				android:id="@+id/audit_cost_icon"></ImageView>
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/gps_icon"
+				android:layout_marginLeft="2dp" android:visibility="gone"
+				android:id="@+id/audit_gps_icon"></ImageView>
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/network_icon"
+				android:layout_marginLeft="2dp" android:visibility="gone"
+				android:id="@+id/audit_network_icon"></ImageView>
+
+		</LinearLayout>
+		<LinearLayout android:id="@+id/softmange_action_layout"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:focusable="false" android:layout_marginLeft="5dp">
+
+			<TextView android:layout_height="wrap_content"
+				android:id="@+id/softmanage_already_installed_tip"
+				android:layout_width="wrap_content" android:text="@string/softmanage_has_installed_tip"
+				android:layout_gravity="center_vertical" android:textColor="@color/black"
+				android:layout_marginRight="5dp" android:focusable="false" android:visibility="gone"></TextView>
+			<CheckBox android:id="@+id/softmanage_action_checkbox"
+				android:button="@drawable/checkbox_button" android:layout_gravity="center_vertical"
+				android:layout_width="40dp" android:layout_height="40dp"
+				android:background="@null" android:focusable="false"></CheckBox>
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="#EEEEEE">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+			<TextView android:gravity="center" android:textSize="18dip"
+				android:layout_height="fill_parent" android:layout_width="fill_parent" android:textColor="@color/white"
+				android:layout_centerInParent="true" android:text="@string/backup_software_list_text"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ListView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/backup_applist_listview" android:isScrollContainer="true" android:scrollbars="vertical"></ListView>
+	</LinearLayout>
+	
+</LinearLayout>

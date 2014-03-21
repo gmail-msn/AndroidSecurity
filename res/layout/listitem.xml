@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:gravity="center_vertical" android:layout_height="fill_parent"
+	android:background="@drawable/task_list_bg">
+	<!-- <CheckBox android:id="@+id/itemcheck_3g"
+		android:layout_marginLeft="15dip" android:layout_width="40dip"
+		android:layout_height="40dip" android:focusable="false"
+		android:padding="5dip" android:layout_centerVertical="true"
+		android:textColor="@color/black" android:text="      "
+		android:background="@null" android:button="@drawable/checkbox_button"></CheckBox>
+	<CheckBox android:id="@+id/itemcheck_wifi"
+		android:layout_width="40dip" android:layout_height="40dip"
+		android:layout_marginLeft="10dip" android:focusable="false"
+		android:padding="5dip" android:layout_centerVertical="true"
+		android:textColor="@color/black" android:text="      "
+		android:background="@null" android:button="@drawable/checkbox_button"></CheckBox> -->
+	<ImageView android:id="@+id/appImageicon"
+		android:layout_width="45dp" android:layout_height="45dp"
+		android:layout_margin="3dp" android:padding="5dp" />
+	<LinearLayout 
+		android:orientation="vertical"
+		android:id="@+id/pkgLayout"
+		android:layout_height="45dp"
+		android:layout_width="fill_parent"
+		android:gravity="center_vertical"
+		android:layout_toRightOf="@+id/appImageicon"
+		android:layout_toLeftOf="@+id/statusLayout">
+		
+		<TextView 
+			android:layout_height="wrap_content" 
+			android:id="@+id/itemtext"
+			android:singleLine="true" 
+			android:text="uid:packages"
+			android:textColor="#000000" 
+			android:paddingBottom="5dp"
+			android:layout_width="fill_parent"/>
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp">
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/net_traffice_day"
+				android:textColor="@color/grey"
+				android:textSize="10sp"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/green"
+				android:paddingRight="5dp"
+				android:id="@+id/netTraficDayTotalTextView"
+				android:textSize="10sp"/>	
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/net_traffice_month"
+				android:textColor="@color/grey"
+				android:textSize="10sp"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/green"
+				android:id="@+id/netTraficMonthTotalTextView"
+				android:textSize="10sp"/>	
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:id="@+id/statusLayout">
+		
+		<!-- <CheckBox android:id="@+id/itemcheck_3g"
+			android:layout_marginLeft="15dip" android:layout_width="40dip"
+			android:layout_height="40dip" android:focusable="false"
+			android:padding="5dip" android:layout_centerVertical="true"
+			android:textColor="@color/black" android:text="      "
+			android:background="@null" android:button="@drawable/checkbox_button"/> -->
+		<ImageView 
+			android:id="@+id/g3ImageView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="20dp"
+			android:src="@drawable/start_manage_list_icon_enable"/>
+			
+		<!-- <CheckBox android:id="@+id/itemcheck_wifi"
+			android:layout_width="40dip" android:layout_height="40dip"
+			android:layout_marginLeft="10dip" android:focusable="false"
+			android:padding="5dip" android:layout_centerVertical="true"
+			android:textColor="@color/black" android:text="      "
+			android:background="@null" android:button="@drawable/checkbox_button"/> -->
+		<ImageView 
+			android:id="@+id/wifiImageView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dp"
+			android:src="@drawable/start_manage_list_icon_enable"/>
+	</LinearLayout>
+</RelativeLayout>

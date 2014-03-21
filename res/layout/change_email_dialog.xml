@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<LinearLayout android:background="@color/white" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_width="300dip">
+
+		<LinearLayout
+			android:background="#6CBD45" android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="40dp">
+			<ImageView
+				android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+				android:layout_width="wrap_content" android:src="@drawable/soft_prompt_dialog_icon"
+				android:layout_height="wrap_content"></ImageView>
+			<TextView android:id="@+id/title_text_tv" android:textColor="@color/white"
+				android:text="@string/softmanage_prompt_dialog_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:gravity="center_horizontal" android:layout_weight="1"
+			android:layout_width="match_parent" android:layout_height="wrap_content">
+
+			<RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+				<LinearLayout android:id="@+id/et_linear1" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+					<EditText android:id="@+id/et_line1" android:layout_width="fill_parent"
+						android:singleLine="true"
+						android:hint="@string/account_man_change_email_hint_text" android:layout_marginRight="5dp" android:layout_marginLeft="5dp" android:inputType="textEmailAddress" android:maxLength="40" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+				</LinearLayout>
+
+			</RelativeLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingLeft="3dip"
+				android:paddingRight="3dip">
+
+				<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+					android:layout_height="1dp"></View>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:layout_gravity="center_horizontal" android:layout_marginTop="5dip" android:layout_width="fill_parent" android:layout_marginBottom="5dp">
+				<Button android:text="@android:string/ok" android:id="@+id/button_ok"
+					android:padding="5dp" android:textColor="@color/white"
+					android:layout_marginBottom="2dp" android:background="@drawable/button_bg_selector"
+					android:layout_height="wrap_content" android:layout_width="100dip"></Button>
+				<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+					android:padding="5dp" android:layout_marginLeft="10dp"
+					android:textColor="@color/white" android:layout_marginBottom="2dp"
+					android:background="@drawable/button_bg_selector"
+					android:layout_width="100dip" android:layout_height="wrap_content"></Button>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

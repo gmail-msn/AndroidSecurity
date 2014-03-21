@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#EEEEEE" android:orientation="vertical">
+	<!-- 
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip"
+		android:gravity="center_horizontal">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+			<TextView android:id="@+id/function_title_tv"
+				android:gravity="center" android:textColor="@color/white"
+				android:textSize="18dip" android:text="@string/virus_scan_title"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true" />
+		</RelativeLayout>
+	</LinearLayout>
+	-->
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingTop="4dip" android:paddingLeft="13dip"
+		android:layout_height="30dp">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/firewall_icon" />
+		<TextView android:id="@+id/des_title_tv" android:text="@string/safe_your_mobile"
+			android:layout_marginLeft="5dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:textColor="#313031" />
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:background="@color/white">
+		<LinearLayout android:id="@+id/virus_scan_1_layout"
+			android:background="@drawable/white_bg01" android:layout_width="match_parent"
+			android:scrollbars="vertical" android:isScrollContainer="true"
+			android:layout_height="match_parent" android:orientation="vertical">
+			<LinearLayout android:layout_width="match_parent"
+				android:gravity="center_horizontal" android:layout_height="wrap_content"
+				android:orientation="vertical" android:layout_marginTop="10dp">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:orientation="vertical"
+					android:gravity="center_horizontal">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_weight="1" android:src="@drawable/virus_scan_icon06"
+						android:layout_height="wrap_content"></ImageView>
+					<TextView android:textColor="@color/green"
+						android:text="0%" android:id="@+id/scan_progress_text"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textSize="23sp"></TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:gravity="center_vertical">
+					<CheckBox android:button="@drawable/checkbox_button"
+						android:gravity="center" android:layout_marginLeft="10dp" android:layout_height="wrap_content" android:id="@+id/cloud_scan_checkbox" android:layout_width="wrap_content" android:checked="true"></CheckBox>
+					<TextView android:textColor="@color/black" android:text="@string/virus_cloud_scan_prompt_text" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/cloud_scan_prompt_text"></TextView>
+				</LinearLayout>
+
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:gravity="center_vertical" android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_weight="1" android:padding="5dp">
+				<LinearLayout android:layout_width="match_parent"
+					android:gravity="left" android:layout_height="wrap_content">
+					<ImageView
+						android:layout_width="wrap_content" android:src="@drawable/firewall_icon"
+						android:layout_height="wrap_content" android:layout_marginRight="5dp"></ImageView>
+					<TextView android:textColor="@color/black" android:text="@string/virus_scan_last_time"
+						android:layout_width="wrap_content"
+						android:textStyle="bold" android:layout_height="wrap_content"></TextView>
+					<TextView android:textSize="16sp" android:text="2天前" android:id="@+id/virus_scan_last_time_date"
+						android:layout_width="wrap_content" android:layout_marginLeft="3dp"
+						android:textStyle="bold" android:layout_height="wrap_content" android:textColor="@color/black"></TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:id="@+id/last_clean_linear"
+					android:layout_marginTop="5dp" android:orientation="vertical"
+					android:visibility="gone">
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_marginLeft="22dp">
+						<TextView android:textStyle="bold" android:layout_width="wrap_content"
+							android:textColor="@color/black" android:layout_height="wrap_content"
+							android:text="@string/last_unclean_result_text"></TextView>
+						<TextView android:textColor="@color/red"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="2" android:id="@+id/last_unclean_result_sum" android:layout_marginLeft="5dp" android:textSize="18sp" android:textStyle="bold"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_width="match_parent" android:gravity="center"
+						android:layout_marginTop="5dp">
+
+						<LinearLayout android:background="@drawable/button_bg_selector"
+							android:gravity="center" android:id="@+id/button_for_clean_linear"
+							android:layout_width="100dip" android:layout_height="wrap_content"
+							android:padding="5dp">
+
+							<ImageView android:src="@drawable/icon_shanchu"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+							<TextView android:id="@+id/textView3"
+								android:singleLine="true" android:layout_width="wrap_content"
+								android:text="@string/button_for_clean_text" android:textColor="@color/white"
+								android:layout_marginLeft="3dp" android:layout_height="wrap_content"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:layout_marginTop="5dp">
+					<ImageView
+						android:layout_width="wrap_content" android:src="@drawable/virus_scan_icon04"
+						android:layout_height="wrap_content" android:layout_marginRight="5dp"></ImageView>
+					<TextView android:textColor="@color/black"
+						android:text="@string/virus_scan_last_update_db_time" android:id="@+id/textView4"
+						android:layout_width="wrap_content" android:textStyle="bold"
+						android:layout_height="wrap_content"></TextView>
+					<TextView android:textSize="16sp" android:textColor="@color/light_green"
+						android:text="6月20日" android:id="@+id/virus_scan_update_last_time"
+						android:layout_width="wrap_content" android:layout_marginLeft="3dp"
+						android:textStyle="bold" android:layout_height="wrap_content"></TextView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:gravity="center" android:layout_height="wrap_content"
+				android:orientation="vertical" android:layout_marginTop="5dp">
+				<LinearLayout android:id="@+id/virus_scan_begin_linear"
+					android:background="@drawable/button_bg_selector"
+					android:layout_gravity="center_horizontal" android:padding="5dp"
+					android:orientation="horizontal" android:gravity="center"
+					android:layout_height="wrap_content" android:layout_width="100dip">
+					<ImageView android:id="@+id/imageView4" android:src="@drawable/virus_scan_icon03"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+					<TextView android:textColor="@color/white" android:id="@+id/textView2"
+						android:singleLine="true" android:text="@string/virus_scan_begin_text"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="3dp"></TextView>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

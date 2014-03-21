@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="#EEEEEE">
+
+
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="0dip" android:cacheColorHint="#00000000"
+		android:divider="@null" android:paddingLeft="5dip"
+		android:paddingRight="5dip" android:id="@+id/listproc"
+		android:layout_weight="1"></ListView>
+
+</LinearLayout>

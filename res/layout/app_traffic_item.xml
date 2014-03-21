@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:gravity="center_vertical" android:layout_height="fill_parent"
+	android:background="@drawable/listselect">
+	<ImageView android:id="@+id/appIcon" android:layout_width="53dp"
+		android:layout_height="53dp" android:layout_marginLeft="5dip" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginLeft="9dip" android:layout_toRightOf="@id/appIcon"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<TextView android:id="@+id/app_name" android:layout_width="fill_parent"
+			android:textSize="18dip" android:layout_height="30dip"
+			android:paddingTop="3dip" android:textColor="@color/black" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="4dip">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_marginTop="4dip" android:layout_height="wrap_content"
+				android:background="@drawable/app_traffic_send" />
+			<TextView android:layout_height="wrap_content" android:id="@+id/traffic_send_tv"
+				android:textSize="14dip" android:textColor="#000000"
+				android:layout_marginLeft="5dip" android:layout_width="wrap_content"></TextView>
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_marginLeft="10dip" android:layout_marginTop="5dip"
+				android:layout_height="wrap_content" android:background="@drawable/app_traffic_down" />
+			<TextView android:id="@+id/traffic_down_tv"
+				android:layout_height="wrap_content" android:textSize="14dip"
+				android:layout_marginLeft="5dip" android:singleLine="true"
+				android:textColor="@color/black" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<TextView android:id="@+id/traffic_all_tv"
+		android:layout_height="wrap_content" android:textSize="14dip"
+		android:textColor="@color/black" android:layout_alignParentRight="true"
+		android:layout_marginRight="8dip" android:layout_centerVertical="true"
+		android:paddingTop="10dip" android:singleLine="true"
+		android:layout_width="wrap_content"></TextView>
+
+
+</RelativeLayout>

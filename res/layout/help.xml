@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#EEEEEE">
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<TextView android:id="@+id/function_title_tv"
+			android:gravity="center" android:textColor="@color/white"
+			android:textSize="18dip" android:text="@string/use_help"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent" android:scrollbars="none"
+		android:layout_height="fill_parent" android:paddingLeft="8dip"
+		android:paddingRight="8dip" android:layout_marginTop="8dip">
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="vertical" android:layout_height="fill_parent"
+			android:background="@color/white">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:background="@color/green">
+
+				<TextView android:id="@+id/introduction_tv"
+					android:layout_width="fill_parent" android:paddingLeft="10dip"
+					android:paddingRight="10dip" android:layout_height="wrap_content" />
+
+			</LinearLayout>
+			<TextView android:id="@+id/introduction_des_tv"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingLeft="10dip" android:paddingRight="10dip" android:gravity="left"/>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:background="@color/green">
+
+				<TextView android:id="@+id/main_func_des_tv"
+					android:layout_width="fill_parent" android:paddingLeft="10dip"
+					android:paddingRight="10dip" android:layout_height="wrap_content" />
+
+			</LinearLayout>
+			<LinearLayout android:id="@+id/main_linear" android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

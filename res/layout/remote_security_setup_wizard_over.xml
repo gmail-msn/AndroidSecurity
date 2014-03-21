@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<TextView android:layout_marginTop="10dip"
+			android:singleLine="true" android:textColor="@color/light_black"
+			android:paddingLeft="5dip" android:text="@string/sure_filldate_message"
+			android:textSize="18dip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+
+
+		<TextView android:text="@string/sure_enable_remote_security"
+			android:layout_marginTop="5dip" android:paddingRight="5dip"
+			android:paddingLeft="5dip" android:layout_width="fill_parent"
+			android:textColor="@color/light_black" android:layout_height="wrap_content"></TextView>
+
+		<TextView android:id="@+id/stepover_update_sim_tv"
+			android:textColor="@color/light_black" android:layout_marginTop="5dip"
+			android:paddingRight="5dip" android:paddingLeft="5dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+
+		<TextView android:id="@+id/stepover_lock_mobile_tv"
+			android:textColor="@color/light_black" android:layout_marginTop="5dip"
+			android:paddingRight="5dip" android:paddingLeft="5dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+
+		<TextView android:text="@string/step_over_promote"
+			android:textColor="@color/light_black" android:layout_marginTop="5dip"
+			android:paddingRight="5dip" android:paddingLeft="5dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:paddingLeft="8dip" android:paddingRight="8dip"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:layout_marginTop="25dp">
+			<TextView android:layout_height="wrap_content"
+				android:gravity="center_horizontal" android:layout_weight="3.3"
+				android:singleLine="true" android:layout_width="fill_parent"
+				android:text="@string/email" android:textColor="@color/black"></TextView>
+			<EditText android:lines="1" android:layout_height="wrap_content"
+				android:singleLine="true" android:layout_width="fill_parent"
+				android:layout_weight="1" android:id="@+id/email_et"></EditText>
+		</LinearLayout>
+
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:paddingTop="15dip" android:layout_height="wrap_content"
+			android:gravity="center_horizontal">
+			<Button android:text="@string/setting_over" android:id="@+id/nextstep_to_over"
+				android:singleLine="true" android:paddingTop="5dip"
+				android:layout_marginLeft="20dip" android:paddingBottom="5dip"
+				android:textColor="@color/white" android:layout_marginTop="8dip"
+				android:background="@drawable/button_bg_selector"
+				android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+				android:layout_width="100dip"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

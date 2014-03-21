@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" android:padding="5dp"
+  android:gravity="center_vertical" android:background="@drawable/listselect">
+    <LinearLayout android:layout_height="wrap_content"
+	 android:layout_width="match_parent" android:padding="3dp">
+        <TextView android:layout_height="wrap_content" android:id="@+id/clean_time_tv" android:layout_width="wrap_content" android:textColor="@color/black" android:text="2011-07-06 18:16:16"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="3dp">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/virus_history_virusnum" android:textColor="@color/black"></TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/history_virus_num" android:layout_width="wrap_content" android:textColor="@color/black" android:layout_marginLeft="3dp" android:text="0" android:textSize="15sp"></TextView>
+        <TextView android:textColor="@color/black" android:layout_marginLeft="2dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/virus_history_carenum"></TextView>
+        <TextView android:layout_height="wrap_content" android:id="@+id/history_care_num" android:layout_width="wrap_content" android:textColor="@color/light_green" android:text="1"></TextView>
+    </LinearLayout>
+</LinearLayout>

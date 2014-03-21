@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BuyinDefender>
+	<Build>
+	    <Internal>
+	        <BaseUrl254>http://192.168.0.19:8080/</BaseUrl254>
+	        <BaseUrl128>http://192.168.0.30:8080/</BaseUrl128>
+	    </Internal>
+	    <Release>
+	        <BaseUrl254>http://203.156.192.254:8080/</BaseUrl254>
+	        <BaseUrl128>http://203.156.192.128:8080/</BaseUrl128>
+	    </Release>
+	</Build>
+	
+	<Markets>
+		<All>
+		    defender_google;defender_samsung;defender_ehooi600;defender_kindroid;defender_gfan;defender_eoemarket;defender_mumayi;defender_goapk;defender_hiapk;defender_appchina;defender_nduo;defender_dangle
+		</All>
+	
+		<Market id="0" name="defender_google" description="电子市场">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_google/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_google/zh</UpgradeZhUrl>
+		</Market>	
+		
+		<Market id="1" name="defender_samsung" description="三星市场">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_samsung/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_samsung/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="5" name="defender_ehooi600" description="奕虎平板i600">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_ehooi600/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_ehooi600/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="6" name="defender_kindroid" description="Kindroid.com">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_kindroid/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_kindroid/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="11" name="defender_gfan" description="机锋网">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_gfan/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_gfan/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="12" name="defender_eoemarket" description="优亿市场">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_eoemarket/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_eoemarket/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="13" name="defender_mumayi" description="木蚂蚁">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_mumayi/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_mumayi/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="14" name="defender_goapk" description="安智网">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_goapk/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_goapk/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="15" name="defender_hiapk" description="安卓网">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_hiapk/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_hiapk/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="16" name="defender_appchina" description="应用汇">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_appchina/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_appchina/zh</UpgradeZhUrl>
+		</Market>
+		
+		<Market id="17" name="defender_nduo" description="N多市场">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_nduo/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_nduo/zh</UpgradeZhUrl>
+		</Market>
+		<Market id="20" name="defender_dangle" description="当乐网">
+		    <UpgradeEnUrl>DefenderService/client/lastVersion/defender_dangle/en</UpgradeEnUrl>
+		    <UpgradeZhUrl>DefenderService/client/lastVersion/defender_dangle/zh</UpgradeZhUrl>
+		</Market>
+	</Markets>
+</BuyinDefender>

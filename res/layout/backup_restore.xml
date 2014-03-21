@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="#EEEEEE" android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip"
+		android:gravity="center_horizontal">
+		<!-- TextView android:gravity="center" android:textColor="@color/white" 
+			android:textSize="18dip" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+			android:id="@+id/backup_1_title_tv" android:text="@string/backup_1_title" 
+			/ -->
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+			<TextView android:gravity="center" android:textSize="18dip"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:textColor="@color/white" android:layout_centerInParent="true" android:text="@string/title_for_backup_restore"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_weight="1" android:layout_height="match_parent"
+		android:background="@color/white" android:fillViewport="true" android:padding="5dp">
+		<LinearLayout android:layout_height="match_parent"
+			android:isScrollContainer="true" android:layout_width="match_parent"
+			android:layout_marginBottom="5dp" android:background="@color/white"
+			android:orientation="vertical">
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:id="@+id/backup_linear" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_height="70dp" android:gravity="center_vertical">
+				<LinearLayout android:layout_width="wrap_content"
+					android:padding="5dp" android:layout_height="wrap_content"
+					android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/icon_beifen_new"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="2dp" android:text="@string/backup_tab_backup_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/backup_cloud_prompt_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:id="@+id/restore_linear" android:layout_marginBottom="5dp" android:layout_marginTop="5dp" android:layout_height="70dp" android:gravity="center_vertical">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_weight="1" android:padding="5dp"
+					android:layout_height="wrap_content">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/icon_huifu_new"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="2dp" android:text="@string/backup_tab_restore_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464"
+								android:layout_height="wrap_content" android:layout_marginRight="2dp"
+								android:textSize="13sp" android:text="@string/restore_cloud_prompt_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:id="@+id/browlist_linear" android:layout_marginBottom="5dp" android:layout_marginTop="5dp" android:layout_height="70dp" android:gravity="center_vertical">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_weight="1" android:padding="5dp"
+					android:layout_height="wrap_content">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/software"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="2dp" android:text="@string/backup_applist_browlist_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464"
+								android:layout_height="wrap_content" android:layout_marginRight="2dp"
+								android:textSize="13sp" android:text="@string/brow_applist_prompt_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content"
+					android:gravity="center" android:layout_width="wrap_content"
+					android:layout_gravity="center" android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:orientation="vertical"
+				android:padding="5dp" android:layout_marginTop="15dp" android:layout_marginLeft="30dp">
+				<LinearLayout android:gravity="center"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/user_name_linear">
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:textColor="@color/black" android:id="@+id/user_name_text" android:text="@string/backup_not_login_text" android:textSize="16sp"></TextView>
+				</LinearLayout>
+				<LinearLayout android:gravity="center"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/last_backup_time_linear" android:visibility="visible">
+					<TextView android:text="@string/backup_last_scan_time" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#646464" android:id="@+id/last_backup_date_title"></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:id="@+id/last_backup_time_text" android:textColor="#646464"></TextView>
+				</LinearLayout>
+				<LinearLayout android:gravity="center"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textColor="#646464" android:text="@string/local_contacts_text" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:textColor="#646464" android:id="@+id/local_contacts_sum_text"></TextView>
+				</LinearLayout>
+				<LinearLayout android:gravity="center"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/remote_contacts_sum_linear" android:visibility="gone">
+					<TextView android:textColor="#646464" android:text="@string/remote_contacts_text" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:textColor="#646464" android:id="@+id/remote_contacts_sum_text"></TextView>
+				</LinearLayout>
+				<!-- 
+				<LinearLayout android:gravity="center"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone" android:id="@+id/remote_sms_sum_linear">
+					<TextView android:textColor="#646464" android:text="@string/remote_contacts_text" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:textColor="#646464" android:id="@+id/remote_sms_sum_text"></TextView>
+				</LinearLayout>
+				<LinearLayout android:gravity="center"
+					android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone" android:id="@+id/remote_applist_sum_linear">
+					<TextView android:textColor="#646464" android:text="@string/remote_contacts_text" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:textColor="#646464" android:id="@+id/remote_applist_sum_text"></TextView>
+				</LinearLayout>
+				-->
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

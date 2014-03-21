@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal"
+	android:background="@drawable/tanchu2" android:weightSum="3"
+	android:layout_height="wrap_content" android:layout_width="wrap_content">
+	<LinearLayout android:layout_gravity="center_horizontal"
+		android:gravity="center" android:padding="8dp" android:layout_height="50dp"
+		android:layout_width="match_parent">
+		<ImageView android:id="@+id/imageView1"
+			android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+			android:src="@drawable/soft_prompt_dialog_icon"
+			android:layout_height="wrap_content" android:layout_marginRight="5dp"></ImageView>
+		<TextView android:layout_gravity="center_vertical"
+			android:textColor="@color/white" android:text="@string/softmanage_prompt_dialog_title"
+			android:id="@+id/textView1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_gravity="center_horizontal" android:gravity="center_horizontal"
+		android:weightSum="3" android:padding="5dp" android:layout_weight="2"
+		android:layout_height="110dp" android:layout_width="match_parent">
+		<LinearLayout android:layout_height="wrap_content" 
+			android:layout_weight="1.6" android:layout_width="match_parent">
+			<TextView android:textColor="@color/black"
+				android:text="@string/softmanage_download_recommend_text"
+				android:id="@+id/prompt_dialog_text" android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_width="match_parent"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content" android:paddingLeft="3dip" android:paddingRight="3dip"
+			android:layout_height="wrap_content">
+			<View android:layout_height="1dp" android:layout_width="match_parent"
+				android:background="@drawable/virus_scan_line01"
+				android:layout_marginTop="6dp"></View>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:padding="5dp" android:layout_weight="1.4">
+			<ProgressBar android:id="@+id/prompt_dialog_progress"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_height="11dp" android:max="100"
+				android:progressDrawable="@drawable/progress_bar"
+				android:layout_width="match_parent" android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"></ProgressBar>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black">#000000</color>
+	<color name="grey">#727272</color>
+	<color name="all_bg_color">#EBEBEB</color>
+	<color name="white">#FFFFFF</color>
+	<color name="light_black">#202020</color>
+	<color name="light_green">#64BD45</color>
+	<color name="red">#ff0000</color>
+	<color name="green">#6CBD45</color>
+	<color name="orange">#FF7E00</color>
+	<color name="tab_text">#5B983E</color>
+	<color name="linear_bg">#EEEEEE</color>
+	<color name="linear_focuse">#EEEEEE</color>
+	<color name="linear_unfocuse">#D2D2D2</color>
+	<drawable name="linear_unfocuse">#101010</drawable> 
+	<!-- 
+    <drawable name="linear_focuse">#282828</drawable>
+     -->
+    <drawable name="menu_item_focuse">#499b21</drawable> 
+    <drawable name="menu_item_unfocuse">#6CBD45</drawable>
+</resources>

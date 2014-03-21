@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical" android:padding="5dp"
+  android:gravity="center_vertical" android:background="@drawable/listselect">
+    <LinearLayout android:layout_height="wrap_content"
+	 android:layout_width="match_parent" android:padding="3dp">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@color/black" android:text="2011-07-06 18:16:16" android:id="@+id/log_time_tv"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="3dp" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_height="match_parent" android:layout_width="wrap_content">
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/backup_log_back_succ_text" android:id="@+id/log_flag_text" android:textColor="@color/light_green"></TextView>
+            <TextView android:textColor="@color/black" android:layout_height="wrap_content" android:textSize="15sp" android:layout_width="wrap_content" android:layout_marginLeft="3dp" android:id="@+id/log_type_text" android:text="@string/backup_log_contacts_text"></TextView>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_height="match_parent" android:layout_width="wrap_content">
+            <TextView android:textColor="@color/black" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/log_ntraf_text" android:text="@string/backup_log_ntraf_text"></TextView>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/log_ntraf_num_text" android:text="1KB" android:textColor="@color/black"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

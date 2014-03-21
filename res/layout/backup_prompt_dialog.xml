@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:background="@drawable/tanchu" android:layout_height="wrap_content">
+
+	<View android:layout_width="310dip" android:layout_height="0dip"
+	/>
+
+	<LinearLayout android:gravity="center"
+		android:layout_width="fill_parent" android:layout_height="60dp">
+		<ImageView android:layout_marginRight="5dp"
+			android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+			android:src="@drawable/soft_prompt_dialog_icon"
+			android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+		<TextView android:textColor="@color/white"
+			android:text="@string/softmanage_prompt_dialog_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"></TextView>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:gravity="center_horizontal" android:layout_weight="1"
+		android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+			<TextView android:layout_height="wrap_content"
+				android:textColor="@color/black" android:id="@+id/prompt_text" android:gravity="center"
+				android:layout_width="match_parent" android:text="@string/backup_contacts_select_text"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:text="@string/backup_prompt_dialog_tip_text"
+				android:layout_width="wrap_content" android:textColor="@color/black" android:layout_marginTop="10dp"></TextView>
+		</LinearLayout>
+
+		<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+			android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"></View>
+		<LinearLayout android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:layout_gravity="center_horizontal"
+			android:layout_width="match_parent" android:padding="5dp">
+			<Button android:padding="5dp" android:textColor="@color/white"
+				android:layout_marginBottom="2dp" android:layout_height="wrap_content" android:id="@+id/button_remote" android:text="@string/bakcup_prompt_dialog_button_remote" android:background="@drawable/button_bg_selector" android:layout_width="100dip"></Button>
+			<Button android:padding="5dp" android:layout_marginLeft="10dp"
+				android:textColor="@color/white" android:layout_marginBottom="2dp"
+				android:layout_height="wrap_content" android:text="@string/bakcup_prompt_dialog_button_local" android:id="@+id/button_local" android:background="@drawable/button_bg_selector" android:layout_width="100dip"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

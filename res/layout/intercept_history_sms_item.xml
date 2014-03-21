@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/listselect">
+
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:paddingTop="5dip"
+		android:paddingBottom="3dip">
+
+		<CheckBox android:id="@+id/select_cb" android:layout_height="40dip"
+			android:focusable="false" android:padding="5dip" android:textColor="@color/black"
+			android:text="      " android:background="@null" android:button="@drawable/checkbox_button"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:layout_width="30dip" android:gravity="center" />
+		<LinearLayout android:id="@+id/linear"
+			android:layout_width="fill_parent" android:layout_toLeftOf="@id/select_cb"
+			android:layout_height="wrap_content" android:paddingLeft="5dip">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_marginTop="2dip" android:layout_height="wrap_content"
+				android:background="@drawable/sms_icon" />
+			<TextView android:id="@+id/phone_tv" android:layout_height="wrap_content"
+				android:textSize="18dip" android:textColor="@color/black"
+				android:layout_marginLeft="3dip" android:layout_width="wrap_content"></TextView>
+			<TextView android:id="@+id/date_tv" android:layout_gravity="right"
+				android:layout_height="wrap_content" android:textSize="14dip"
+				android:gravity="right" android:paddingRight="5dip"
+				android:layout_width="fill_parent"></TextView>
+		</LinearLayout>
+		<TextView android:id="@+id/remarkets_tv"
+			android:layout_toLeftOf="@id/select_cb" android:layout_height="fill_parent"
+			android:paddingLeft="5dip" android:layout_below="@id/linear"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dp" android:layout_marginRight="5dp"
+			android:layout_alignParentLeft="true"></TextView>
+
+
+	</RelativeLayout>
+
+
+
+
+
+
+
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/handle_linear" android:layout_height="wrap_content"
+		android:visibility="gone" android:paddingBottom="5dip">
+		<LinearLayout android:id="@+id/del_linear"
+			android:paddingTop="2dip" android:layout_width="100dip"
+			android:background="@drawable/button_bg_selector" android:gravity="center_horizontal"
+			android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="2dip"
+				android:src="@drawable/icon_shanchu" />
+			<TextView android:text="@string/softmanage_apk_delete_text"
+				android:layout_width="wrap_content" android:singleLine="true"
+				android:layout_marginLeft="3dip" android:textColor="@color/white"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/edit_linear"
+			android:paddingTop="2dip" android:layout_width="100dip"
+			android:layout_marginLeft="2dip" android:background="@drawable/button_bg_selector"
+			android:gravity="center_horizontal" android:layout_height="wrap_content">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="2dip"
+				android:src="@drawable/back_sms_white" />
+			<TextView android:text="@string/backup_tab_restore_text"
+				android:layout_width="wrap_content" android:singleLine="true"
+				android:layout_marginLeft="3dip" android:textColor="@color/white"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:id="@+id/more_linear"
+			android:layout_width="100dip" android:layout_marginLeft="2dip"
+			android:paddingTop="2dip" android:background="@drawable/button_bg_selector"
+			android:gravity="center_horizontal" android:layout_height="wrap_content">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="2dip"
+				android:src="@drawable/more_icon" />
+			<TextView android:text="@string/more" android:layout_width="wrap_content"
+				android:singleLine="true" android:layout_marginLeft="3dip"
+				android:textColor="@color/white" android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

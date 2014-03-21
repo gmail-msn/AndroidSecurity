@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="#EEEEEE" android:orientation="vertical">
+	<!-- 
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip"
+		android:gravity="center">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">			
+			<TextView android:id="@+id/function_title_tv"
+				android:gravity="center" android:textColor="@color/white"
+				android:textSize="18dip" android:text="@string/virus_scan_title"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"/>
+		</RelativeLayout>
+	</LinearLayout>
+	-->
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingTop="4dip" android:paddingLeft="13dip"
+		android:layout_height="30dp">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/firewall_icon" />
+		<TextView android:id="@+id/des_title_tv" android:text="@string/safe_your_mobile"
+			android:layout_marginLeft="5dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:textColor="#313031" />
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent" android:background="@color/white" 
+		android:layout_height="wrap_content" android:layout_weight="1" android:focusable="true">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:background="@drawable/white_bg01"
+			android:orientation="vertical" android:id="@+id/virus_scan_1_layout"
+			android:layout_marginBottom="2dp" android:scrollbars="vertical"
+			android:isScrollContainer="true">
+
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_marginTop="5dp">
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:src="@drawable/virus_scan_icon06"
+					android:layout_weight="1"></ImageView>
+				<TextView android:textColor="@color/green"
+					android:layout_width="wrap_content" android:id="@+id/scan_progress_text"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:layout_marginTop="3dp" android:text="0%" android:textSize="20sp"></TextView>
+				<ProgressBar android:id="@+id/scan_progress"
+					style="?android:attr/progressBarStyleHorizontal"
+					android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+					android:progressDrawable="@drawable/progress_bar"
+					android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true" android:max="100"
+					android:layout_width="match_parent" android:layout_height="11dip"></ProgressBar>
+			</LinearLayout>
+			<View android:layout_width="match_parent"
+				android:layout_marginTop="3dp" android:layout_height="1dp"
+				android:background="@drawable/virus_scan_line01"></View>
+			<LinearLayout android:id="@+id/virus_scanning_linear"
+				android:orientation="vertical" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:gravity="center_vertical"
+				android:padding="5dp" android:layout_weight="1">
+				<TextView android:id="@+id/apktext" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:scrollbars="vertical"
+					android:singleLine="false" android:textColor="#ff9600"
+					android:layout_marginLeft="5dp" />
+			</LinearLayout>
+			
+		</LinearLayout>
+	</ScrollView>
+	<View android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp" android:layout_width="match_parent"
+				android:layout_marginTop="10dp"></View>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_marginTop="2dp">
+				<LinearLayout android:background="@drawable/button_bg_selector"
+					android:id="@+id/virus_scan_cancel_linear"
+					android:orientation="horizontal"
+					android:padding="5dp" android:layout_gravity="center_horizontal"
+					android:gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:src="@drawable/virus_scan_icon07"></ImageView>
+					<TextView android:textColor="@color/white"
+						android:layout_marginLeft="5dp"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/virus_scan_cancel_text"></TextView>
+				</LinearLayout>
+			</LinearLayout>
+</LinearLayout>

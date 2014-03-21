@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<TextView android:layout_marginTop="10dip"
+			android:singleLine="true" android:textColor="@color/light_black"
+			android:paddingLeft="5dip" android:text="@string/input_safe_mobile_number"
+			android:textSize="18dip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:paddingLeft="8dip" android:paddingRight="8dip"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:layout_marginTop="25dp">
+			<TextView android:layout_height="wrap_content"
+				android:gravity="center_horizontal" android:layout_weight="2.1"
+				android:singleLine="true" android:layout_width="fill_parent"
+				android:text="@string/safe_mobile_number" android:textColor="@color/black"></TextView>
+			<EditText android:lines="1" android:layout_height="wrap_content"
+				android:singleLine="true" android:layout_width="fill_parent"
+				android:inputType="number"
+				android:layout_weight="1" android:id="@+id/safe_mobile_input_et"></EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:paddingLeft="8dip" android:paddingRight="8dip"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+			<TextView android:layout_height="wrap_content"
+				android:gravity="center_horizontal" android:layout_weight="2.1"
+				android:singleLine="true" android:layout_width="fill_parent" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="40dip" android:layout_weight="1">
+				<CheckBox android:id="@+id/procCheck" android:layout_width="wrap_content"
+					android:layout_height="40dip" android:checked="true"
+					android:padding="5dip" android:textColor="@color/black"
+					android:text="@string/update_sim_lock_mobile" android:background="@null"
+					android:button="@drawable/checkbox_button" />
+			</LinearLayout>
+		</LinearLayout>
+
+
+
+		<TextView android:id="@+id/safe_mobile_des_tv"
+			android:layout_marginTop="5dip" android:paddingRight="5dip"
+			android:paddingLeft="5dip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+
+		<TextView android:id="@+id/lock_mobile_des_tv"
+			android:layout_marginTop="5dip" android:paddingRight="5dip"
+			android:paddingLeft="5dip" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+		<View android:layout_width="fill_parent" android:background="@drawable/virus_scan_line01"
+			android:layout_height="1dp" android:layout_marginTop="18dip"></View>
+		<LinearLayout android:layout_width="fill_parent"
+			android:paddingTop="15dip" android:layout_height="wrap_content"
+			android:gravity="center_horizontal">
+
+			<Button android:text="@string/sms_content" android:id="@+id/sms_content_bt"
+				android:singleLine="true" android:paddingTop="5dip"
+				android:paddingBottom="5dip" android:textColor="@color/white"
+				android:layout_marginTop="8dip" android:background="@drawable/button_bg_selector"
+				android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+				android:layout_width="100dip"></Button>
+			<Button android:text="@string/next_step" android:id="@+id/nextstep_to_step_three_bt"
+				android:singleLine="true" android:paddingTop="5dip"
+				android:layout_marginLeft="20dip" android:paddingBottom="5dip"
+				android:textColor="@color/white" android:layout_marginTop="8dip"
+				android:background="@drawable/button_bg_selector"
+				android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+				android:layout_width="100dip"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#EEEEEE">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:background="#6CBD45" android:layout_height="40dip">
+			<RelativeLayout android:layout_height="match_parent"
+				android:layout_width="wrap_content">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/home_page"
+					android:layout_marginLeft="10dp" android:gravity="center"
+					android:layout_centerVertical="true">
+
+					<TextView android:id="@+id/textView1"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:textSize="12sp"></TextView>
+
+					<ImageView android:src="@drawable/home_icon"
+						android:layout_height="wrap_content" android:id="@+id/home_icon"
+						android:layout_width="wrap_content"></ImageView>
+				</LinearLayout>
+				<TextView android:id="@+id/function_title_tv"
+					android:gravity="center" android:textColor="@color/white"
+					android:textSize="18dip" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:text="@string/mobile_examine" />
+			</RelativeLayout>
+
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:padding="5dp">
+			<LinearLayout android:layout_height="wrap_content"
+				android:orientation="vertical" android:background="@color/white"
+				android:layout_marginBottom="5dp" android:layout_width="match_parent"
+				android:padding="5dp">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:gravity="center">
+					<TextView android:textColor="@color/black"
+						android:textStyle="bold" android:text="@string/mobile_examine_fuc_title"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:textSize="18sp"></TextView>
+				</LinearLayout>
+				<RelativeLayout android:layout_height="wrap_content"
+					android:paddingTop="5dp" android:layout_width="match_parent"
+					android:paddingBottom="5dp" android:gravity="center_vertical">
+					<LinearLayout android:layout_centerVertical="true"
+						android:layout_height="wrap_content" android:layout_width="match_parent"
+						android:orientation="horizontal" android:layout_alignParentLeft="true"
+						android:layout_toLeftOf="@+id/ratingbar_linear" android:gravity="center_vertical">
+						<TextView android:textColor="@color/black"
+							android:layout_height="wrap_content" android:layout_width="wrap_content"
+							android:id="@+id/current_fenshu" android:layout_marginRight="5dp"
+							android:text="@string/current_perm_fenshu" android:textSize="18sp"></TextView>
+						<TextView android:id="@+id/fenshu_tv"
+							android:layout_height="wrap_content" android:layout_width="wrap_content"
+							android:textColor="@color/red" android:textSize="23sp"></TextView>
+					</LinearLayout>
+					<LinearLayout android:layout_alignParentRight="true"
+						android:gravity="center" android:layout_centerVertical="true"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:id="@+id/ratingbar_linear" android:layout_marginRight="5dp">
+						<RatingBar android:id="@+id/healthRatingBar" style="@style/healthRatingBar"
+							android:isIndicator="true" android:numStars="5" android:max="100"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					</LinearLayout>
+				</RelativeLayout>
+				<RelativeLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:paddingTop="2dp"
+					android:paddingBottom="2dp">
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:orientation="vertical"
+						android:layout_toLeftOf="@+id/scan_action_linear"
+						android:layout_alignParentLeft="true" android:layout_marginRight="10dp" android:id="@+id/scan_progress_linear">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:orientation="vertical"
+							android:id="@+id/scanning_linear">
+							<LinearLayout android:layout_height="wrap_content"
+								android:layout_width="match_parent" android:id="@+id/desp_linear"
+								android:gravity="center_vertical">
+								<TextView android:layout_height="wrap_content"
+									android:layout_width="wrap_content" android:id="@+id/scan_title_tv"
+									android:textColor="@color/black" android:text="@string/scan_title_text"></TextView>
+								<TextView android:layout_height="wrap_content"
+									android:layout_width="wrap_content" android:id="@+id/scan_app_tv"
+									android:textColor="@color/black" android:singleLine="true"></TextView>
+							</LinearLayout>
+							<LinearLayout android:layout_height="wrap_content"
+								android:layout_width="match_parent" android:id="@+id/progress_linear"
+								android:layout_marginTop="5dp">
+								<ProgressBar android:layout_centerVertical="true"
+									android:progressDrawable="@drawable/progress_bar"
+									style="?android:attr/progressBarStyleHorizontal"
+									android:layout_width="fill_parent" android:layout_height="11dip"
+									android:id="@+id/mobile_exam_progress" android:visibility="visible" android:max="100"/>
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:id="@+id/scan_result_linear"
+							android:visibility="gone">
+							<TextView android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:id="@+id/scan_result_tv" android:textColor="@color/grey"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:orientation="vertical"
+						android:layout_alignParentRight="true" android:id="@+id/scan_action_linear" android:layout_centerVertical="true">
+						<LinearLayout android:background="@drawable/mobile_exam_button_bg"
+							android:layout_gravity="center_horizontal" android:padding="5dp"
+							android:orientation="horizontal" android:gravity="center"
+							android:layout_height="wrap_content" android:layout_width="100dip"
+							android:id="@+id/cancel_scan_button">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:src="@drawable/virus_scan_icon07"
+								android:layout_marginRight="5dp"></ImageView>
+							<TextView android:textColor="@color/white"
+								android:singleLine="true" android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_marginLeft="3dp"
+								android:text="@string/cancel"></TextView>
+						</LinearLayout>
+						<LinearLayout android:background="@drawable/mobile_exam_button_bg"
+							android:layout_gravity="center_horizontal" android:padding="5dp"
+							android:orientation="horizontal" android:gravity="center"
+							android:layout_height="wrap_content" android:layout_width="100dip"
+							android:id="@+id/optimize_button" android:visibility="gone">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:src="@drawable/refresh"></ImageView>
+							<TextView android:textColor="@color/white"
+								android:singleLine="true" android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_marginLeft="3dp"
+								android:text="@string/mobile_exam_optimize_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+				<LinearLayout android:background="@color/white" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="fill_parent">
+					<LinearLayout android:padding="5dp" android:id="@+id/danger_item_linear" android:visibility="gone" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="match_parent">
+						<LinearLayout android:id="@+id/danger_item_title_linear" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_vertical">
+							<ImageView android:layout_marginRight="5dp" android:src="@drawable/mobile_exam_danger_icon" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+							<TextView android:text="@string/danger_item_text" android:textColor="@color/red" android:id="@+id/danger_item_title_tv" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp"></TextView>
+						</LinearLayout>
+						<ListView android:id="@+id/danger_list_view" android:divider="@null" android:layout_marginTop="5dp" android:layout_width="match_parent" android:isScrollContainer="false" android:layout_weight="1" android:layout_height="fill_parent"></ListView>
+						<View android:background="@drawable/virus_scan_line01" android:layout_height="1dp" android:layout_width="match_parent"></View>
+					</LinearLayout>
+					<LinearLayout android:padding="5dp" android:id="@+id/unoptimized_item_linear" android:visibility="gone" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content">
+						<LinearLayout android:id="@+id/unoptimized_item_title_linear" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_vertical">
+							<ImageView android:layout_marginRight="5dp" android:src="@drawable/mobile_exam_unoptimized_icon" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+							<TextView android:text="@string/unoptimized_item_text" android:textColor="@color/orange" android:id="@+id/unoptimized_item_title_tv" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp"></TextView>
+						</LinearLayout>
+						<ListView android:id="@+id/unoptimized_list_view" android:divider="@null" android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+						<View android:background="@drawable/virus_scan_line01" android:layout_height="1dp" android:layout_width="match_parent"></View>
+					</LinearLayout>
+					<LinearLayout android:padding="5dp" android:id="@+id/optimized_item_linear" android:visibility="gone" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content">
+						<LinearLayout android:id="@+id/optimized_item_title_linear" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_vertical">
+							<ImageView android:layout_marginRight="5dp" android:src="@drawable/mobile_exam_optimized_icon" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+							<TextView android:text="@string/optimized_item_text" android:textColor="@color/light_green" android:id="@+id/optimized_item_title_tv" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp"></TextView>
+						</LinearLayout>
+						<ListView android:id="@+id/optimized_list_view" android:divider="@null" android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+						<View android:background="@drawable/virus_scan_line01" android:layout_height="1dp" android:layout_width="match_parent"></View>
+					</LinearLayout>
+					<LinearLayout android:padding="5dp" android:id="@+id/safe_item_linear" android:visibility="gone" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="wrap_content">
+						<LinearLayout android:id="@+id/safe_item_title_linear" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center_vertical">
+							<ImageView android:layout_marginRight="5dp" android:src="@drawable/mobile_exam_optimized_icon" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+							<TextView android:text="@string/safe_item_text" android:textColor="@color/light_green" android:id="@+id/safe_item_title_tv" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16sp"></TextView>
+						</LinearLayout>
+						<ListView android:id="@+id/safe_list_view" android:divider="@null" android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+						<!-- com.kindroid.security.widget.LinearLayoutForListView
+	                        android:orientation="vertical" android:layout_width="match_parent"
+	                        android:layout_height="wrap_content" android:id="@+id/safe_list_view">
+	                    </com.kindroid.security.widget.LinearLayoutForListView-->
+							<View android:background="@drawable/virus_scan_line01" android:layout_height="1dp" android:layout_width="match_parent"></View>
+					</LinearLayout>
+				</LinearLayout>
+			</ScrollView>
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false" android:background="#EEEEEE">
+	<!-- 
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+
+			</LinearLayout>
+			<TextView android:id="@+id/function_title_tv"
+				android:gravity="center" android:textColor="@color/white"
+				android:textSize="18dip" android:text="@string/virus_scan_title"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true" />
+		</RelativeLayout>
+	</LinearLayout>
+	-->
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:padding="5dp" android:gravity="center_vertical">
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:src="@drawable/firewall_icon"
+			android:layout_marginRight="5dp"></ImageView>
+		<LinearLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content" android:layout_weight="1" android:gravity="center_vertical">
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView1"
+				android:layout_width="wrap_content" android:textColor="@color/black"
+				android:text="@string/last_time_clean_history"></TextView>
+			<TextView android:layout_height="wrap_content" android:id="@+id/history_clean_time"
+				android:layout_width="wrap_content" android:textColor="@color/black"
+				android:text="2011-07-06" android:layout_marginLeft="3dp"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/clean_history_action_linear"
+			android:background="@drawable/button_bg_selector" android:gravity="center"
+			android:paddingBottom="3dp" android:paddingTop="3dp">
+			<ImageView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:src="@drawable/icon_shanchu"
+				android:layout_marginRight="3dp"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="@color/white"
+				android:text="@string/clean_history"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="0dip" android:cacheColorHint="#00000000"
+		android:divider="@null" android:id="@id/android:list"
+		android:layout_weight="1" />
+</LinearLayout>

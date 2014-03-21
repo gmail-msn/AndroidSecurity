@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="KindroidSecurity" default="help">
+    <property name="ROOT" value="${basedir}" />
+    
+    <!-- default maket is set as ‘电子市场’ -->
+    <property name="market" value="defender_google" />
+    <property name="config.market.name" value="${market}" />
+    <!-- internal apk is build by default 默认为内网（isTestOnly）-->
+    <property name="isTestOnly" value="false" />
+    <!-- default build type is release -->
+    <property name="buildtype" value="release" />
+    <property name="market.file" value="${basedir}/market.xml" />
+    
+    <target name="calcXpath">
+        <condition property="xpath.build.baseurl254" value="/BuyinDefender/Build/Internal/BaseUrl254" else="/BuyinDefender/Build/Release/BaseUrl254" >
+            <istrue value="${isTestOnly}" />
+        </condition>
+        <condition property="xpath.build.baseurl128" value="/BuyinDefender/Build/Internal/BaseUrl128" else="/BuyinDefender/Build/Release/BaseUrl128" >
+            <istrue value="${isTestOnly}" />
+        </condition>    
+
+        <property name="xpath.market.id" value="/BuyinDefender/Markets/Market[@name='${config.market.name}']/@id" />
+    	<property name="xpath.market.name" value="/BuyinDefender/Markets/Market[@name='${config.market.name}']/@name" />
+    	<property name="xpath.market.description" value="/BuyinDefender/Markets/Market[@name='${config.market.name}']/@description" />
+    	<property name="xpath.market.upgradeenurl" value="/BuyinDefender/Markets/Market[@name='${config.market.name}']/UpgradeEnUrl" />
+    	<property name="xpath.market.upgradezhurl" value="/BuyinDefender/Markets/Market[@name='${config.market.name}']/UpgradeZhUrl" />
+    </target>
+
+    <target name="getmarket" depends="calcXpath">
+        <xpath input="${market.file}" expression="${xpath.build.baseurl254}" output="config.baseurl254" />
+        <xpath input="${market.file}" expression="${xpath.build.baseurl128}" output="config.baseurl128" />
+        <xpath input="${market.file}" expression="${xpath.market.id}" output="config.market.id" />
+        <xpath input="${market.file}" expression="${xpath.market.description}" output="config.market.description" />
+        <xpath input="${market.file}" expression="${xpath.market.upgradeenurl}" output="config.upgrade.en.url.2" />
+        <xpath input="${market.file}" expression="${xpath.market.upgradezhurl}" output="config.upgrade.zh.url.2" />
+        <property name="config.upgrade.en.url" value="${config.baseurl254}${config.upgrade.en.url.2}" />
+        <property name="config.upgrade.zh.url" value="${config.baseurl254}${config.upgrade.zh.url.2}" />
+        
+        <fail message="unknown market ${config.market.name}">
+            <condition>
+                <equals arg1="" arg2="${config.market.id}" />
+            </condition>
+        </fail>
+         
+        <echo> Maket(${config.market.name}):id=${config.market.id}, description=${config.market.description}</echo>
+        <echo>       Upgrade_En_Url=${config.upgrade.en.url}</echo>
+        <echo>       Upgrade_Zh_Url=${config.upgrade.zh.url}</echo>
+    </target>
+
+    <target name="showmarkets">
+        <xpath input="${market.file}" expression="/BuyinDefender/Markets/All" output="market.all" />
+        <foreach list="${market.all}" target="getmarket" param="config.market.name" delimiter=";" trim="true" />
+    </target>
+
+    <!-- Copy Config.java to our source tree, replacing custom tokens with values in build.properties. 
+         The configuration depends on "clean" because otherwise the build system will not detect changes in the configuration. -->
+    <target name="config" depends="getmarket">
+        <property name="config-target-path" value="${source.dir}/com/kindroid/security/util"/>
+
+		<!-- Copy the configuration file, replacing tokens in the file. -->
+		<copy file="${source.dir}/../config/Config.java" todir="${config-target-path}" overwrite="true" encoding="utf-8">
+			<filterset>
+				<filter token="CONFIG.BASEURL254" value="${config.baseurl254}"/>
+				<filter token="CONFIG.BASEURL128" value="${config.baseurl128}"/>
+				<filter token="CONFIG.UPGRADE_EN_URL" value="${config.upgrade.en.url}"/>
+				<filter token="CONFIG.UPGRADE_ZH_URL" value="${config.upgrade.zh.url}"/>
+				<filter token="CONFIG.MARKET_ID" value="${config.market.id}"/>
+			</filterset>
+		</copy>
+
+		<!-- Now set it to read-only, as we don't want people accidentally editing the wrong one.
+		<chmod file="${config-target-path}/Config.java" perm="-w"/>
+		<attrib file="${config-target-path}/Config.java" readonly="true"/> -->
+    </target>
+
+    <target name="build" depends="config">
+        <switch value="${buildtype}">
+            <case value="release">
+                <antcall target="release">
+                </antcall>
+            </case>
+            <case value="debug">
+                <antcall target="debug">
+                </antcall>
+            </case>
+            <default>
+                <fail message="unknown build type ${buildtype}"/>
+            </default>
+        </switch>        
+    </target> 
+
+    <target name="buildall">
+        <xpath input="${market.file}" expression="/BuyinDefender/Markets/All" output="market.all" />
+        <foreach list="${market.all}" target="build" param="config.market.name" delimiter=";" trim="true" />    
+    </target>
+
+    <target name="help">
+        <!-- displays starts at col 13
+              |13                                                              80| -->
+        <echo>BuyinDefender build file. Available targets:</echo>
+        <echo>   help:              Displays this help.</echo>
+        <echo>   showmarkets:       Show all avaliable markets.</echo>
+        <echo>   updateVersionCode: Increase android:versionCode in AndroidManifest.xml by 1. </echo>
+        <echo>                      This target should only be performed during daily build or release build. </echo>
+        <echo>   config:            Copy config/Config.java to src/com/kindroid/util/Config.java </echo>
+        <echo>                      and replace settings by the given market.</echo>
+        <echo>                      Properties "isTestOnly", "market" should be set. Default values are "true", "defender". </echo>
+        <echo>   build:             Builds the application and signs it. Properties "buildtype", "isTestOnly", "market" should be set. </echo>
+        <echo>                      Default values are "release", "true", "defender". </echo>
+        <echo>   buildall:          Builds the application for all avaliable markets. Properties "buildtype", "isTestOnly" should be set. </echo>
+        <echo>                      Default values are "release", "true". </echo>
+        <echo>   clean:             Remove all intermediate files and directories. </echo>
+    </target>
+
+    <import file="${ROOT}/build/basic.xml" />
+</project>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="@drawable/theme_bg">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+
+			</LinearLayout>
+			<TextView android:gravity="center" android:textColor="@color/white"
+				android:textSize="18dip" android:text="@string/softmanage_installed_tab"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true" />
+		</RelativeLayout>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingLeft="5dip" android:layout_marginTop="6dip"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:paddingLeft="2dip">
+				<TextView android:layout_width="wrap_content"
+					android:textColor="@color/light_black" android:text="@string/memory_hasuse_detail"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/hasuse_tv" android:layout_width="wrap_content"
+					android:textColor="#80B119" android:textSize="18dip"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_width="wrap_content"
+					android:textSize="10dip" android:textColor="@color/light_black"
+					android:layout_height="wrap_content" android:text="@string/health_memcount" />
+				<TextView android:layout_width="wrap_content"
+					android:textColor="@color/light_black" android:layout_marginLeft="25dip"
+					android:layout_height="wrap_content" android:text="@string/can_use" />
+				<TextView android:id="@+id/canuse_tv" android:layout_width="wrap_content"
+					android:textSize="18dip" android:textColor="#80B119"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_width="wrap_content"
+					android:textSize="10dip" android:textColor="@color/light_black"
+					android:layout_height="wrap_content" android:text="@string/health_memcount" />
+			</LinearLayout>
+			<ProgressBar android:id="@+id/progressBar"
+				android:progressDrawable="@drawable/progress_bar_2"
+				android:layout_marginTop="6dip" style="?android:attr/progressBarStyleHorizontal"
+				android:max="100" android:layout_width="fill_parent"
+				android:layout_height="11dip" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1.9">
+			<LinearLayout android:id="@+id/installed_action_linear"
+				android:layout_width="wrap_content" android:background="@drawable/button_bg_selector"
+				android:layout_marginTop="8dip" android:layout_height="wrap_content"
+				android:paddingTop="5dip"
+				android:paddingBottom="5dip" android:focusable="true" android:gravity="center" android:layout_marginRight="5dp" android:paddingLeft="3dip" android:paddingRight="3dip" android:layout_marginLeft="10dip">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_marginTop="2dip" android:layout_height="wrap_content"
+					android:src="@drawable/icon_anzhuang" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_marginLeft="3dip" android:textColor="@color/white"
+					android:layout_height="wrap_content" android:text="@string/softmanage_install_text" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingLeft="5dip" android:layout_height="wrap_content"
+		android:layout_marginTop="5dip">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="5dip" android:layout_weight="1"
+			android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="3dip" android:textColor="@color/light_black"
+				android:layout_height="wrap_content" android:text="@string/softmanage_installed_sum" />
+			<TextView android:id="@+id/installed_sum_tv"
+				android:layout_width="wrap_content" android:textColor="#80B119"
+				android:textSize="18dip" android:layout_height="wrap_content" />
+
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:gravity="right" android:layout_weight="1"
+			android:layout_height="wrap_content">
+
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/light_black" android:layout_marginRight="5dip"
+				android:layout_height="wrap_content" android:text="@string/all_select" />
+			<CheckBox android:id="@+id/select_al_cb"
+				android:layout_width="40dip" android:layout_marginLeft="10dip"
+				android:layout_height="40dip" android:focusable="false"
+				android:padding="5dip" android:textColor="@color/black"
+				android:text="      " android:background="@null" android:button="@drawable/checkbox_button" />
+
+		</LinearLayout>
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="0dip" android:cacheColorHint="#00000000"
+		android:divider="@null" android:id="@id/android:list"
+		android:layout_weight="1" />
+
+</LinearLayout>

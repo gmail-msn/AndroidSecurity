@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<ImageView android:id="@+id/notificationIcon" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_width="40dp" android:layout_height="40dp"/>		
+	</LinearLayout>	
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">	
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">	
+		<TextView android:id="@+id/notificationTitle" android:textSize="18sp" android:textColor="@color/black"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />	
+	</LinearLayout>	
+		<ProgressBar android:id="@+id/notificationProgress" android:progressDrawable="@drawable/progress_bar" style="?android:attr/progressBarStyleHorizontal" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+	</LinearLayout>
+</LinearLayout>

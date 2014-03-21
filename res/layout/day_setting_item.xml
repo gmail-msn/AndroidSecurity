@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:gravity="center_vertical"
+	android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="match_parent"
+		android:layout_height="40dp" android:background="@drawable/dialog_listselect">
+		<TextView android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="@color/black" android:textSize="16sp"
+			android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+			android:id="@+id/day_name"></TextView>
+			
+		<CheckBox android:layout_alignParentRight="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_marginRight="10dp"
+			android:focusable="false" android:focusableInTouchMode="false"
+			android:id="@+id/select_cb" android:checked="false"
+			android:clickable="false"></CheckBox>
+		<ImageView android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_width="match_parent" android:src="@drawable/virus_scan_line01"></ImageView>
+	</RelativeLayout>
+</LinearLayout>

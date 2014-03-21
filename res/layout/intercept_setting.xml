@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@color/linear_focuse">
+
+	<ScrollView android:layout_width="match_parent"
+		android:layout_weight="1" android:layout_height="match_parent"
+		android:background="@color/white" android:fillViewport="true"
+		android:padding="5dp">
+		<LinearLayout android:layout_height="match_parent"
+			android:isScrollContainer="true" android:layout_width="match_parent"
+			android:layout_marginBottom="5dp" android:background="@color/white"
+			android:orientation="vertical">
+			<LinearLayout android:orientation="horizontal" android:layout_marginTop="5dp"
+				android:layout_height="70dp"
+				android:gravity="center_vertical" android:paddingLeft="5dp"
+				android:id="@+id/intercept_mode_linear" android:background="@drawable/listselect" android:layout_width="fill_parent">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textColor="@color/black"
+								android:layout_marginRight="2dp" android:textSize="18sp"
+								android:text="@string/select_intercept_model"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginTop="8dp">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/default_model"></TextView>
+							<TextView android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:textColor="#646464"
+								android:id="@+id/current_intercept_mode" android:text="@string/defaults"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<!-- 
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+				 -->
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_height="70dp"
+				android:gravity="center_vertical" android:paddingLeft="5dp"
+				android:id="@+id/treat_mode_linear" android:background="@drawable/listselect">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textColor="@color/black"
+								android:layout_marginRight="2dp" android:textSize="18sp"
+								android:text="@string/phone_intercept_treat"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginTop="8dp">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/default_model"></TextView>
+							<TextView android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:textColor="#646464"
+								android:id="@+id/current_treat_mode" android:text="@string/return_busy_sound"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_height="70dp"
+				android:gravity="center_vertical" android:paddingLeft="5dp"
+				android:background="@drawable/listselect" android:id="@+id/key_word_linear">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textColor="@color/black"
+								android:layout_marginRight="2dp" android:textSize="18sp" android:text="@string/intercept_key_word_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginTop="8dp">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp" android:text="@string/intercept_key_word_desp"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<!-- 
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+				-->
+			<!-- 
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp" android:layout_height="70dp"
+				android:gravity="center_vertical" android:paddingLeft="5dp"
+				android:id="@+id/define_intercept_keywords" android:background="@drawable/listselect">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textColor="@color/black"
+								android:layout_marginRight="2dp" android:textSize="18sp"
+								android:text="@string/intercept_keywords"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginTop="5dp">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/intercept_keywords_prompt"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			-->
+			<!-- 
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+				 -->
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_height="70dp"
+				android:gravity="center_vertical" android:paddingLeft="5dp"
+				android:id="@+id/notify_intercept_info_linear" android:background="@drawable/listselect">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textColor="@color/black"
+								android:layout_marginRight="2dp" android:textSize="18sp"
+								android:text="@string/notify_intercept"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginTop="8dp">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/notify_intercept_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginLeft="6dp">
+					<CheckBox android:background="@null" android:button="@drawable/checkbox_button"
+						android:id="@+id/notify_intercept_cb" android:focusable="false"
+						android:focusableInTouchMode="false" android:clickable="false" android:layout_height="30dp" android:layout_width="30dp"></CheckBox>
+				</LinearLayout>
+			</LinearLayout>
+			<!-- 
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+				 -->
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_height="70dp"
+				android:gravity="center_vertical" android:paddingLeft="5dp"
+				android:id="@+id/nodisturb_linear" android:background="@drawable/listselect">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textColor="@color/black"
+								android:layout_marginRight="2dp" android:textSize="18sp"
+								android:text="@string/nodisturb_at_night"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginTop="8dp">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/current_status"></TextView>
+							<TextView android:layout_height="wrap_content"
+								android:layout_width="wrap_content" android:textColor="#646464"
+								android:text="@string/defaults" android:id="@+id/current_nodisturb_mode"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<!-- 
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			 -->
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

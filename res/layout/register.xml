@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<TextView android:id="@+id/function_title_tv"
+			android:gravity="center" android:textColor="@color/white"
+			android:textSize="18dip" android:text="@string/account_manager"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:fillViewport="true">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="#EEEEEE"
+			android:paddingTop="8dip" android:paddingLeft="8dip"
+			android:paddingRight="8dip">
+			<LinearLayout android:layout_width="fill_parent"
+				android:background="@color/white" android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView android:layout_marginTop="25dip"
+					android:textColor="@color/light_black" android:text="@string/backup_register_text"
+					android:textSize="22dip" android:layout_gravity="center_horizontal"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+				<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+					android:layout_height="1dp" android:layout_marginTop="8dip"></View>
+
+
+				<LinearLayout android:layout_width="match_parent"
+					android:paddingLeft="8dip" android:paddingRight="8dip"
+					android:gravity="center_vertical" android:layout_height="wrap_content"
+					android:layout_marginTop="25dp">
+					<TextView android:layout_height="wrap_content"
+						android:text="@string/backup_login_user_name_text"
+						android:singleLine="true" android:gravity="center_horizontal"
+						android:layout_weight="2.9" android:layout_width="fill_parent"
+						android:textColor="@color/black"></TextView>
+					<EditText android:lines="1" android:layout_height="wrap_content"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:layout_weight="1" android:id="@+id/user_name_input" android:maxLength="40"></EditText>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent"
+					android:gravity="center_vertical" android:paddingLeft="8dip"
+					android:paddingRight="8dip" android:layout_height="wrap_content"
+					android:layout_marginTop="10dp">
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_weight="2.9"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:textColor="@color/black" android:text="@string/backup_login_password_text"></TextView>
+					<EditText android:lines="1" android:layout_height="wrap_content"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:layout_weight="1" android:id="@+id/password_input"
+						android:maxLength="20" android:password="true"></EditText>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="match_parent"
+					android:paddingLeft="8dip" android:paddingRight="8dip"
+					android:gravity="center_vertical" android:layout_height="wrap_content"
+					android:layout_marginTop="10dp">
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_weight="2.9"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:textColor="@color/black" android:text="@string/sure_passwd"></TextView>
+					<EditText android:lines="1" android:layout_height="wrap_content"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:layout_weight="1" android:id="@+id/sure_password_input"
+						android:password="true" android:maxLength="20"></EditText>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="match_parent"
+					android:paddingLeft="8dip" android:paddingRight="8dip"
+					android:gravity="center_vertical" android:layout_height="wrap_content"
+					android:layout_marginTop="10dp">
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_weight="2.9"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:textColor="@color/black" android:text="@string/email"></TextView>
+					<EditText android:lines="1" android:layout_height="wrap_content"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:layout_weight="1" android:id="@+id/email_input" android:maxLength="40" android:inputType="textEmailAddress"></EditText>
+				</LinearLayout>
+				
+				<LinearLayout android:layout_width="match_parent"
+					android:paddingLeft="8dip" android:paddingRight="8dip"
+					android:gravity="center_vertical" android:layout_height="wrap_content"
+					android:layout_marginTop="10dp">
+					<TextView android:layout_height="wrap_content"
+						android:gravity="center_horizontal" android:layout_weight="2.9"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:textColor="@color/black" android:text="@string/account_register_phone_number"></TextView>
+					<EditText android:lines="1" android:layout_height="wrap_content"
+						android:singleLine="true" android:layout_width="fill_parent"
+						android:layout_weight="1" android:id="@+id/phoneNum_input" android:hint="@string/account_register_hint_optional_text" android:maxLength="16" android:inputType="phone"></EditText>
+				</LinearLayout>
+
+				<View android:layout_width="fill_parent" android:background="@drawable/virus_scan_line01"
+					android:layout_height="1dp" android:layout_marginTop="18dip"></View>
+
+
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_marginTop="10dip" android:paddingBottom="15dip"
+					android:layout_height="wrap_content" android:gravity="center_horizontal">
+					<LinearLayout android:layout_width="fill_parent"
+						android:paddingRight="8dip" android:layout_height="wrap_content"
+						android:layout_weight="1" android:gravity="right">
+						<Button android:text="@string/just_register"
+							android:id="@+id/button_ok" android:singleLine="true"
+							android:paddingTop="5dip" android:paddingBottom="5dip"
+							android:textColor="@color/white" android:layout_marginTop="8dip"
+							android:background="@drawable/button_bg_selector"
+							android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+							android:layout_width="100dip"></Button>
+
+
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent"
+						android:paddingLeft="8dip" android:layout_height="wrap_content"
+						android:layout_weight="1">
+
+						<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+							android:padding="5dp" android:layout_marginLeft="10dp"
+							android:textColor="@color/white" android:layout_marginBottom="2dp"
+							android:background="@drawable/button_bg_selector"
+							android:layout_width="100dip" android:layout_height="wrap_content"></Button>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

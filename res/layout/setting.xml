@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="10dip" android:orientation="vertical"
+	android:background="#EBEBEB">
+	<!-- <RelativeLayout android:id="@+id/mobile_traffic_rl" android:layout_width="fill_parent" 
+		android:gravity="center_vertical" android:layout_height="50dip" android:background="@drawable/setting_bg"> 
+		<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:singleLine="true" android:text="@string/mobile_traffic" android:textColor="@color/black" 
+		android:layout_marginLeft="10dip" /> <TextView android:id="@+id/mobile_traffic_tv" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" 
+		android:textColor="@color/black" android:layout_alignParentRight="true" android:layout_marginRight="10dip" 
+		/> </RelativeLayout> <RelativeLayout android:id="@+id/begin_date_rl" android:layout_width="fill_parent" 
+		android:gravity="center_vertical" android:layout_marginTop="-2dip" android:layout_height="50dip" 
+		android:background="@drawable/setting_bg"> <TextView android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:singleLine="true" android:text="@string/begin_date" 
+		android:textColor="@color/black" android:layout_marginLeft="10dip" /> <TextView 
+		android:id="@+id/begin_date_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:singleLine="true" android:textColor="@color/black" android:layout_alignParentRight="true" 
+		android:layout_marginRight="10dip" /> </RelativeLayout> -->
+	<RelativeLayout android:id="@+id/mobile_traffic_limit_per_month_rl"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_marginTop="15dip" android:layout_height="50dip"
+		android:background="@drawable/setting_bg">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:text="@string/mobile_traffic_limit_per_month"
+			android:textColor="@color/black" android:layout_marginLeft="10dip" />
+		<TextView android:id="@+id/mobile_traffic_limit_per_month_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:singleLine="true" android:textColor="@color/black"
+			
+			android:layout_alignParentRight="true" android:layout_marginRight="15dip" />
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/mobile_traffic_left_per_month_rl"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_marginTop="-2dip" android:layout_height="50dip"
+		android:background="@drawable/setting_bg">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:text="@string/mobile_traffic_left_per_month"
+			android:textColor="@color/black" android:layout_marginLeft="10dip" />
+		<TextView android:id="@+id/mobile_traffic_left_per_month_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:singleLine="true" android:textColor="@color/black"
+			android:layout_alignParentRight="true" android:layout_marginRight="15dip" />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/cal_date_rl" android:background="@drawable/setting_bg"
+		android:layout_height="50dip" android:layout_marginTop="-2dip"
+		android:gravity="center_vertical">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:text="@string/cal_date" android:textColor="@color/black"
+			android:layout_marginLeft="10dip" />
+		<TextView android:id="@+id/cal_date_tv" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:textColor="@color/black" android:layout_alignParentRight="true"
+			android:layout_marginRight="15dip" />
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/clear_count_data_rl" android:gravity="center_vertical"
+		android:layout_marginTop="15dip" android:layout_height="50dip"
+		android:background="@drawable/setting_bg">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:text="@string/clear_count_data" android:textColor="@color/black"
+			android:layout_marginLeft="10dip" />
+		<TextView android:id="@+id/clear_count_data_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:singleLine="true" android:textColor="@color/black"
+			android:layout_alignParentRight="true" android:layout_marginRight="15dip" />
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/update_virus_rl"
+		android:layout_width="fill_parent" android:background="@drawable/setting_bg"
+		android:layout_height="50dip" android:layout_marginTop="-2dip"
+		android:gravity="center_vertical">
+		<TextView android:layout_height="wrap_content" android:singleLine="true"
+			android:text="@string/update_virus" android:textColor="@color/black"
+			android:layout_marginLeft="10dip" android:id="@+id/update_virus_tv" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_width="wrap_content" android:focusable="false"/>
+		<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/update_virus_iv" android:layout_alignParentRight="true" android:layout_alignRight="@+id/update_virus_tv" android:layout_centerVertical="true" android:src="@drawable/arrow03" android:layout_marginRight="6dp" android:focusable="false"></ImageView>
+	</RelativeLayout>
+
+
+</LinearLayout>

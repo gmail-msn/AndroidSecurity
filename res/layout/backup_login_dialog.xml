@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:background="@color/white" android:layout_height="300dp">
+
+	<View android:layout_width="310dip" android:layout_height="0dip" />
+
+	<LinearLayout android:gravity="center"
+		android:layout_width="fill_parent" android:layout_height="60dp"
+		android:background="@drawable/button_bg_green">
+		<ImageView android:layout_marginRight="5dp"
+			android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+			android:src="@drawable/soft_prompt_dialog_icon"
+			android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+		<TextView android:textColor="@color/white"
+			android:text="@string/softmanage_prompt_dialog_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"></TextView>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:gravity="center_horizontal" android:layout_weight="1"
+		android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_marginTop="5dp">
+			<TextView android:layout_height="wrap_content"
+				android:textColor="@color/black" android:gravity="center"
+				android:layout_width="match_parent" android:text="@string/backup_login_prompt_text" android:id="@+id/login_prompt_text"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="5dp">
+			<TextView android:layout_height="wrap_content"
+				android:text="@string/backup_login_user_name_text"
+				android:layout_width="wrap_content" android:textColor="@color/black"></TextView>
+			<EditText android:lines="1" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/user_name_input"></EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="5dp">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:textColor="@color/black"
+				android:text="@string/backup_login_password_text"
+				android:layout_marginLeft="13dp"></TextView>
+			<EditText android:lines="1" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/password_input"></EditText>
+		</LinearLayout>
+		<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+			android:layout_height="1dp" android:layout_marginTop="5dp"></View>
+		<LinearLayout android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:layout_gravity="center_horizontal"
+			android:layout_width="match_parent" android:layout_marginTop="5dp">
+			<Button android:padding="5dp" android:textColor="@color/white"
+				android:layout_marginBottom="2dp" android:background="@drawable/button_off"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:id="@+id/button_ok" android:text="@string/backup_login_text"></Button>
+			<Button android:padding="5dp" android:layout_marginLeft="10dp"
+				android:textColor="@color/white" android:layout_marginBottom="2dp"
+				android:background="@drawable/button_off" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@android:string/cancel"
+				android:id="@+id/button_cancel"></Button>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="5dp" android:layout_marginTop="5dp" android:gravity="center">
+			<TextView android:textColor="@color/black" android:layout_height="wrap_content" android:text="@string/backup_register_text" android:layout_width="wrap_content" android:id="@+id/backup_register_action"></TextView>
+			<TextView android:textColor="@color/black" android:layout_height="wrap_content" android:text="@string/backup_forget_password_test" android:layout_width="wrap_content" android:layout_marginLeft="60dp" android:id="@+id/backup_forget_password_action"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

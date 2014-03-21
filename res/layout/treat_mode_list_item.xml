@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"  android:gravity="center_vertical" android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="match_parent" android:layout_height="40dip" android:background="@drawable/dialog_listselect">
+		<LinearLayout android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="10dp" android:orientation="horizontal">
+			<TextView android:layout_marginBottom="10dp" android:textColor="@color/black" android:layout_height="wrap_content" android:id="@+id/mode_title_tv" android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:id="@+id/radio_linear">
+			<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/radio_button" android:focusable="false" android:focusableInTouchMode="false" android:checked="false" android:clickable="false" android:button="@drawable/radio_button"></RadioButton>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

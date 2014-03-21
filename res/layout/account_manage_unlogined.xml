@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="#EEEEEE" android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip"
+		android:gravity="center_horizontal">
+		<!-- TextView android:gravity="center" android:textColor="@color/white" 
+			android:textSize="18dip" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+			android:id="@+id/backup_1_title_tv" android:text="@string/backup_1_title" 
+			/ -->
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+			<TextView android:gravity="center" android:textSize="18dip"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:textColor="@color/white" android:layout_centerInParent="true"
+				android:text="@string/account_manager"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_weight="1" android:layout_height="match_parent"
+		android:background="@color/white" android:fillViewport="true"
+		android:padding="5dp">
+		<LinearLayout android:layout_height="match_parent"
+			android:isScrollContainer="true" android:layout_width="match_parent"
+			android:layout_marginBottom="5dp" android:background="@color/white"
+			android:orientation="vertical">
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_height="70dp" android:gravity="center_vertical" android:id="@+id/login_linear">
+				<LinearLayout android:layout_width="wrap_content"
+					android:padding="5dp" android:layout_height="wrap_content"
+					android:layout_weight="1">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/account_man_icon01"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginBottom="5dp">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="2dp"
+								android:text="@string/account_man_login_prompt_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/account_man_login_exp_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_marginBottom="5dp" android:layout_marginTop="5dp"
+				android:layout_height="70dp" android:gravity="center_vertical" android:id="@+id/backup_linear">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_weight="1" android:padding="5dp"
+					android:layout_height="wrap_content">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/account_man_icon02"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginBottom="5dp">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="2dp"
+								android:text="@string/account_man_backup_prompt_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/account_man_backup_exp_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_gravity="center"
+					android:layout_marginRight="10dp" android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_marginBottom="5dp" android:layout_marginTop="5dp"
+				android:layout_height="70dp" android:gravity="center_vertical" android:id="@+id/anti_theft_linear">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_weight="1" android:padding="5dp"
+					android:layout_height="wrap_content">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/account_man_icon03"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:layout_marginBottom="5dp">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="2dp"
+								android:text="@string/account_man_anti_theft_prompt_text"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464" android:layout_height="wrap_content"
+								android:layout_marginRight="2dp" android:textSize="13sp"
+								android:text="@string/account_man_anti_theft_exp_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_height="wrap_content"
+					android:gravity="center" android:layout_width="wrap_content"
+					android:layout_gravity="center" android:layout_marginRight="10dp"
+					android:layout_marginLeft="6dp">
+					<ImageView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:layout_gravity="center"
+						android:src="@drawable/arrow03"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:orientation="vertical"
+				android:padding="5dp" android:layout_marginTop="15dp">
+				<LinearLayout android:layout_height="wrap_content"
+					android:gravity="center_horizontal" android:layout_gravity="center_horizontal"
+					android:layout_marginTop="6dp" android:layout_marginBottom="5dp"
+					android:layout_width="match_parent">
+					<Button android:padding="5dp" android:textColor="@color/white"
+
+						android:layout_marginBottom="2dp" android:layout_height="wrap_content"
+						android:background="@drawable/button_bg_selector"
+						android:text="@string/backup_register_text" android:id="@+id/register_button" android:lines="1" android:layout_width="wrap_content" android:minWidth="100dp"></Button>
+					<Button android:padding="5dp" android:layout_marginLeft="10dp"
+						android:textColor="@color/white" android:layout_marginBottom="2dp"
+						android:layout_height="wrap_content" android:background="@drawable/button_bg_selector"
+						android:text="@string/backup_forget_password_test" android:id="@+id/forgot_pass_button" android:lines="1" android:minWidth="100dp" android:layout_width="wrap_content"></Button>
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

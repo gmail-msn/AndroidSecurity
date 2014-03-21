@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">Kindroid Security</string>
+	<string name="title_enabled">FireWall</string>
+	<string name="title_disabled">FireWall (Firewall disabled)</string>
+	<string name="showrules">Show rules</string>
+	<string name="applyrules">Apply rules</string>
+	<string name="saverules">Save rules</string>
+	<string name="purgerules">Purge rules</string>
+	<string name="setpwd">Set password</string>
+	<string name="help">Help</string>
+	<string name="close">Close</string>
+	<string name="fw_enabled">Firewall is ON</string>
+	<string name="fw_disabled">Firewall is OFF</string>
+	<string name="log_enabled">Log is enabled</string>
+	<string name="log_disabled">Log is disabled</string>
+	<string name="show_log">Show log</string>
+	<string name="clear_log">Clear log</string>
+	<string name="pass_titleset">Set password lock</string>
+	<string name="pass_titleget">Password required</string>
+	<string name="appLoading">Loading...</string>
+	<string name="appRefresh">Refresh</string>
+	<string name="appWhatsNew">What\'s new?</string>
+
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancel</string>
+	<string name="helpTitle">Help</string>
+	<string name="helpClose">Close</string>
+	<string name="aboutTitle">About</string>
+	<string name="aboutDonation">Donate</string>
+	<string name="aboutClose">Close</string>
+	<string name="aboutHomepage">Homepage</string>
+	<string name="exportTitle">Export to .csv</string>
+	<string name="exportSummary">Export all data to a .csv file on the SD card</string>
+	<string name="exportSuccessful">Export to %1$s successful</string>
+	<string name="exportFailed">Export failed</string>
+	<string name="exportDialogTitle">Exporting...</string>
+	<string name="exportDialogText">Please wait while exporting data</string>
+	<string name="permissionRequired">Could not acquire root access.\n You need a rooted
+		phone to run KindroidSecurity.\n\nIf this phone is already rooted,
+		please make sure KindroidSecurity has enough permissions to execute
+		the su command.\n
+		Error message:</string>
+	<string name="importTitle">Import from .csv</string>
+	<string name="importSummary">Import data from .csv files on the SD card</string>
+	<string name="importSuccessful">Import successful</string>
+	<string name="importFailed">Import failed</string>
+	<string name="importDialogTitle">Importing...</string>
+	<string name="importDialogText">Please wait while importing data</string>
+	<string name="importAlertText">Are you sure that you want to import the data to
+		the SD card?</string>
+
+	<string name="interfaceTypeCell">Cell</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interface</string>
+	<string name="menuInterfaceAdd">Add a counter</string>
+	<string name="menuInterfaceAddDone">New counter added</string>
+	<string name="menuInterfaceReset">Reset all</string>
+	<string name="menuInterfaceResetDone">Reset done</string>
+	<string name="menuInterfaceGraph">Show graph</string>
+
+	<string name="dialogInterfaceResetTitle">Reset all</string>
+	<string name="dialogInterfaceResetText">Are you sure?</string>
+
+	<string name="menuCounterTitle">Counter</string>
+	<string name="menuCounterChange">Change counter type</string>
+	<string name="menuCounterChangeDone">Counter type changed</string>
+	<string name="menuCounterRemove">Remove counter</string>
+	<string name="menuCounterRemoveDone">Counter removed</string>
+	<string name="menuCounterStartDate">Set start date</string>
+	<string name="menuCounterStartDay">Set start day</string>
+	<string name="menuCounterSetDuration">Set duration</string>
+	<string name="menuCounterSetAlert">Set data alert</string>
+
+	<string name="dialogCounterTypeTitle">Select counter type</string>
+	<string name="dialogCounterDurationTitle">Select counter duration</string>
+	<string name="dialogCounterMonthlyTitle">Select the reset date</string>
+	<string name="dialogCounterMonthlyChanged">Date changed</string>
+	<string name="dialogCounterWeeklyTitle">Select the reset day</string>
+	<string name="dialogCounterWeeklyChanged">Day changed</string>
+
+	<string name="dialogCounterLimitTitle">Set notification value</string>
+	<string name="dialogCounterLimitText">Set the notification limit. To disable
+		notification, just erase the value or set it to 0.</string>
+	<string name="dialogCounterLimitWrong">Wrong number format</string>
+
+	<string name="dialogDetailsStartDate">Start date:</string>
+	<string name="dialogDetailsEndDate">End date:</string>
+	<string name="dialogDetailsReceived">Received:</string>
+	<string name="dialogDetailsSent">Sent:</string>
+	<string name="dialogDetailsTotal">Total:</string>
+	<string name="dialogDetailsAlert">Alert:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">no alert defined</string>
+
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s exceeds the limit of %2$s %3$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s exceeds the defined limit</string>
+
+	<!-- Preferences -->
+	<string name="preferences">Preferences</string>
+	<string name="prefsCategoryAdvancedTitle">Advanced preferences</string>
+	<string name="prefsCatImportExportTitle">Import/Export</string>
+	<string name="prefsCatImportExportSummary">Import and export data to and from the SD card</string>
+	<string name="prefsWifiUpdateTitle">WiFi slow update rate</string>
+	<string name="prefsWifiUpdateSummaryOn">Update every hour. Require less power but less
+		accurate</string>
+	<string name="prefsWifiUpdateSummaryOff">Update every 30 seconds. Require more power but
+		more accurate</string>
+	<string name="prefsDebugTitle">Debug</string>
+	<string name="prefsDebugSummary">Show debug information in the notification area</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Received</string>
+	<string name="graphSentLabel">Sent</string>
+	<string name="graphYTitle">kBytes</string>
+	<string name="proc_close">Kill Processes</string>
+	<string name="app_summary_health_report">Summary</string>
+	<string name="app_summary_memory_title">Memory</string>
+	<string name="app_summary_network_title">GPRS</string>
+	<string name="app_summary_had_used_percent">%s Used</string>
+	<string name="app_summary_health_score">%d Scores</string>
+	<string name="app_summary_health_used_m_byte">%dM Used</string>
+	<string name="app_summary_health_leave_m_byte">%dM Free</string>
+	<string name="app_summary_one_key_optimize">Optimize</string>
+	<string name="app_summary_settings">Setting</string>
+	<string name="app_firewall_disable">OFF</string>
+	<string name="app_firewall_enable">ON</string>
+	<string name="app_firewall_save_rule">Save Rules</string>
+	<string name="app_firewall_status_enable">Firewall is ON</string>
+	<string name="app_firewall_status_diable">Firewall is OFF</string>
+	<string name="scan_pause">Pause</string>
+	<string name="scanningText">Scanning...</string>
+	<string name="scanningDone">Scanning is done!</string>
+	<string name="scan_norisk">No Risk</string>
+	<string name="scan_warn">Warning</string>
+	<string name="scan_risk">Risk</string>
+	<string name="scan_danger">Danger</string>
+	<string name="app_uninst">Uninstall</string>
+	<string name="risk_warning">Signed with Google test certification</string>
+	<string name="no_risk">No risk found</string>
+	<string name="app_rescan">Rescan</string>
+	<string name="scan_continue">Resume</string>
+	<string name="working">Loading...</string>
+	<string name="reading">Reading installed applications</string>
+	<string name="health_closeprocess">Close processes</string>
+	<string name="health_closecount">
+	</string>
+	<string name="health_memrelease">Release Memory</string>
+	<string name="health_memcount">M</string>
+	<string name="package_name">net.kindroid.security</string>
+	<string name="introduction">[Introduction]</string>
+	<string name="permission_des">[Permission description]</string>
+	<string name="version">Version:</string>
+	<string name="size">Size:</string>
+	<string name="save_level">Security level:</string>
+	<string name="please_dont_uni_selft">Dont uninstall self</string>
+	<string name="mobile_traffic">Mobile traffic</string>
+	<string name="begin_date">Begin date</string>
+	<string name="mobile_traffic_limit_per_month">Mobile traffic limit per month</string>
+	<string name="mobile_traffic_left_per_month">Mobile traffic left per month</string>
+	<string name="cal_date">Balance date</string>
+	<string name="clear_count_data">Clear count data</string>
+
+	<string name="update_virus">Update</string>
+	<string name="update_virus_no_new_version_text">Up to date!</string>
+	<string name="update_virus_has_new_version_text">There is new virus definitions available, update it
+		now?</string>
+
+	<string name="day">
+	</string>
+	<string name="checking_update">Checking update....</string>
+	<string name="updating">Updating....</string>
+	<string name="advice_tips">Too many processes are running, click to optimize!</string>
+	<string name="advice_tips_better">Current system is healthy, please keep</string>
+	<string name="advice_tips_bad">There are security risks in current system, please
+		optimize it!</string>
+	<string name="setting_cal_date">Settlement Day</string>
+	<string name="sure">OK</string>
+	<string name="message_connot_null">Must not be empty!</string>
+	<string name="message_connot_bezero">Input should greater than 0</string>
+	<string name="clear_cache_suc">Succeeded to reset data! </string>
+	<string name="clear_cache_faile">Failed to reset data!</string>
+	<string name="less_zero_more_31">Date should be between 1 and 31!</string>
+	<string name="sure_clear_cache_suc">Are you sure to reset data?</string>
+	<string name="mobile_exp">Summary</string>
+	<string name="safe_your_mobile">Protect your device all the time</string>
+	<string name="your_mobile_get_count">Rank : </string>
+	<string name="mobile_check_out_report">System Summary</string>
+	<string name="close_proess">Closed:</string>
+	<string name="close_proess_detail">,Released:</string>
+	<string name="process_sum">Processes: </string>
+	<string name="all_select">All</string>
+	<string name="proc_close_al">End All</string>
+	<string name="proc_close_select">End Selected</string>
+
+	<string name="memory_hasuse_detail">Used:</string>
+	<string name="can_use">Free:</string>
+
+	<string name="task_manager">Task Manager</string>
+	<string name="refresh_list">Refresh</string>
+	<string name="memory_manager">Task Manager</string>
+	<string name="soft_manager">Applications</string>
+	<string name="network_stream">Network Traffic</string>
+	<string name="virus_safe">AntiVirus</string>
+	<string name="run_proc">Processes</string>
+	<string name="left_memory">Memory</string>
+	<string name="install_soft">APPs</string>
+	<string name="left_space">Free</string>
+	<string name="has_use_stream">Used</string>
+	<string name="left_stream">Free</string>
+	<string name="danger_soft">Risks</string>
+	<string name="last_time_scan">Scanned</string>
+	<string name="mobile_sumary">Summary</string>
+	<string name="fuc_list">Function</string>
+	<string name="soft_center">Software Center</string>
+	<string name="firewall">Firewall</string>
+	<string name="g3or2g">2G/3G</string>
+	<string name="wifi">Wi-Fi</string>
+	<string name="day_before">Days ago</string>
+	<string name="quit_app_tips">Press again to exit</string>
+	<string name="softmanage_recommend_tab">Recommend</string>
+	<string name="softmanage_installed_tab">Applications</string>
+	<string name="softmanage_apkmanage_tab">APK Package</string>
+	<string name="softmanage_version_title">Version</string>
+	<string name="softmanage_uninstall_text">Uninstall</string>
+	<string name="softmanage_install_text">Install</string>
+	<string name="softmanage_memory_title">Memory: </string>
+	<string name="softmanage_memory_used">Used </string>
+	<string name="softmanage_memory_available">Free </string>
+	<string name="softmanage_installed_sum">Total Installed Apps: </string>
+	<string name="softmanage_apk_sum">Amounts: </string>
+	<string name="softmanage_prompt_dialog_title">Kindroid Security Notice</string>
+	<string name="softmanage_scan_installed_text">Scanning apps installed, please wait...</string>
+	<string name="softmanage_has_installed_tip">Installed</string>
+	<string name="softmanage_use_memory_text">Used: </string>
+	<string name="softmanage_uninstall_tip_text">Are you sure to uninstall?</string>
+	<string name="softmanage_install_tip_text">Install selected apk?</string>
+	<string name="softmanage_delete_tip_text">Delete selected apk?</string>
+	<string name="softmanage_left_menu_text">Install</string>
+	<string name="softmanage_left_menu_text1">Delete</string>
+	<string name="softmanage_right_menu_text">Refresh</string>
+	<string name="softmanage_install_now_text">Install</string>
+	<string name="softmanage_install_descript_text">Description</string>
+	<string name="softmanage_scan_apk_text">Scanning local packages, please wait...</string>
+	<string name="softmanage_scan_recommend_text">Loading application info, please wait...</string>
+	<string name="softmanage_download_recommend_text">Downloading apk, please wait...</string>
+	<string name="softmanage_apk_install_text">Install</string>
+	<string name="softmanage_apk_delete_text">Delete</string>
+	<string name="virus_scan_title">Anti-Virus</string>
+	<string name="virus_scan_last_time">Scanned:</string>
+	<string name="virus_scan_last_update_db_time">Virus definitions: </string>
+	<string name="month">Month</string>
+	<string name="virus_scan_begin_text">Scan Now</string>
+	<string name="virus_scan_cancel_text">Cancel</string>
+	<string name="virus_scan_cancel_prompt_text">Are you sure to cancel?</string>
+	<string name="net_traffice_title">Network Traffic</string>
+	<string name="net_traffice_settings">Settings</string>
+	<string name="net_traffice_settings_enable">Network Traffic is On</string>
+	<string name="net_traffice_settings_disable">Network Traffic is OFF</string>
+	<string name="net_traffice_cell_today_title">3G(GPRS) Today</string>
+	<string name="net_traffice_cell_month_limit">3G Quota:</string>
+	<string name="net_traffice_unit">M</string>
+	<string name="net_traffice_month_used">Used:</string>
+	
+	<!-- firewall -->
+	<string name="net_traffice_day">Day:</string>
+	<string name="net_traffice_month">Month:</string>
+	<string name="firewall_menu_disable_wifi">Forbid all: Wifi</string>
+	<string name="firewall_menu_allow_wifi">Allow all: Wifi</string>
+	<string name="firewall_menu_disable_3g">Forbid all: 2G/3G</string>
+	<string name="firewall_menu_allow_3g">Allow all: 2G/3G</string>
+	<string name="firewall_loading">Please wait…</string>
+	<string name="firewall_title_desc">To allow or forbid network access</string>
+	<string name="firewall_apps_num_desc">Network access allowed</string>
+	<string name="firewall_has_no_root">Operation failed. Your mobile has not Rooted.</string>
+	<string name="firewall_allow_network_desc">Allow access</string>
+	<string name="firewall_forbid_network_desc">Forbid access</string>
+	<string name="firewall_not_surpport">Mobile not Rooted or not surpport this function.</string>
+	<!-- cache management -->
+	<string name="cache_management_title">Cache Clean</string>
+	<string name="cache_management_one_key_clear">Clean</string>
+	<string name="cache_management_cache_text">Cache</string>
+	<string name="cache_management_cached_app_text">Application(s) with cache:</string>
+	<string name="cache_management_total_cache_text">Totally:</string>
+	<string name="cache_management_no_cache_text">(No Cache)</string>
+
+	<string name="net_traffice_month_remaider">Available:</string>
+	<string name="net_traffice_month_remaider_percent">(Left</string>
+	<string name="net_traffice_month_remaider_suffix">)</string>
+	<string name="net_traffice_wifi_today_title">Wi-Fi Today</string>
+	<string name="net_traffice_wifi_total">Total:</string>
+	<string name="net_traffice_wifi_month_bill">Settlement Date Per Month:</string>
+	<string name="net_traffice_settings_limit">3G(GPRS) Month Quota</string>
+	<string name="net_traffice_settings_month_cal_day">Settlement Date Per Month</string>
+	<string name="net_traffice_settings_adjust_used">Traffic Used</string>
+	<string name="net_traffice_settings_clear_data">Reset All</string>
+	<string name="net_traffice_settings_clear_data_confirm">Are you sure to reset all data?</string>
+	<string name="net_traffice_settings_clear_data_date">Last reset on：%s</string>
+	<string name="net_traffice_settings_limit_dialog_title">Month Quota(M)</string>
+	<string name="net_traffice_settings_limit_dialog_left">Traffic Used(M)</string>
+	<string name="net_traffice_settings_cal_day">Settlement Date</string>
+	<string name="softmanage_version_unknown">Version unknown</string>
+	<string name="virus_scan_find_virus_text">High Risks:</string>
+	<string name="virus_scan_care_use_text">Warnings:</string>
+	<string name="virus_scan_clean_success_text">Cleaned:</string>
+	<string name="virus_scan_need_treat_text">To be checked:</string>
+	<string name="virus_scan_success_prompt_text">Your phone is &lt;font
+		color=&quot;#80B119&quot;&gt;&lt;big&gt;Safe&lt;/big&gt;&lt;/font&gt;</string>
+	<string name="virus_scan_fail_prompt_text">Check &lt;font
+		color=&quot;#80B119&quot;&gt;&lt;big&gt;Report&lt;/big&gt;&lt;/font&gt;
+		immediately</string>
+	<string name="virus_scan_again_text">Rescan</string>
+	<string name="virus_scan_report_text">Report</string>
+	<string name="virus_scan_select_uninstall_apps_text">To be handled</string>
+	<string name="backup_1_title">Backup/Restore</string>
+	<string name="backup_1_select_text">Select items to backup</string>
+	<string name="backup_contacts_text">Contacts</string>
+	<string name="backup_sms_text">SMS</string>
+	<string name="backup_app_list_text">Software</string>
+	<string name="backup_last_scan_time">Last backup date：</string>
+	<string name="backup_contacts_sum_text">Contacts(Done/All)：</string>
+	<string name="backup_sms_sum_text">SMS(Done/All)：</string>
+	<string name="backup_applist_sum_text">Backed up list：</string>
+	<string name="backup_button_backup_text">Backup</string>
+	<string name="backup_tab_backup_text">Backup</string>
+	<string name="backup_tab_restore_text">Restore</string>
+	<string name="backup_restore_select_text">Select the content you want to restore</string>
+	<string name="backup_restore_prompt_text">
+		IMPORTANCE: Restoring will &lt;font
+		color=&quot;#ff0000&quot;
+		size=&quot;16&quot;&gt;OVERWRITE&lt;/font&gt; your data.
+	</string>
+	<string name="virus_scan_days_ago_text"> Days ago</string>
+	<string name="virus_scan_months_ago_text"> Months ago</string>
+	<string name="virus_scan_hours_ago_text"> Hours ago</string>
+	<string name="virus_scan_minites_ago_text"> Minutes ago</string>
+	<string name="virus_scan_seconds_ago_text"> Seconds ago</string>
+	<string name="virus_update_network_error_text">Network connection error!</string>
+	<string name="backup_start_backup_text">Please wait....</string>
+	<string name="backup_backing_contacts_text">Backing up the contacts, please wait...</string>
+	<string name="backup_backing_sms_text">Backing up the SMS, please wait...</string>
+	<string name="backup_backing_apps_text">Backing up the application list, please wait...</string>
+	<string name="backup_button_restore_text">Restore</string>
+	<string name="backup_start_restore_text">Restoring, please wait....</string>
+	<string name="backup_restoring_contacts_text">Restoring contacts, please wait...</string>
+	<string name="backup_restoring_sms_text">Restoring SMS, please wait...</string>
+	<string name="backup_restoring_apps_text">Restore App list, please wait...</string>
+	<string name="virus_update_prompt_text">Updating virus definitions, please wait...</string>
+	<string name="backup_completed_confirm_prompt_text">Backup successfully!</string>
+	<string name="restore_completed_confirm_prompt_text">Restore successfully!</string>
+	<string name="backup_has_no_date_to_back_prompt_text">No data to backup!</string>
+	<string name="virus_has_no_update_text">Not Updated</string>
+	<string name="backup_applist_text">Backup Software List</string>
+	<string name="backup_applist_apps_sum_text">All software list amount</string>
+	<string name="backup_applist_browlist_text">Check software list</string>
+	<string name="backup_applist_backed_sum_text">Backuped software list</string>
+	<string name="backup_applist_browlist_action_text">Show List</string>
+	<string name="backup_applist_delback_text">If you want to delete the backuped software list,
+		please click</string>
+	<string name="backup_applist_delback_action_text">Delete</string>
+	<string name="restore_confirm_text">Are you sure to restore?</string>
+	<string name="delete_applist_backfiles_confirm_text">Are you sure to delete?</string>
+	<string name="backup_applist_confirm_text">Are you sure to backup?</string>
+	<string name="backup_applist_progress_prompt_text">Backing up, please wait....</string>
+	<string name="backup_applist_delete_progress_text">Deleting, please wait....</string>
+	<string name="backup_applist_delete_confirm_text">Deleted successful!</string>
+	<string name="backup_applist_loaddata_progress_text">Loading software list, please wait...</string>
+	<string name="applist_app_not_found_text">Application is not available, please install it
+		manually!</string>
+	<string name="backup_loading_tip_text">Computing....</string>
+	<string name="virus_risk_level">[High Risk]</string>
+	<string name="virus_warning_level">[Warning]</string>
+	<string name="virus_update_when_scanning">Scanner is scanning, please try again later!</string>
+	<string name="mobile_exp_apk_text">APKs</string>
+	<string name="virus_scan_history_tab">History</string>
+	<string name="last_time_clean_history">Last cleaned on:</string>
+	<string name="virus_history_virusnum">Found：</string>
+	<string name="virus_history_carenum">, Warning：</string>
+	<string name="clean_history">Clean</string>
+	<string name="clean_history_confirm">Are you to clean history?</string>
+	<string name="clean_no_history">None</string>
+	<string name="button_yes">Yes</string>
+	<string name="button_no">No</string>
+	<string name="backup_select_content_prompt">Please select content to backup!</string>
+	<string name="recover_select_content_prompt">Please select content to restore!</string>
+	<string name="recover_has_no_data_prompt">No data to restore!</string>
+	<string name="apply_rule_success">Rules applied with success</string>
+	<string name="save_rule_success">Rules saved with success</string>
+	<string name="apply_rule_failed">Failed to apply rules!</string>
+	<string name="save_rule_failed">Failed to save rules!</string>
+	<string name="applying_rule">Applying iptables rules</string>
+	<string name="saving_rule">Saving iptables rules</string>
+	<string name="deleting_rule">Deleting iptables rules</string>
+	<string name="delete_rule_success">Delete iptables rules with success</string>
+	<string name="delete_rule_failed">failed to delete iptables rules</string>
+	<string name="cancel_backup_text">Cancel backup?</string>
+	<string name="sdcard_unexist">No SD card, can\'t backup!</string>
+	<string name="cancel_recover_text">Cancel Restoring?</string>
+	<string name="firewall_not_support">Sorry, your device does not support firewall
+		function, this feature is not available for your device, thanks!</string>
+	<string name="firewall_noroot">Sorry, the ROOT permission is needed for firewall
+		function, please ROOT it and try again later, thanks!</string>
+	<string name="download_error_prompt">Error occurs when downloading, please try it later!</string>
+	<string name="black_certificate">Signed with Google Test Certificate</string>
+	<string name="any_applications">(Any application)</string>
+	<string name="root_applications">(root) - Applications running as root</string>
+	<string name="network_need_oval_zero">Traffic must greater than 0</string>
+	<string name="softmanage_select_app">Please select the applications!</string>
+	<string name="softmanage_apk_noselect">Please select the APK packages!</string>
+	<string name="softmanage_recommend_noselect">Please select the applications to install!</string>
+	<string name="proce_select_app">Please select the processes to close!</string>
+	<string name="backup_applist_file_noexist">Backup file not exist, failed to delete!</string>
+	<string name="backup_applist_delete_fail">Failed to delete backup file!</string>
+
+	<string name="left_less_limit">The value must be less than the
+		size of package</string>
+	<string name="had_install">Installed</string>
+	<string name="cancel_virus_update">Cancel update?</string>
+	<string name="backup_applist_backfile_noexist">The file is not existing.</string>
+	<string name="sdcard_noexist">SD card is not existing.</string>
+	<string name="backup_applist_noback">No backup data!</string>
+	<string name="cancel_download_apk">Do you want to cancel downloading APK package?</string>
+	<string name="last_unclean_result_text">Last Pending:</string>
+	<string name="button_for_clean_text">Clean</string>
+	<string name="loading_virus_history_prompt_text">Loading, please wait!</string>
+	<string name="virus_clean_uninstalled">Uninstalled</string>
+	<string name="no_app_to_install">No application to install!</string>
+	<string name="apk_install_delete_text">Please select your operation!</string>
+	<string name="add_values">Add values to the chart</string>
+	<string name="x">X</string>
+	<string name="y">Y</string>
+	<string name="add">Add</string>
+	<string name="new_series">New series</string>
+	<string name="pending_application">Pending:</string>
+	<string name="used_memory">Used: </string>
+	<string name="unuse_memory">Free : </string>
+	<string name="apkmanage_select_all_prompt">Choose APK package to INSTALL</string>
+	<string name="softmanage_select_text">Choose applications to UNINSTALL</string>
+	<string name="softmanage_size_sort_text">Size</string>
+	<string name="softmanage_name_sort_text">Name</string>
+	<string name="backup_software_list_text">Software List</string>
+	<string name="backup_cancel_text">Cancel</string>
+	<string name="backing_up_text">backing up...</string>
+	<string name="backup_prompt_dialog_tip_text">Reminder: Will consume a little network traffic to
+		back up on server.</string>
+	<string name="backup_contacts_select_text">To backup your data to cloud server or local?</string>
+	<string name="bakcup_prompt_dialog_button_remote">Network</string>
+	<string name="bakcup_prompt_dialog_button_local">Local</string>
+	<string name="backup_error_prompt_text">Backup failed!</string>
+	<string name="bakcup_remote_network_unabailable_text">Network is unavailable, please try again!</string>
+	<string name="backup_login_prompt_text">Please enter your username and password</string>
+	<string name="backup_login_user_name_text">Name：</string>
+	<string name="backup_login_password_text">Password：</string>
+	<string name="backup_login_text">Login</string>
+	<string name="backup_register_text">Register</string>
+	<string name="backup_forget_password_test">Forgot password</string>
+	<string name="backup_login_user_name_empty">Username can not be empty!</string>
+	<string name="backup_login_password_empty">Passwrod can not be empty!</string>
+	<string name="backup_login_fail_prompt">Failed to login, please try again!</string>
+	<string name="backup_fail_prompt_text">Failed to backup, please try again!</string>
+	<string name="restoring_text">restoring...</string>
+	<string name="restore_cancel_text">Cancel</string>
+	<string name="restore_cancel_prompt_text">Restore operation has been canceled!</string>
+	<string name="restore_log_cancel_prompt_text">restore operation has been canceled!</string>
+	<string name="virus_cloud_scan_prompt_text">Cloud Anti-Virus &lt;font
+		color=&quot;#8B8B8B&quot;&gt;&lt;small&gt;(NOTE: consume very little
+		network traffic)&lt;/small&gt;&lt;/font&gt;</string>
+	<string name="softcenter_recommend_tab_text">Hot</string>
+	<string name="softcenter_search_tab_text">Search</string>
+	<string name="remote_security">Anti-Theft</string>
+	<string name="remote_security_open">Anti-Theft is ON</string>
+	<string name="remote_security_close">Anti-Theft is OFF</string>
+	<string name="security_fuc">Anti-Theft</string>
+	<string name="remote_data_del">Data Wipe</string>
+	<string name="mobile_data_del">Data wipe out on your lost/stolen device</string>
+	<string name="remote_lock_mobile">Block device after replacing SIM card</string>
+	<string name="lock_lost_mobile">Block</string>
+	<string name="remote_gps_mobile">Locate</string>
+	<string name="get_lost_mobile_gps">To locate your lost/stolen device</string>
+	<string name="open">On</string>
+	<string name="update_passwd">Change PIN</string>
+	<string name="click_to_update">Click to edit</string>
+	<string name="safe_mobile_number">Security No</string>
+	<string name="after_update_sim_to_send_mes">SIM Watch SMS</string>
+	<string name="after_update_sim_to_lock_mobile_fuc">Change card lock mobile</string>
+	<string name="after_update_sim_to_lock_mobile">Change the card will lock the mobile</string>
+
+	<string name="showpasswd">\u0020\u0020\u0020\u0020\u0020\u0020 show password</string>
+	<string name="virus_cloud_scan_tip">...Begin cloud scan...</string>
+	<string name="backup_login_name_pwd_err">User name or password error!</string>
+	<string name="backup_login_error_pwd">Password length can not be less than 6</string>
+	<string name="backup_login_error_uname">Username should contain no less than 3 letters.</string>
+
+	<!-- string name="showpasswd">\u0020\u0020\u0020\u0020\u0020\u0020显示密码</string -->
+	<string name="input_passwd">Enter password</string>
+	<string name="input_passwd_again">Enter password again</string>
+	<string name="first_open_input_passwd">Please set Anti-Theft PIN for first use.</string>
+	<string name="passwd_can_notbe_null">Password can not be empty</string>
+	<string name="passwd_length_canot_gt_16">Password can not be greater than 16</string>
+	<string name="passwd_surepasswd_same">Password error, please retry!</string>
+	<string name="input_corect_passwd_please">Password validation failed, please re-enter</string>
+	<string name="input_passwd_goto_kindscret">Please enter Anti-Theft PIN.</string>
+	<string name="you_can_write_70c">You can enter 70 characters</string>
+	<string name="input_valide_mobile">Please enter a valid phone number</string>
+	<string name="sms_lengh_gt_0">Please enter 1-70 characters</string>
+	<string name="after_update_sim_to_send_sms_fuc">SIM Watch</string>
+	<string name="after_update_sim_to_send_sms">Sends new number when SIM card is changed</string>
+	<string name="command">Command:</string>
+	<string name="command_del_data">You can remotely wipe personal data in the lost
+		phone (Including Contacts and SMS) by sending above SMS command from
+		any phone, an SMS message will be received after operation is
+		completed. Caution: This operation will wipe out the important data in
+		the target device!</string>
+	<string name="lostmobile_cur_num">Current used number of your lost phone</string>
+
+	<string name="command_gps_des">To locate your lost phone, please send
+		above command
+		from any phone or fill the following
+		information to confirm.</string>
+
+	<string name="lostmobile_safe_num">Anti-Theft password of your lost phone</string>
+
+	<string name="comman_del_content">#ehoo_del#Anti-Theft PIN</string>
+	<string name="comman_gps_content">#ehoo_gps#Anti-Theft PIN</string>
+	<string name="sms_send_suc">message sent successfully</string>
+	<string name="sms_send_fail">Message sent failed</string>
+	<string name="data_del_suc">Data is deleted successfully</string>
+	<string name="gps_cannot_get">Unable to get gps information</string>
+
+	<string name="sms_content">SMS content</string>
+
+	<string name="softcenter_category_1_title">Installed must</string>
+	<string name="softcenter_category_2_title">Community Chat</string>
+	<string name="softcenter_category_3_title">Video play</string>
+	<string name="softcenter_category_4_title">Hot game</string>
+	<string name="softcenter_category_5_title">Office applications</string>
+	<string name="softcenter_category_6_title">News</string>
+	<string name="softcenter_category_7_title">Web browsing</string>
+
+	<string name="account_manager">Account management</string>
+	<string name="about_us">About information</string>
+	<string name="forgot_passwd">Forgot Password</string>
+	<string name="request_message_now">Request data, please wait...</string>
+	<string name="login_suc">Login success</string>
+	<string name="email">Email：</string>
+	<string name="register_suc">Registered successfully</string>
+
+	<string name="email_invalid">Please enter a valid email</string>
+	<string name="username_invalid">Invalid username</string>
+	<string name="password_invalid">Invalid password</string>
+	<string name="username_can_not_less_3">Username should contain no less than 3 letters.</string>
+	<string name="username_al_exist">Username already exists</string>
+	<string name="eamil_al_exist">Email already exists</string>
+	<string name="user_not_exist">Account or password error</string>
+	<string name="password_notlessthan4">Password should be no less than 4 characters</string>
+	<string name="title_for_backup_restore">Backup and Restore</string>
+	<string name="password_has_sendto_your_email">Password has been sent to your mailbox, please
+		check！</string>
+	<string name="use_help">Help</string>
+	<string name="online_update">Online update</string>
+	<string name="show_upgrade_newest">It’s up-to-date</string>
+	<string name="downloading_label">Version update</string>
+	<string name="downloading_description">Download new version now?</string>
+
+	<string name="sure_close_selected">Do you want to close selected processes?</string>
+	<string name="sure_close_all">Do you want to close all processes?</string>
+	<string name="sure_passwd">Confirm：</string>
+
+
+	<string name="introduct_des">Kindroid Security is a safe security and system management application based on the android system with characteristic of high stability, less occupancy and accurate statistics. Equip with anti-virus cloud scanning, network traffic monitoring, spam SMS and harassing calls blocking as its core function; in additional, other useful functions as task management, application and APK install and uninstall management, contacts online backup, remote anti-theft and data wiping are also available.
+	\nKindroid Security sees the user experience and interaction design as the core function, based on improve function details and enhance software reliability, in order to bring you a perfect security protection and system optimization application!
+	\nThis version does not apply to ophone, LePhone and other non-standard Android system mobiles.
+	</string>
+	<string name="main_fuc_des">Main functions：</string>
+	<string name="logined_status">Logged</string>
+
+	<string name="recover_has_no_app_prompt">No data to view!</string>
+	<string name="releasenote_title">Release notes:</string>
+	<string name="help_introduction">Introduction</string>
+	<string name="cloud_scan_network_unavailable">Network unavailable，cloud scan unabled!</string>
+	<string name="download_error">Network unavailable, try again later!</string>
+	<string name="network_tip">Network unavailable, try again later!</string>
+
+	<string name="your_mobile_maybe_lost">SIM card replaced, please save this number. </string>
+	<string name="forgot_pwd_retrive">Retrieve</string>
+	<string name="over_limit">Exceed(</string>
+
+	<string name="backup_no_backup_text">No local backup.</string>
+	<string name="backup_log_tab">View log</string>
+	<string name="backup_cloud_prompt_text">Upload contacts, SMS and software list in the
+		mobile to cloud server</string>
+	<string name="restore_cloud_prompt_text">Download contacts, SMS and software lists from
+		cloud server to mobile</string>
+	<string name="brow_applist_prompt_text">Log on cloud server to check backup software list</string>
+	<string name="local_contacts_text">Local contacts : </string>
+	<string name="remote_contacts_text">Network contacts : </string>
+	<string name="backup_not_login_text">Not logged</string>
+	<string name="clean_backlog_text">Clear out</string>
+	<string name="back_log_sum_text"> %1$d log(s)</string>
+	<string name="backup_action_text">Backup</string>
+	<string name="backuping_text">Backing up</string>
+	<string name="privacy_action_text">
+		<u>Personal privacy protection statement</u>
+	</string>
+	<string name="restoring_text_new">Restoring </string>
+	<string name="privacy_content_text">EHOO INFO TECH LIMITED (Hereinafter called EHOO)
+		provides professional mobile network service which on the basis of
+		some customer information. These basic information including mobile
+		number, IMEI, contacts and so on. In order to protect your legal
+		rights of privacy information, we hereby make statement of information
+		collecting and usage as follows.\n
+
+		1. Personal information\n
+		When you
+		register an account for data backup, it is necessary for you to
+		provide mobile number or IMEI. We would not match the number with the
+		information of any other person you know. The selected backup data
+		should be uploaded to EHOO server to ensure you can get back or
+		restore the information at any time you want.\n
+		\n
+		2. Data backup and
+		restore\n
+		Data backup and restore of contacts/ SMS/ local software list
+		is an
+		optional feature. Only you choose to accept the service will us
+		provide corresponding service to you. EHOO would take strictly secure
+		measures to ensure data safety and to keep the data from being
+		visited, used or leaked unauthorized through a variety of security
+		techniques. Network traffic cost would be charged by operators during
+		function operating process.\n
+		\n
+		3. Disclaimer\n
+		EHOO would not make
+		public, edit or disclose any personal information
+		which obtained during
+		the above mentioned processes, except following
+		conditions:\n
+		(1) In
+		accordance with relevant state laws and regulations;\n
+		(2) To protect
+		the rights and interests of you and the public under
+		emergency
+		circumstances;\n
+		(3) To protect trademark, patents and any other
+		legitimate rights of
+		EHOO;\n
+		(4) Other conditions which need to make
+		public, edit or disclose the
+		above information according to the law.\n
+		\n
+		EHOO does not assume any liability if any force majeure occurs as
+		follows,
+		but we would try our best to protect your rights and
+		interests, as
+		well as a timely notification would be given to you.\n
+		(1) Hacker attack;\n
+		(2) Great impact caused by telecom operator;\n
+		(3)
+		Network, website shut down caused by government control;\n
+		(4) Virus
+		attack;\n
+		(5) Nature disasters and wars, other uncontrollable,
+		unpredictable or
+		unavoidable events.\n
+		\n
+		Your acceptance of EHOO service
+		indicates that you understand and agree
+		with the above statement, and
+		authorize EHOO to receive, also keep and
+		make backup your personal
+		information.\n
+		EHOO reserves the rights of adjust and modify the
+		statement according to
+		the products development. Any statement change
+		referring to your
+		personal information would be released in the product
+		or on the
+		website, and your acceptance of EHOO service indicates that
+		you agree
+		with the modified statement.\n
+		\n
+		EHOO INFO TECH LIMITED\n
+
+	</string>
+	<string name="restore_action_text">Restore</string>
+	<string name="backup_contacts_exist_prompt_text">Local contacts( %1$d)</string>
+	<string name="backup_sms_exist_prompt_text">Local SMS( %1$d)</string>
+	<string name="backup_applist_exist_prompt_text">All installed software( %1$d)</string>
+	<string name="backup_applist_download_error_text">Netweork error, please try later</string>
+	<string name="restore_error_prompt_text">Restore failed!</string>
+	<string name="backup_cancel_prompt_text">Backup cancelled!</string>
+	<string name="restore_prompt_text">“Restore” is to copy all the information from cloud
+		server to local. All restored data would remain the same as those on
+		the cloud server after this.</string>
+	<string name="backup_log_back_succ_text">Backup succeed：</string>
+	<string name="backup_log_contacts_text">Contact</string>
+	<string name="backup_log_ntraf_text">Network traffic：</string>
+	<string name="backup_log_back_fail_text">Backup Failed：</string>
+	<string name="backup_log_restore_fail_text">Restore failed：</string>
+	<string name="backup_log_restore_succ_text">Restore succeed ：</string>
+	<string name="backup_log_fail_text"> No change</string>
+	<string name="firewall_oper_prompt_text">(Select as allow)</string>
+	<string name="backup_log_empty_text">No log record!</string>
+	<string name="restore_complete_prompt_text">Restore complete!</string>
+	<string name="backup_complete_prompt_text">Backup complete!</string>
+	<string name="backup_log_sms_text">SMS</string>
+
+	<string name="input_name_passwd">Step 1, enter user ID and password</string>
+	<string name="input_safe_mobile_number">Step 2, enter security number</string>
+	<string name="sure_filldate_message">Step 3, confirm the information</string>
+
+	<string name="setup_login_find_passwd">To get back your password, please press\u0020</string>
+	<string name="first_step_login_checkout">1 Login</string>
+	<string name="second_step_safe_mobile">2 Security Number</string>
+	<string name="three_step_setting_over">3 Finish</string>
+	<string name="register_account">Register</string>
+	<string name="next_step">Next</string>
+	<string name="update_sim_lock_mobile">\u0020\u0020\u0020\u0020\u0020Enable block function</string>
+	<string name="setting_safe_mobile_number">Set a security number.</string>
+	<string name="setting_safe_mobile_number_des">By sending a SMS to the security number from the
+		lost/stolen device to easily get the mobile number of another end.
+		Wipe contacts, positioning remotely is available.</string>
+	<string name="update_sim_lock_mobile_no_space">Block device after replacing SIM card.</string>
+	<string name="update_sim_lock_mobile_des">Blocks the lost/stolen device if the SIM card was
+		replaced. The password is required to access any function of the
+		device.</string>
+	<string name="sure_enable_remote_security">Click “finish” to enable anti-theft!</string>
+	<string name="step_over_update_sim">1、An automatic SMS would be sent to security number
+		%1$s
+		if SIM card was replaced, you could easily get the mobile number
+		of
+		another end and wipe personal data remotely.</string>
+	<string name="step_over_set_lock_mobile">2、Blocks the lost/stolen device if the SIM card was
+		replaced. The password is required to access any function of the
+		device. Please remember your code.</string>
+	<string name="step_over_noset_lock_mobile">2、SIM card block function is off! Mobile block is
+		not available after SIM card was replaced.</string>
+	<string name="step_over_promote">3、If you forget all the information above
+		mentioned, please leave your e-mail address and all of the information
+		would be sent to you. (optional)</string>
+	<string name="setting_over">Finish</string>
+	<string name="backup_delete_log_prompt_text">Clear out all backup records?</string>
+	<string name="account_man_login_prompt_text">Login Kindroid Security</string>
+	<string name="account_man_login_exp_text">Following function and service are availabe after
+		login</string>
+	<string name="account_man_backup_prompt_text">Online backup and restore</string>
+	<string name="account_man_backup_exp_text">Backup contacts, SMS, software list on cloud server</string>
+	<string name="account_man_anti_theft_prompt_text">Remote Anti-theft</string>
+	<string name="account_man_anti_theft_exp_text">SMS notice after device was lost/ stolen, wipe
+		material, positioning remotely</string>
+	<string name="account_man_logined_prompt_text">Logged, click to log out.</string>
+	<string name="account_man_email_text">Email：</string>
+	<string name="account_man_email_edit_text">Click to edit Email</string>
+	<string name="backup_restore_norecord_prompt_text">No contacts backup record recently</string>
+	<string name="backup_start_prompt_text">Continue to cover the former data on cloud server?</string>
+	<string name="account_log_off_prompt_text">Sure to log out?</string>
+	<string name="safe_mobile_has_set">Security number already set</string>
+	<string name="safe_mobile_has_noset">Security number not set</string>
+	<string name="mobile_setup_helpyou">Setting guide would help you to complete the remote
+		anti-theft set:</string>
+	<string name="exit_setup">Exit</string>
+	<string name="begin_setup">Start setting</string>
+
+
+	<string name="remote_security_pop">[Kindroid Security Notice]</string>
+	<string name="unlock_mobile">Unlock</string>
+	<string name="please_input_correct_remote_security_passwd">Anti-Theft password error, please retry
+</string>
+
+	<string name="account_man_change_pass_prompt_text">Change Password</string>
+
+	<string name="account_man_change_pass_dialog_prompt_text">Change password?</string>
+	<string name="account_man_change_pass_hint_text">Enter new password</string>
+	<string name="account_man_change_pass_hint2_text">Enter new password again</string>
+	<string name="account_man_change_email_hint_text">Enter new Email</string>
+	<string name="account_man_change_email_prompt_text">Change Email?</string>
+	<string name="account_man_change_email_input_error_text">Email error, please retry!</string>
+	<string name="account_man_change_email_fail_text">Failed, please retry!</string>
+	<string name="account_man_change_email_succ_text">Email changed!</string>
+	<string name="account_man_change_pwd_succ_text">Password changed!</string>
+	<string name="account_man_change_pwd_fail_text">Failed, please retry!</string>
+	<string name="account_man_change_pwd_input_error_text">Password error, please retry!</string>
+	<string name="menu_feeback">Feedback</string>
+	<string name="feedback_type">Feedback type</string>
+	<string name="feedback_select_prompt_text">Select</string>
+	<string name="feedback_email">Please enter your Email for contact (optional)</string>
+
+	<string name="version_allow">This version is available for Android 2.0 or above mobiles. Free of download and install, network traffic cost would be
+		charged by ISP during operating </string>
+	<string name="soft_version">Version : %1$s</string>
+	<string name="feedback_desp">Description</string>
+	<string name="feedback_submit">Submit</string>
+	<string name="feedback_type_input_prompt">Select type</string>
+	<string name="feedback_desp_input_prompt">Enter description</string>
+	<string name="feedback_succ_text">Succeed</string>
+	<string name="feedback_fail_text">Network is not available, please check</string>
+	<string name="send_email_suc">Mail succeed</string>
+
+	<string name="just_register">Register</string>
+
+	<string name="enable_sim_card">Enable block function?\n(identify verification is
+		needed)</string>
+	<string name="unable_sim_card">Disable block function?\n(identify verification is
+		needed)</string>
+	<string name="close_security_and_clear_safemobile">Clear security number and disable
+		anti-theft(identify verification is needed)</string>
+
+
+	<string name="account_man_obtain_email">Email address is loading...</string>
+	<string name="account_man_obtain_email_error">None</string>
+
+	<string name="send_faile">Send failed</string>
+
+	<string name="data_del_faile">Data wipe failed</string>
+	<string name="softcenter_search_get_hotkey_text">Searching words,please wait…</string>
+	<string name="softcenter_search_my_installed">Installed</string>
+	<string name="softcenter_search_my_upgrade">Update</string>
+	<string name="softcenter_search_my_free">Free</string>
+	<string name="softcenter_search_my_pay">Charge</string>
+	<string name="search_no_found">Sorry, no suitable results found.</string>
+	<string name="proc_manage_service_text">Running Services</string>
+	<string name="proc_manage_proc_text">User Process</string>
+
+	<string name="traffic_monitoring">Traffic Statistic</string>
+	<string name="traffic_app_monitoring">Traffic Rank</string>
+	<string name="chiness_dun">、</string>
+
+	<string name="service_run_in">Run in：</string>
+	<string name="stop_selected_services">Sure to end selected service(es)?</string>
+	<string name="stop_all_services">Sure to end all service(es)?</string>
+	<string name="stop_selected_services_tab">End Selected</string>
+	<string name="stop_all_services_tab">End All</string>
+	<string name="security_audit_privacy">Privacy</string>
+	<string name="security_audit_cost">Chargeback</string>
+	<string name="security_audit_gps">GPS</string>
+	<string name="security_audit_network">Network</string>
+	<string name="search_keyword_error">Invalid keyword, please try again!</string>
+	<string name="search_result_layout_title">Search</string>
+	<string name="searching_prompt_text">Searching, please wait…</string>
+	<string name="softcenter_category_tab_text">Theme</string>
+	<string name="softcenter_get_topics_prompt">Obtaining theme information, please wait...</string>
+	<string name="day_traffic">Day</string>
+	<string name="month_traffic">Month</string>
+	<string name="popview_show">Display suspension frame</string>
+
+
+	<string name="search_empty_prompt_text">No result found, please change keyword and try
+		again!</string>
+	<string name="account_manage_input_old_pass">Enter the former password.</string>
+	<string name="account_manage_input_old_pass_confirm">Former password is empty, please enter!</string>
+	<string name="account_manage_old_pass_err">Former password is not correct, revise password
+		failed!</string>
+	<string name="account_manage_old_pass_invalid">Former password is invalid, revise password failed!</string>
+	<string name="account_manage_new_pass_invalid">New password is invalid, revise password failed!</string>
+	<string name="account_not_exist">Please enter username and E-mail.</string>
+	<string name="corect_format_num">Please enter the correct format of number</string>
+	<string name="press_here_back_pwd">here</string>
+	<string name="softcenter_install_cancel_text">Cancel</string>
+	<string name="upgrade_prompt_dialog_title">New Version Found!</string>
+	<string name="upgrade_prompt_repeat_confirm">Always notice me of a new version.</string>
+	<string name="installed_icon_desp_menu">Icon Description</string>
+	<string name="installed_icon_desp_privacy">This process will access to your personal
+		information. Such as, read contacts data, update content on SD card
+		and so on.</string>
+	<string name="installed_icon_desp_charge">This process requires sending SMS, directly dial
+		the number.</string>
+	<string name="installed_icon_desp_gps">This process will get your position, such as
+		(internet based) general location, accurate (GPS) location.</string>
+	<string name="installed_icon_desp_network">This process needs internet support or fully
+		internet access.</string>
+
+
+
+
+	<string name="intercept_history">Block Log</string>
+	<string name="sms_intercept">SMS</string>
+	<string name="phone_intercept">Call</string>
+
+
+
+
+
+	<string name="manually_add">Manually</string>
+	<string name="add_from_mobile_contact">From contacts</string>
+	<string name="add_from_sim">From SIM card</string>
+	<string name="add_from_log">From call log</string>
+	<string name="add_from_sms">From SMS list</string>
+	<string name="add_black_area">Add blacklist area</string>
+	<string name="add_white_area">Add whitelist area</string>
+
+	<string name="intercept_phone">\u0020\u0020\u0020\u0020\u0020\u0020Block Call</string>
+	<string name="intercept_sms">\u0020\u0020\u0020\u0020\u0020\u0020Block SMS</string>
+
+	<string name="input_mobile_as_rule">Please enter a valid mobile number or a fixed-line phone number begin with area code.</string>
+	<string name="number">Number :</string>
+	<string name="remark">Remarks :</string>
+	<string name="select_intercept_model">Block Mode</string>
+	<string name="default_model">Present Mode：</string>
+	<string name="phone_intercept_treat">Call Block Reply</string>
+	<string name="intercept_keywords">Custom Block Keyword(s)</string>
+	<string name="intercept_keywords_prompt">SMS Only</string>
+	<string name="notify_intercept">Block Notice</string>
+	<string name="notify_intercept_text">Display block notice in system taskbar</string>
+	<string name="nodisturb_at_night">DND Mode</string>
+	<string name="current_status">Present：</string>
+	<string name="defaults">Default</string>
+	<string name="return_busy_sound">Prompt busy tone</string>
+	<string name="contacts_exist">%1$d contacts in all</string>
+
+	<string name="black_whitelist">Black/ White List</string>
+	<string name="intercept_setting">Setting</string>
+	<string name="black_list">Blacklist</string>
+	<string name="white_list">Whitelist</string>
+
+	<string name="account_register_phone_number">Mobile Number:</string>
+	<string name="account_register_hint_text">Required</string>
+	<string name="account_register_hint_optional_text">Optional</string>
+	<string name="account_register_phone_error">Please enter the correct mobile number!</string>
+	<string name="account_change_phone">Update mobile number.</string>
+	<string name="account_edit_phone">Please enter new mobile number.</string>
+	<string name="account_change_phone_succ">Revise succeed!</string>
+	<string name="account_change_phone_error">Invalid mobile number, revise failed!</string>
+	<string name="account_register_error_no103">User ID or password error, register failed!</string>
+	<string name="account_register_error_no113">Request type error, register failed!</string>
+	<string name="account_register_error_no114">Invalid mobile number, register failed!</string>
+	<string name="account_register_error_no121">Invalid Email address, register failed!</string>
+	<string name="account_register_error_no112">Register failed!</string>
+
+	<string name="black_list_num">Blacklist Number:</string>
+	<string name="white_list_num">Whitelist Number:</string>
+	<string name="black_list_explain">Block status: red is ON, gray is OFF.</string>
+	<string name="add_black_list">Add Blacklist</string>
+	<string name="add_white_list">Add Whitelist</string>
+	<string name="edit">Edit</string>
+	<string name="more">More</string>
+	<string name="load_from_sim_error">SIM card not accessible!</string>
+	<string name="sms_contacts_exist">%1$d SMS contacts</string>
+	<string name="sim_contacts_exist">%1$d SIM card contacts</string>
+	<string name="call_log_contacts_exist">%1$d call log contacts</string>
+	<string name="edit_black_list">Edit Blacklist</string>
+	<string name="add_list_no_select">Please select contact to add.</string>
+	<string name="add_blacklist_from_region_prompt">Edit Blacklist Area</string>
+	<string name="add_blacklist_from_region_desp">Please enter area name or area code. (For example, Shanghai or 021)</string>
+	<string name="add_whitelist_from_region_prompt">Edit Whitelist Area</string>
+	<string name="add_list_from_region_code_error">Please enter a valid area code!</string>
+	<string name="add_list_from_region_code_unexist">The corresponding area code is not exist, please try again!</string>
+	<string name="add_list_complete">Done</string>
+	<string name="add_list_from_region_empty_prompt">No information entered, please try again!</string>
+
+	<string name="area_text">Area ： %1$s</string>
+	<string name="code_text">Area Code ： %1$s</string>
+	<string name="sure_del_the_list">Are you sure to delete?</string>
+	<string name="dial_phone_num">Call %1$s</string>
+	<string name="send_sms_phone_num">Send SMS to %1$s</string>
+
+
+	<string name="edit_white_list">Edit Whitelist</string>
+
+	<string name="intercept_treat_select1">Prompt busy tone</string>
+	<string name="intercept_treat_select2">Silence, no vibration</string>
+	<string name="intercept_treat_select3">Prompt power-off</string>
+	<string name="intercept_treat_select4">Prompt out of service</string>
+	<string name="intercept_treat_select5">Prompt not existing number</string>
+
+
+
+	<string name="back_to_inbox">Restore to SMS inbox</string>
+	<string name="add_phonenum_to_blacklist">Add %1$s into blacklist</string>
+	<string name="add_phonenum_to_whitelist">Add %1$s into whitelist</string>
+	<string name="save_phonenum_as_contact">Save %1$s as contact</string>
+	<string name="call_phonenum">Call %1$s</string>
+	<string name="back_sms_to_phone">SMS to %1$s</string>
+	<string name="sure_back_this_sms">Are you sure to restore this SMS?</string>
+	<string name="sms_block_num">Blocked number ：</string>
+	<string name="phone_block_num">Blocked number ：</string>
+	<string name="add_as_blacklist">Add to Blacklist</string>
+	<string name="sure_del_log">Are you sure to delete the log?</string>
+
+
+
+
+	<string name="intercept_treat_dialog_title">Reply Setting</string>
+	<string name="intercept_mode_setting_title">Block Mode Setting</string>
+	<string name="intercept_time_setting_title">DND Setting</string>
+	<string name="intercept_time_setting_time">Block Time</string>
+	<string name="intercept_time_setting_day">Repeat at</string>
+	<string name="intercept_time_setting_start_time">From&lt;font color=&quot;#64BD45&quot;&gt;%1$s&lt;/font&gt;</string>
+	<string name="intercept_time_setting_end_time">To&lt;font color=&quot;#64BD45&quot;&gt;%1$s&lt;/font&gt;</string>
+	<string name="intercept_time_setting_day_start"></string>
+	<string name="intercept_time_setting_work_day">Weekday</string>
+	<string name="intercept_time_setting_rest_day">Weekend</string>
+	<string name="intercept_time_setting_day_separator">,</string>
+	<string name="intercept_time_setting_dialog_title">Block Time Setting</string>
+	<string name="intercept_time_setting_from">From</string>
+	<string name="intercept_time_setting_to">To</string>
+	<string name="intercept_time_setting_start_time_error">Please enter a valid start time.</string>
+	<string name="intercept_time_setting_end_time_error">Please enter a valid end time.</string>
+	<string name="intercept_time_setting_end_equals_start">Same start and end time, please reset!</string>
+	<string name="intercept_day_setting_dialog_title">Week Setting</string>
+	<string name="intercept_history_menu_delete_text">Batch Delete</string>
+	<string name="intercept_history_menu_add_text">Add to Blacklist</string>
+	<string name="intercept_history_menu_recover_sms_text">Batch Restore</string>
+	<string name="intercept_black_white_list_menu_text">Delete All</string>
+
+	<string name="insert_sim_to_update_status">Insert the SIM card to change status.</string>
+
+
+	<string name="input_valid_number">Please enter a valid number!</string>	
+	<string name="enable_nodisturb_mode">DND Mode</string>
+	<string name="disable_nodisturb_mode">DND Mode</string>
+	<string name="all_weekly_day">All</string>
+	<string name="nodisturb_start_time">From</string>
+	<string name="nodisturb_end_time">To</string>
+	<string name="select_sms_to_recover">Please select the content to restore!</string>
+	<string name="select_content_to_delete">Please select the content to delete!</string>
+	<string name="select_phones_to_addlist">Please select number to add!</string>
+	<string name="confirm_to_clear_list">Are you sure to delete all?</string>
+	<string name="add_region_code_unexist">Not existing area code!</string>
+	<string name="number_already_exist">This number already exists.</string>
+	<string name="anti_spam_title">Anti-Spam</string>
+	<string name="confirm_to_restore_sms">Restore selected sms?</string>
+	<string name="confirm_to_delete_history">Are you sure to delete selected log(s)?</string>
+	<string name="confirm_add_selected_to_blacklist">Sure to add selected number(s) to blacklist?</string>
+	<string name="phone_number_not_empty">Number must not be empty!</string>
+	<string name="area_code_format">Format:XX省XX市</string>
+
+	<string name="all_exist_when_addlist">Selected number(s) already exists.</string>
+
+	<string name="notification_text">Today :%1$sM   Current Month: %2$sM</string>
+	<string name="area_existed">This area already exists!</string>
+	<string name="area_code_existed">This area code alreday exists!</string>
+	<string name="install_scanning">New application scanning...</string>
+	<string name="install_scan_soft">New application installed: %s </string>
+	<string name="install_scan_trojan">"%s" is a trojan application, suggest to uninstall at once.</string>
+    <string name="install_scan_clean">No risk found in "%s".</string>
+    <string name="uninstall_btn">Uninstall</string>
+    <string name="uninstall_cancel">Cancel</string>
+    <string name="virus_desp_title">Virus description</string>
+    <string name="install_scan_warn">Find risk in "%s", suggest to see details.</string>
+    <string name="send_pwd_to_safe_phone">Forget password.</string>
+    <string name="safe_mobile_number_unexist">Safe mobile number is not set or has been cleared.</string>
+    <string name="sms_send_pwd_to_safe_number">Password has been sent to your new safe mobile number as your anti-theft password, please check. Enable remote anti-theft function to revise it.</string>
+    <string name="cancel_installed_scan_clean">Sure not to clean the found virus?</string>
+	<string name="sim_card_abssent">SIM card is not available, new password cannot be sent to safe mobile number!</string>
+	<string name="intercept_key_word_text">Block keywords setting</string>
+	<string name="intercept_key_word_desp">Set block keywords for SMS</string>
+	<string name="intercept_activity_title">Keywords setting</string>
+	<string name="intercept_add_text">Add</string>
+	<string name="intercept_keyword_exist">This keyword already exists, please re-enter!</string>
+	<string name="intercept_keyword_hint">Please enter the block keywords.</string>
+	<string name="allow_autostart_sum">Allow &lt;font color=&quot;#64BD45&quot;&gt;&lt;small&gt;%d&lt;/small&gt;&lt;/font&gt; Start at boot application(s):</string>
+	<string name="auto_start_manage_action">Optimize</string>
+	<string name="auto_start_disable">Forbid</string>
+	<string name="auto_start_enable">Allow</string>
+	<string name="start_time_text">Booting time: %s</string>
+	<string name="start_manage_title">Boot Optimize</string>
+	<string name="start_manage_loading_text">Scanning, please wait...</string>
+	<string name="start_manage_enable_tab">Allowed</string>
+	<string name="start_manage_disable_tab">Forbidden</string>
+	<string name="start_manage_prompt_text">This action would probably cause the chosen application(s) operating error. You can enable the chosen application(s) to ‘start at boot’ again if any problems occurred.</string>
+	<string name="start_manage_prompt_cb_text">Don’t remind</string>
+	<string name="start_manage_norooted_prompt">NOT Rooted, operation failed!</string>
+	<string name="start_manage_enable_prompt">Allowing this application to start at boot would slow down your booting time, suggest not allowing.</string>
+	<string name="start_manage_enable_prompt_button_ok">Allow</string>
+	<string name="start_manage_no_start_time">No record!</string>
+	<string name="start_manage_no_enabled">No application need to be optimized!</string>
+	<string name="start_manage_enabling_text">Allowing, please wait...</string>
+	<string name="start_manage_disabling_text">Optimizing, please wait...</string>
+	<string name="start_manage_fail_prompt">Operation failed, please check Root authority!</string>
+	<string name="list_has_more">More</string>
+	<string name="confirm_delete_keyword">Sure to delete this keyword?</string>
+	<string name="softcenter_get_category_prompt">Obtaining category information, please wait...</string>
+	<string name="loading_text">Loading</string>
+	<string name="mobile_examine">Mobile Self-Exam</string>
+	<string name="mobile_examine_fuc_title">System Test Report</string>
+	<string name="current_perm_fenshu">Present system rating:</string>
+	<string name="scan_title_text">Scanning:</string>
+	<string name="mobile_exam_optimize_text">Optimize</string>
+	<string name="danger_item_text">Risk item(s): (%d)</string>
+	<string name="unoptimized_item_text">Item(s) can be optimized: (%d)</string>
+	<string name="optimized_item_text">Optimized: (%d)</string>
+	<string name="safe_item_text">Safe item(s):(%d)</string>
+	<string name="mobile_exam_result_danger_prompt">%d potential risk(s), please check now.</string>
+	<string name="mobile_exam_result_safe_prompt">Your mobile status is fine, please keep.</string>
+	<string name="safe_desp_for_nettraffic_monitor">Check traffic monitor status</string>
+	<string name="danger_desp_for_nettraffic_monitor">Traffic monitor NOT enabled</string>
+	<string name="mobile_exam_action_enabled">Enabled</string>
+	<string name="mobile_exam_action_enable">Enable</string>
+	<string name="safe_desp_for_autostart_onboot">Check application(s) start at boot</string>
+	<string name="danger_desp_for_autostart_onboot">Application(s) can be optimized: %d</string>
+	<string name="mobile_exam_action_complete">Complete</string>
+	<string name="mobile_exam_action_exam">Check</string>
+	<string name="mobile_exam_action_optimize">Optimize</string>
+	<string name="safe_desp_for_enable_security_service">Check safe service status</string>
+	<string name="danger_desp_for_enable_security_service">Safe service NOT enabled.</string>
+	<string name="safe_desp_for_cache_clear">Clean caches</string>
+	<string name="danger_desp_for_cache_clear">Caches to be cleaned</string>
+	<string name="mobile_exam_action_clear">Clean</string>
+	<string name="safe_desp_for_running_task">%1$d task(s) stopped, %2$s memory released</string>
+	<string name="danger_desp_for_running_task">%1$d task(s) running, %2$s memory used</string>
+	<string name="safe_desp_for_remote_security">Check anti-theft status</string>
+	<string name="danger_desp_for_remote_security">Anti-theft NOT enabled</string>
+	<string name="danger_desp_for_virus_scan">Last cloud virus clean: 30 days ago</string>
+	<string name="mobile_exam_action_nofound">No risk found</string>
+	<string name="mobile_exam_action_clean">Virus clean</string>
+	<string name="mobile_exam_start">Scan now</string>
+	<string name="mobile_exam_scan_traffic_monitor">Traffic monitor scanning...</string>
+	<string name="mobile_exam_scan_remote_security">Anti-theft scanning...</string>
+	<string name="mobile_exam_scan_security_sevice">Safe service scanning...</string>
+	<string name="mobile_exam_scan_virus_scan">Cloud virus clean scanning...</string>
+	<string name="mobile_exam_scan_running_task">Running task(s) scanning...</string>
+	<string name="mobile_exam_scan_cache">Cache scanning...</string>
+	<string name="mobile_exam_scan_autostart_onboot">Application(s) start at boot scanning...</string>
+	<string name="mobile_exam_result_unoptimized_prompt">%d item(s) can be optimized, please check.</string>
+	<string name="mobile_exam_optimize_uncomplete_prompt">Some items need to be optimized manually!</string>
+	<string name="danger_desp_for_virus_update">Last time of virus database upgrade: 30 days ago</string>
+	<string name="mobile_exam_scan_virus_update">Virus database upgrade scanning...</string>
+	<string name="clean_summary_text">Remain memory: %d</string>
+	<string name="mobile_exp_today_exam_result">Today\'s exam rating:</string>
+	<string name="mobile_exp_last_exam_result">Exam rating %1$d days ago:</string>
+	<string name="mobile_exp_unoptimized_prompt_text">Mobile need to be optimized right now</string>
+	<string name="mobile_exp_exam_prompt_text">Suggest to exam now</string>
+	<string name="mobile_exp_last_exam_prompt">Exam report</string>
+	<string name="mobile_exp_exam_action_prompt">Overall exam</string>
+	<string name="exam_first_prompt">Overall exam will analyze and optimize your mobile system.</string>
+	<string name="feedback_fail_prompt">Feedback failed, please try later!</string>
+	<string name="exam_again_prompt">Re-exam</string>
+	<string name="intercept_nodisturb_setting_title">DND mode setting</string>
+</resources>

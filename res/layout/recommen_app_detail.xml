@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+	android:layout_height="match_parent" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#EEEEEE">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<TextView android:gravity="center" android:textColor="@color/white"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:text="@string/soft_center" android:textSize="18sp"/>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:gravity="center_vertical">
+				<ImageView android:id="@+id/appIcon" android:layout_width="64dp"
+					android:layout_height="64dp" android:layout_margin="5dp" />
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:orientation="vertical">
+					<TextView android:id="@+id/appName" android:layout_width="wrap_content"
+						android:textStyle="bold" android:textColor="@color/black"
+						android:textSize="20sp" android:layout_height="wrap_content" />
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal">
+						<LinearLayout android:id="@+id/linearLayout1"
+							android:layout_height="match_parent" android:layout_width="wrap_content">
+							<TextView android:id="@+id/appVersion"
+								android:layout_width="wrap_content" android:textColor="@color/black"
+								android:textSize="14sp" android:layout_height="wrap_content" android:maxLength="12"/>
+							<TextView android:id="@+id/appSizeNum"
+								android:layout_width="wrap_content" android:layout_marginLeft="10dp"
+								android:textColor="@color/light_green" android:textSize="18sp"
+								android:textStyle="bold" android:layout_height="wrap_content" />
+							<TextView android:id="@+id/appSizeUnit"
+								android:layout_width="wrap_content" android:textColor="@color/black"
+								android:textSize="14sp" android:layout_height="wrap_content" />
+						</LinearLayout>
+						<LinearLayout android:id="@+id/installApk"
+							android:layout_marginLeft="15dp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:orientation="horizontal"
+							android:background="@drawable/button_bg_selector"
+							android:gravity="center_vertical|center_horizontal" android:layout_marginRight="8dp">
+							<ImageView android:id="@+id/installShotcut"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_marginRight="5dp" android:src="@drawable/icon_anzhuang" />
+							<TextView android:text="@string/softmanage_install_now_text"
+								android:id="@+id/textDesc" android:textColor="@color/white"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:singleLine="true" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<ImageView android:background="@drawable/line_bg"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<LinearLayout android:id="@+id/downloadingProgress"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<ProgressBar android:id="@+id/downloadingBar"
+					android:visibility="gone" android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp" android:progressDrawable="@drawable/progress_bar"
+					style="?android:attr/progressBarStyleHorizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/downloadingText"
+					android:visibility="gone" android:textStyle="bold"
+					android:textSize="10sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+
+			<TextView android:text="@string/softmanage_install_descript_text"
+				android:layout_margin="5dp" android:layout_width="wrap_content"
+				android:textColor="@color/black" android:layout_height="wrap_content" android:textSize="18sp"/>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:background="@color/white" android:padding="5dp">
+				<TextView android:id="@+id/appDescription"
+					android:layout_marginLeft="5dp" android:layout_width="wrap_content"
+					android:textColor="@color/black" android:textSize="15sp"
+					android:layout_height="wrap_content" />
+				<ImageView android:background="@drawable/line_bg"
+					android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/app_screenshot_linear">
+					<ImageView android:id="@+id/appScreenshotOne"
+						android:layout_weight="1" android:layout_height="250dp"
+						android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+						android:layout_width="wrap_content" />
+					<ImageView android:id="@+id/appScreenshotTwo"
+						android:layout_weight="1" android:layout_height="250dp"
+						android:layout_marginRight="5dp" android:layout_width="wrap_content" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

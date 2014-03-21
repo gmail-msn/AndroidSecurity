@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center_vertical"
+	android:background="@drawable/listselect">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:paddingLeft="5dip"
+		android:paddingRight="5dip">
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_marginTop="7dip" android:layout_height="wrap_content"
+			android:src="@drawable/add_green_icon" />
+		<TextView android:id="@+id/handle_tv" android:layout_width="fill_parent"
+			android:layout_marginLeft="5dip" android:layout_height="wrap_content"
+			android:textSize="18dip" android:textColor="@color/black" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:background="@drawable/tanchu"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<LinearLayout android:layout_width="310dip"
+		android:layout_height="wrap_content" android:orientation="vertical">
+
+		<RelativeLayout android:layout_width="match_parent"
+			android:layout_gravity="center_horizontal" android:layout_height="50dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_marginTop="8dp" android:layout_marginLeft="16dp"
+				android:layout_centerInParent="true">
+				<ImageView android:id="@+id/imageView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:src="@drawable/soft_prompt_dialog_icon"
+					android:layout_marginTop="3dp"></ImageView>
+				<TextView android:layout_gravity="center_vertical"
+					android:layout_marginLeft="5dp" android:text="@string/softmanage_prompt_dialog_title"
+					android:layout_width="wrap_content" android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:textColor="@color/white"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:gravity="center"
+				android:layout_marginTop="10dp" android:layout_marginRight="20dp"
+				android:layout_centerVertical="true">
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:src="@drawable/icon_close"
+					android:id="@+id/apk_dialog_close"></ImageView>
+			</LinearLayout>
+		</RelativeLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:layout_weight="1">
+			<TextView android:gravity="center" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:text="@string/apk_install_delete_text"
+				android:textColor="@color/black"></TextView>
+		</LinearLayout>
+		<LinearLayout android:padding="10dp" android:gravity="center"  android:layout_marginTop="15dip"
+			android:orientation="horizontal" android:layout_height="wrap_content"
+			 android:layout_width="match_parent">
+			<LinearLayout android:id="@+id/apk_install_tv"
+				android:layout_width="wrap_content" android:gravity="center"
+				android:layout_height="wrap_content" android:background="@drawable/button_bg_green">
+				<TextView android:text="@string/softmanage_apk_install_text"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textColor="@color/white" android:textSize="16sp"></TextView>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/apk_delete_tv"
+				android:layout_width="wrap_content" android:gravity="center"
+				android:layout_height="wrap_content" android:layout_marginLeft="15dp"
+				android:background="@drawable/button_bg_green">
+				<TextView android:text="@string/softmanage_apk_delete_text"
+					android:layout_width="100dip" android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textColor="@color/white" android:textSize="16sp"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="#EEEEEE">
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<TextView android:gravity="center" android:textColor="@color/white"
+			android:textSize="18dip" android:text="@string/remote_security"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<TextView android:id="@+id/function_title_tv"
+				android:layout_marginLeft="14dip" android:textSize="18dip"
+				android:layout_marginTop="5dip" android:textColor="@color/light_black"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:orientation="vertical" android:layout_marginTop="3dip"
+				android:layout_height="fill_parent" android:paddingLeft="4dip"
+				android:paddingRight="4dip">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:paddingLeft="5dip" android:paddingRight="5dip"
+					android:paddingTop="10dip" android:paddingBottom="15dip"
+					android:orientation="vertical" android:layout_height="wrap_content"
+					android:background="@color/white">
+
+
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<TextView android:textSize="14dip" android:textColor="@color/green"
+							android:text="@string/command" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+
+						<TextView android:id="@+id/command_title_tv"
+							android:textColor="@color/green" android:textSize="14dip"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+					</LinearLayout>
+
+					<TextView android:id="@+id/command_des_tv"
+						android:textSize="14dip" android:layout_marginTop="10dip"
+						android:textColor="@color/light_black" android:text="@string/command"
+						android:lineSpacingExtra="4dip" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_marginTop="15dip" android:layout_height="wrap_content"
+						android:orientation="vertical">
+						<TextView android:textSize="14dip" android:textColor="@color/light_black"
+							android:text="@string/lostmobile_cur_num" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+						<EditText android:id="@+id/lost_mobile_num_et"
+							android:maxLength="11" android:layout_marginTop="6dip"
+							android:singleLine="true" android:inputType="number"
+							android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					</LinearLayout>
+
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="vertical">
+						<TextView android:textSize="14dip" android:textColor="@color/light_black"
+							android:layout_marginTop="6dip" android:text="@string/lostmobile_safe_num"
+							android:layout_width="wrap_content" android:layout_height="wrap_content" />
+						<EditText android:id="@+id/kind_security_safe_num_et"
+							android:layout_marginTop="6dip" android:singleLine="true" android:password="true"
+							android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					</LinearLayout>
+
+					<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+						android:layout_height="1dp"></View>
+
+					<LinearLayout android:layout_height="wrap_content"
+						android:layout_marginTop="10dip" android:gravity="center_horizontal"
+						android:layout_gravity="center_horizontal" android:layout_width="match_parent">
+						<Button android:text="@android:string/ok" android:id="@+id/button_ok"
+							android:padding="5dp" android:textColor="@color/white"
+							android:layout_marginBottom="2dp" android:background="@drawable/button_bg_selector"
+							android:layout_height="wrap_content" android:layout_width="100dip"></Button>
+						<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+							android:padding="5dp" android:layout_marginLeft="15dp"
+							android:textColor="@color/white" android:layout_marginBottom="2dp"
+							android:background="@drawable/button_bg_selector"
+							android:layout_width="100dip" android:layout_height="wrap_content"></Button>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

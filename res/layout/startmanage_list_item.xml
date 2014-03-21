@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:layout_gravity="center_vertical" android:background="@drawable/listselect">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginRight="5dp"
+		android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+		android:layout_toLeftOf="@+id/app_list_item_right_linear">
+		<ImageView android:layout_width="60dp"
+			android:layout_height="60dp" android:layout_margin="5dp"
+			android:focusable="false" android:src="@drawable/icon_default"
+			android:id="@+id/app_icon" android:padding="6dp"></ImageView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:orientation="vertical" android:focusable="false"
+			android:layout_gravity="center_vertical" android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_weight="1">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:textSize="15sp"
+					android:id="@+id/app_label" android:textColor="@color/black" android:singleLine="true"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_weight="1" android:layout_marginTop="3dp">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_marginRight="5dp"
+					android:layout_gravity="center_vertical" android:textSize="12sp" android:id="@+id/app_version" android:textColor="@color/black" android:singleLine="true"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+					android:textSize="12sp" android:id="@+id/app_size" android:textColor="@color/black" android:singleLine="true"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:layout_centerVertical="true"
+		android:padding="5dp" android:layout_width="wrap_content"
+		android:id="@+id/list_item_right_linear" android:gravity="center">
+		<ImageView android:id="@+id/disable_icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/start_manage_list_icon_disable"></ImageView>
+		<ImageView android:id="@+id/enable_icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/start_manage_list_icon_enable"></ImageView>
+	</LinearLayout>
+</RelativeLayout>

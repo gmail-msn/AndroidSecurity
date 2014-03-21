@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingTop="0dip">
+
+	<LinearLayout android:layout_width="300dip"
+		android:background="@color/white" android:layout_height="wrap_content"
+		android:orientation="vertical" android:paddingBottom="5dip">
+
+
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:background="#6CBD45" android:gravity="center"
+			android:layout_height="45dp" android:layout_width="fill_parent">
+			<ImageView android:id="@+id/imageView1"
+				android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+				android:layout_width="wrap_content" android:src="@drawable/soft_prompt_dialog_icon"
+				android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+			<TextView android:id="@+id/title_text_tv" android:textColor="@color/white"
+				android:text="@string/softmanage_prompt_dialog_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+
+
+		<LinearLayout android:orientation="vertical"
+			android:gravity="center_horizontal" android:layout_weight="1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:id="@+id/mobile_linear"
+				android:layout_width="fill_parent" android:paddingLeft="8dip"
+				android:paddingRight="8dip" android:gravity="center_vertical"
+				android:layout_height="wrap_content" android:layout_marginTop="5dp">
+				<TextView android:layout_height="wrap_content" android:gravity="center_horizontal"
+					android:layout_weight="2.9" android:singleLine="true"
+					android:layout_width="fill_parent" android:textColor="@color/black" android:textSize="17sp" android:text="@string/add_blacklist_from_region_prompt" android:id="@+id/edit_prompt_tv"></TextView>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/remark_linear"
+				android:layout_width="fill_parent" android:paddingLeft="8dip"
+				android:paddingRight="8dip" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:orientation="vertical" android:gravity="center">
+				<TextView android:layout_height="wrap_content" android:layout_weight="2.9" android:textColor="@color/black" android:text="@string/add_blacklist_from_region_desp" android:layout_width="wrap_content" android:id="@+id/edit_desp_tv" android:gravity="center"></TextView>
+				<EditText android:lines="1"
+					android:layout_height="wrap_content" android:singleLine="true"
+					android:layout_width="fill_parent" android:layout_weight="1"
+					android:id="@+id/input_et" android:hint="@string/area_code_format" android:maxLength="30"></EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/intercept_linear"
+				android:layout_width="fill_parent" android:layout_marginTop="8dip"
+				android:layout_height="wrap_content" android:paddingLeft="8dip"
+				android:paddingRight="8dip">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_weight="1" android:layout_height="wrap_content">
+					<CheckBox android:id="@+id/intercept_sms_cb"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:focusable="false" android:padding="5dip"
+						android:textColor="@color/black" android:text="@string/intercept_sms"
+						android:background="@null" android:button="@drawable/checkbox_button" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:gravity="right">
+					<CheckBox android:id="@+id/intercept_phone_cb"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:focusable="false" android:padding="5dip"
+						android:textColor="@color/black" android:text="@string/intercept_phone"
+						android:background="@null" android:button="@drawable/checkbox_button" />
+				</LinearLayout>
+
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_marginTop="8dip" android:layout_height="wrap_content"
+				android:paddingLeft="3dip" android:paddingRight="3dip">
+
+				<View android:layout_width="fill_parent" android:background="@drawable/virus_scan_line01"
+					android:layout_height="1dp"></View>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_marginTop="8dip" android:gravity="center_horizontal"
+				android:layout_gravity="center_horizontal" android:layout_width="match_parent">
+				<Button android:text="@android:string/ok" android:id="@+id/button_ok"
+					android:padding="5dp" android:textColor="@color/white"
+					android:layout_marginBottom="2dp" android:background="@drawable/button_bg_selector"
+					android:layout_height="wrap_content" android:layout_width="100dip"></Button>
+				<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+					android:padding="5dp" android:layout_marginLeft="10dp"
+					android:textColor="@color/white" android:layout_marginBottom="2dp"
+					android:background="@drawable/button_bg_selector"
+					android:layout_width="100dip" android:layout_height="wrap_content"></Button>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

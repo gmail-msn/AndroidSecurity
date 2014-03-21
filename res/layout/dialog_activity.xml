@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/downloadingDialog"
+	android:layout_height="wrap_content" android:background="#EEEEEE"
+	android:layout_width="wrap_content" android:layout_gravity="center"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout android:layout_width="300dip"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<RelativeLayout android:id="@+id/title_layout"
+			android:layout_width="match_parent" android:layout_weight="1"
+			android:layout_gravity="center_horizontal" android:layout_height="50dp" android:background="@color/green">
+			<LinearLayout android:id="@+id/linearLayout1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerInParent="true">
+				<ImageView android:layout_height="wrap_content"
+					android:id="@+id/imageView1" android:layout_width="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginRight="5dp" android:layout_marginTop="2dp"
+					android:src="@drawable/soft_prompt_dialog_icon"></ImageView>
+				<TextView android:layout_gravity="center_vertical"
+					android:layout_height="wrap_content" android:text="@string/softmanage_prompt_dialog_title"
+					android:id="@+id/textView1" android:layout_width="wrap_content"
+					android:textColor="@color/white"></TextView>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:id="@+id/version_desp_linear">
+			<TextView android:layout_height="wrap_content"
+				android:textStyle="bold" android:textColor="@color/black"
+				android:gravity="left|center_vertical" android:paddingLeft="10dp"
+				android:layout_width="wrap_content" android:textSize="15sp" android:paddingTop="5dp" android:id="@+id/risk_notice" android:text="@string/install_scan_trojan"/>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/releasenotes_linear" android:background="#EEEEEE"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:paddingBottom="5dp">
+			<TextView android:textColor="@color/black"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="10dp"
+				android:textSize="15sp" android:text="@string/virus_desp_title"></TextView>
+			<TextView android:layout_height="wrap_content" android:isScrollContainer="true" android:textColor="@color/black"
+				android:paddingLeft="10dp" android:paddingRight="5dp"
+				android:textSize="12dp"
+				android:layout_width="match_parent" android:paddingTop="3dip"
+				android:paddingBottom="3dip" android:id="@+id/virus_desp"></TextView>
+		</LinearLayout>
+		<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+			android:layout_height="1dp" android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"></View>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center_horizontal" android:layout_marginBottom="6dp">
+
+			<Button android:clickable="true"
+				android:layout_width="100dip" android:textColor="@color/white"
+				android:layout_height="wrap_content" android:background="@drawable/button_bg_selector" android:text="@string/uninstall_btn" android:id="@+id/uninstallOkBtn"/>
+
+			<Button android:clickable="true"
+				android:layout_width="100dip"
+				android:layout_height="wrap_content" android:background="@drawable/button_bg_selector"
+				android:layout_marginLeft="10dp" android:textColor="@color/white" android:text="@string/uninstall_cancel" android:id="@+id/uninstallCancelBtn"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:weightSum="3"
+	android:layout_gravity="center_horizontal|center" android:background="@drawable/tanchu2"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<RelativeLayout android:id="@+id/title_layout"
+		android:layout_width="match_parent" android:layout_weight="1"
+		android:layout_gravity="center_horizontal" android:layout_height="50dp">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerInParent="true">
+			<ImageView android:layout_height="wrap_content" android:id="@+id/imageView1"
+				android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_marginRight="5dp" android:layout_marginTop="2dp"
+				android:src="@drawable/soft_prompt_dialog_icon"></ImageView>
+			<TextView android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" android:text="@string/softmanage_prompt_dialog_title"
+				android:id="@+id/textView1" android:layout_width="wrap_content"
+				android:textColor="@color/white"></TextView>
+		</LinearLayout>
+	</RelativeLayout>
+	<View android:layout_width="310dip" android:layout_height="0dip" />
+	<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:padding="12dp"
+		android:layout_weight="2" android:layout_gravity="center_horizontal"
+		android:layout_height="100dp">
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:layout_gravity="center_horizontal"
+			android:layout_weight="1">
+			<LinearLayout android:gravity="center" android:layout_centerInParent="true" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="wrap_content">
+				<TextView android:id="@+id/prompt_dialog_text" android:textColor="@color/black" android:layout_width="wrap_content" android:gravity="center" android:layout_height="wrap_content" android:text="@string/start_manage_disabling_text"></TextView>
+			</LinearLayout>
+		</RelativeLayout>
+
+
+
+
+		<LinearLayout android:paddingTop="3dip"
+			android:layout_height="wrap_content" android:gravity="center_horizontal|center_vertical"
+			android:layout_weight="1" android:layout_width="fill_parent">
+
+			<RelativeLayout android:layout_width="17dip"
+				android:layout_height="17dip">
+				<ImageView android:id="@+id/pr_one" android:layout_width="13dip"
+					android:layout_centerInParent="true" android:visibility="invisible"
+					android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+				<ImageView android:id="@+id/pr_one_copy"
+					android:layout_width="17dip" android:layout_height="17dip"
+					android:background="@drawable/loading_focus" />
+
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="17dip"
+				android:layout_marginLeft="10dip" android:layout_height="17dip">
+				<ImageView android:id="@+id/pr_two" android:layout_width="13dip"
+					android:layout_centerInParent="true" android:layout_height="13dip"
+					android:background="@drawable/loading_unfocus" />
+				<ImageView android:id="@+id/pr_two_copy"
+					android:visibility="invisible" android:layout_width="17dip"
+					android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="17dip"
+				android:layout_marginLeft="10dip" android:layout_height="17dip">
+				<ImageView android:id="@+id/pr_three"
+					android:layout_centerInParent="true" android:layout_width="13dip"
+					android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+				<ImageView android:id="@+id/pr_three_copy"
+					android:visibility="invisible" android:layout_width="17dip"
+					android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="17dip"
+				android:layout_marginLeft="10dip" android:layout_height="17dip">
+				<ImageView android:id="@+id/pr_four" android:layout_width="13dip"
+					android:layout_centerInParent="true" android:layout_height="13dip"
+					android:background="@drawable/loading_unfocus" />
+				<ImageView android:id="@+id/pr_four_copy"
+					android:visibility="invisible" android:layout_width="17dip"
+					android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="17dip"
+				android:layout_marginLeft="10dip" android:layout_height="17dip">
+				<ImageView android:id="@+id/pr_five" android:layout_width="13dip"
+					android:layout_centerInParent="true" android:layout_height="13dip"
+					android:background="@drawable/loading_unfocus" />
+				<ImageView android:id="@+id/pr_five_copy"
+					android:visibility="invisible" android:layout_width="17dip"
+					android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+			</RelativeLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

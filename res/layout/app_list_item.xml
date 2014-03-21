@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:layout_gravity="center_vertical" android:background="@drawable/listselect">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginRight="5dp"
+		android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toLeftOf="@+id/app_list_item_right_linear">
+		<ImageView android:id="@+id/applist_app_icon"
+			android:layout_width="60dp" android:layout_height="60dp"
+			android:layout_margin="5dp" android:padding="6dp" android:focusable="false" android:src="@drawable/icon_default"></ImageView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:orientation="vertical"
+			android:focusable="false" android:layout_gravity="center_vertical" android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_weight="1">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/applist_app_label"
+					android:textColor="#000000" android:layout_gravity="center_vertical"
+					android:textSize="15sp"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_weight="1" android:layout_marginTop="3dp">
+				<TextView android:id="@+id/applist_app_version"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+					android:textColor="#000000" android:textSize="12sp"></TextView>
+				<TextView android:id="@+id/applist_app_size"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_gravity="center_vertical" android:textColor="#000000" android:textSize="12sp"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:layout_alignParentRight="true"
+		android:layout_centerVertical="true" android:padding="5dp" android:gravity="right" android:id="@+id/app_list_item_right_linear" android:layout_width="wrap_content">
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/applist_right_icon"
+			android:background="@drawable/arrow03" android:layout_marginRight="3dp"></ImageView>
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:visibility="gone"
+			android:text="@string/softmanage_has_installed_tip"
+			android:layout_gravity="center_vertical" android:textColor="@color/black"
+			android:layout_marginRight="5dp" android:id="@+id/applist_already_installed_tip"></TextView>
+	</LinearLayout>
+</RelativeLayout>

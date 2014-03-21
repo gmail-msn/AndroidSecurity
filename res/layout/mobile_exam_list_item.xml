@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:gravity="center" android:background="@color/white" android:orientation="horizontal" android:padding="5dp" android:layout_height="35dp">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<LinearLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:orientation="vertical" android:gravity="center_vertical">
+			<TextView android:layout_marginRight="2dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textColor="@color/black" android:singleLine="true"
+				android:id="@+id/mobile_exam_item_desp"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:layout_marginLeft="6dp" android:gravity="center_vertical">
+		<TextView android:textColor="@color/grey"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/safe_action_tv"></TextView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="match_parent" android:id="@+id/danger_action_linear"
+			android:background="@drawable/mobile_exam_button_bg"
+			android:paddingBottom="3dp" android:paddingLeft="5dp"
+			android:paddingRight="5dp" android:paddingTop="3dp" android:gravity="center">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/danger_action_tv"
+				android:textColor="@color/white" android:gravity="center"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

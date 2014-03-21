@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="scan_pause">暂停</string>
+	<string name="scanningText">正在扫描...</string>
+	<string name="scanningDone">扫描完成!</string>
+	<string name="scan_norisk">未发现安全风险</string>
+	<string name="scan_warn">谨慎使用</string>
+	<string name="scan_risk">危险软件</string>
+	<string name="scan_danger">木马软件</string>
+	<string name="app_uninst">一键卸载</string>
+	<string name="risk_warning">本软件为Google测试证书签名</string>
+	<string name="no_risk">未发现安全风险</string>
+	<string name="app_rescan">重新扫描</string>
+	<string name="app_name">安卓卫士</string>
+	<string name="scan_continue">继续</string>
+	<string name="app_summary_settings">设置</string>
+	<string name="app_firewall_disable">禁用防火墙</string>
+	<string name="app_firewall_enable">启用防火墙</string>
+	<string name="app_firewall_save_rule">保存规则</string>
+	<string name="app_firewall_status_enable">防火墙已开启</string>
+	<string name="app_firewall_status_diable">防火墙已禁用</string>
+	<string name="app_summary_one_key_optimize">一键优化</string>
+	<string name="app_summary_memory_title">内存</string>
+	<string name="app_summary_network_title">GPRS流量</string>
+	<string name="app_summary_had_used_percent">使用%s</string>
+	<string name="app_summary_health_score">%d分</string>
+	<string name="app_summary_health_used_m_byte">使用%dM</string>
+	<string name="app_summary_health_leave_m_byte">剩余%dM</string>
+	<string name="cancel">取消</string>
+
+	<string name="working">正在加载...</string>
+	<string name="permissionRequired">此操作需要root权限,错误信息:</string>
+	<string name="reading">正在读取已安装应用</string>
+	<string name="proc_close">结束进程</string>
+	<string name="health_closeprocess">关闭进程</string>
+	<string name="health_closecount">个</string>
+	<string name="health_memrelease">释放内存</string>
+	<string name="health_memcount">M</string>
+	<string name="firewall_noroot">手机权限不支持：很抱歉，由于目前系统版本未获得最高权限（root权限），致使目前无法为您开启防火墙的功能。</string>
+	<string name="introduction">简介</string>
+	<string name="permission_des">权限描述</string>
+	<string name="version">版本:</string>
+	<string name="size">大小:</string>
+	<string name="save_level">安全级别:</string>
+	<string name="please_dont_uni_selft">无法卸载自己</string>
+	<string name="mobile_traffic">手机流量套餐</string>
+	<string name="begin_date">起始日期</string>
+	<string name="mobile_traffic_limit_per_month">每月套餐限额</string>
+	<string name="mobile_traffic_left_per_month">每月剩余流量提醒</string>
+	<string name="cal_date">结算日</string>
+	<string name="clear_count_data">清空统计数据</string>
+	<string name="update_virus">更新病毒库</string>
+	<string name="update_virus_no_new_version_text">已经是最新的病毒库!</string>
+	<string name="update_virus_has_new_version_text">发现新病毒库,是否更新?</string>
+	<string name="day">日</string>
+	<string name="setting_mobile_traffic_limit_per_month">设置每月套餐限额</string>
+	<string name="setting_mobile_traffic_left_per_month">设置每月剩余流量提醒</string>
+	<string name="setting_cal_date">设置结算日</string>
+	<string name="sure">确定</string>
+
+	<string name="updating">正在更新....</string>
+
+	<string name="checking_update">正在检测更新，请稍候....</string>
+
+	<string name="message_connot_null">信息不能为空</string>
+	<string name="message_connot_bezero">输入信息不能为0</string>
+	<string name="left_less_limit">调整流量必须小于套餐限额</string>
+	<string name="sure_clear_cache_suc">确定清空统计数据吗</string>
+	<string name="clear_cache_suc">清除统计数据成功</string>
+	<string name="clear_cache_faile">清除统计数据失败</string>
+	<string name="less_zero_more_31">日期须在1-31之间</string>
+	<string name="mobile_exp">手机体检</string>
+	<string name="safe_your_mobile">安卓卫士时刻保护着您的手机</string>
+	<string name="your_mobile_get_count">当前性能分数 : </string>
+	<string name="mobile_check_out_report">性能检测报告</string>
+	<string name="close_proess">关闭进程</string>
+	<string name="close_proess_detail">个,释放内存</string>
+	<string name="process_sum">进程总数 : </string>
+	<string name="all_select">全选</string>
+	<string name="proc_close_al">结束全部进程</string>
+	<string name="proc_close_select">结束所选进程</string>
+
+	<string name="memory_hasuse_detail">内存 : 已用</string>
+	<string name="can_use">可用</string>
+
+	<string name="task_manager">任务管理</string>
+	<string name="refresh_list">刷新列表</string>
+	<string name="memory_manager">任务管理</string>
+	<string name="soft_manager">软件管理</string>
+	<string name="network_stream">流量监控</string>
+	<string name="virus_safe">病毒查杀</string>
+	<string name="run_proc">运行进程</string>
+	<string name="left_memory">剩余内存</string>
+
+	<string name="net_traffice_title">流量监控</string>
+	<string name="net_traffice_settings">详细设置</string>
+	<string name="net_traffice_settings_enable">安卓卫士流量监控已开启</string>
+	<string name="net_traffice_settings_disable">安卓卫士流量监控已禁用</string>
+	<string name="net_traffice_cell_today_title">3G今日流量</string>
+	<string name="net_traffice_cell_month_limit">本月3G流量限额:</string>
+	<string name="net_traffice_unit">M</string>
+	<string name="net_traffice_month_used">本月已用</string>
+	
+	<!-- firewall -->
+	<string name="net_traffice_day">今日：</string>
+	<string name="net_traffice_month">本月：</string>
+	<string name="firewall_menu_disable_wifi">全部禁止：Wifi网络</string>
+	<string name="firewall_menu_allow_wifi">全部允许：Wifi网络</string>
+	<string name="firewall_menu_disable_3g">全部禁止：2G/3G网络</string>
+	<string name="firewall_menu_allow_3g">全部允许：2G/3G网络</string>
+	<string name="firewall_loading">正在处理，请稍候...</string>
+	<string name="firewall_title_desc">您可以选择允许或禁止网络</string>
+	<string name="firewall_apps_num_desc">具有联网权限应用数量</string>
+	<string name="firewall_has_no_root">您还没有取得Root权限，无法进行防火墙操作</string>
+	<string name="firewall_allow_network_desc">表示允许访问网络</string>
+	<string name="firewall_forbid_network_desc">表示禁止访问网络</string>
+	<string name="firewall_not_surpport">没有Root权限或设备不支持</string>
+
+	<string name="net_traffice_month_remaider">本月剩余</string>
+	<string name="net_traffice_month_remaider_percent">(剩余</string>
+	<string name="net_traffice_month_remaider_suffix">)</string>
+	<string name="net_traffice_wifi_today_title">Wifi今日流量</string>
+	<string name="net_traffice_wifi_total">Wifi使用总量</string>
+	<string name="net_traffice_wifi_month_bill">月结算日为 每月</string>
+	<string name="net_traffice_settings_limit">3G每月限额流量(M)</string>
+	<string name="net_traffice_settings_month_cal_day">月结算日</string>
+	<string name="net_traffice_settings_adjust_used">调整本月已用流量(M)</string>
+	<string name="net_traffice_settings_clear_data">清空全部统计数据</string>
+	<string name="net_traffice_settings_clear_data_confirm">确定清空全部统计数据?</string>
+	<string name="net_traffice_settings_clear_data_date">上一次清空数据时间：%s</string>
+	<string name="net_traffice_settings_limit_dialog_title">每月限额流量(M)</string>
+	<string name="net_traffice_settings_limit_dialog_left">本月已用流量(M)</string>
+	<string name="net_traffice_settings_cal_day">月结算日</string>
+	<string name="quit_app_tips">再按一次将退出程序</string>
+	<string name="advice_tips">进程较多，建议优化。</string>
+	<string name="advice_tips_better">性能良好，继续保持。</string>
+	<string name="advice_tips_bad">性能较差，立即清理。</string>
+	<string name="downloading_description">是否立即下载更新？</string>
+	<string name="downloading_label">版本更新</string>
+	<string name="notification_text">今日 :%1$sM   本月: %2$sM</string>
+	<string name="download_error">下载时发生网络错误</string>
+	<string name="network_tip">由于网络原因，请稍后再试!</string>
+	<string name="had_install">已安装</string>
+	<!-- add zhl -->
+	<string name="softmanage_recommend_tab">装机推荐</string>
+	<string name="softmanage_installed_tab">软件管理</string>
+	<string name="softmanage_apkmanage_tab">APK安装包</string>
+	<string name="softmanage_version_title">版</string>
+	<string name="softmanage_uninstall_text">一键卸载</string>
+	<string name="softmanage_install_text">一键安装</string>
+	<string name="softmanage_memory_title">内存: </string>
+	<string name="softmanage_memory_used">已用 </string>
+	<string name="softmanage_memory_available">剩余 </string>
+	<string name="softmanage_installed_sum">已安装应用数量: </string>
+	<string name="softmanage_apk_sum">安装包数量: </string>
+	<string name="softmanage_prompt_dialog_title">安卓卫士提示</string>
+	<string name="softmanage_scan_installed_text">正在扫描已安装应用,请稍候...</string>
+	<string name="softmanage_has_installed_tip">已安装</string>
+	<string name="softmanage_use_memory_text">占用内存 </string>
+	<string name="softmanage_uninstall_tip_text">确定卸载选中的程序吗?</string>
+	<string name="softmanage_install_tip_text">确定安装选中的程序吗?</string>
+	<string name="softmanage_delete_tip_text">确定删除选中的程序吗?</string>
+	<string name="softmanage_left_menu_text">批量安装</string>
+	<string name="softmanage_left_menu_text1">批量删除</string>
+	<string name="softmanage_right_menu_text">刷新</string>
+	<string name="softmanage_install_now_text">立刻安装</string>
+	<string name="softmanage_install_descript_text">软件介绍</string>
+	<string name="softmanage_scan_apk_text">正在扫描本地安装包,请稍候...</string>
+	<string name="softmanage_scan_recommend_text">正在获取推荐信息,请稍候...</string>
+	<string name="softmanage_download_recommend_text">正在下载安装包,请稍候...</string>
+	<string name="softmanage_apk_install_text">安装</string>
+	<string name="softmanage_apk_delete_text">删除</string>
+	<string name="virus_scan_title">病毒查杀</string>
+	<string name="virus_scan_last_time">上次完整扫描时间:</string>
+	<string name="virus_scan_last_update_db_time">反病毒库更新于: </string>
+	<string name="month">月</string>
+	<string name="virus_scan_begin_text">一键查杀</string>
+	<string name="virus_scan_cancel_text">取消杀毒</string>
+	<string name="virus_scan_cancel_prompt_text">正在查杀,确定要取消吗?</string>
+	
+	<!-- cache management -->
+	<string name="cache_management_title">缓存清理</string>
+	<string name="cache_management_one_key_clear">一键清理</string>
+	<string name="cache_management_cache_text">缓存</string>
+	<string name="cache_management_cached_app_text">缓存应用数量：</string>
+	<string name="cache_management_total_cache_text">缓存总计：</string>
+	<string name="cache_management_no_cache_text">（暂无缓存）</string>
+
+	<string name="softmanage_version_unknown">版本未知</string>
+	<string name="virus_scan_find_virus_text">发现病毒: </string>
+	<string name="virus_scan_care_use_text">谨慎使用: </string>
+	<string name="virus_scan_clean_success_text">成功清除: </string>
+	<string name="virus_scan_need_treat_text">待处理数: </string>
+	<string name="virus_scan_success_prompt_text">目前您的手机处于 &lt;font
+		color=&quot;#80B119&quot;&gt;&lt;big&gt;安全&lt;/big&gt;&lt;/font&gt; 状态</string>
+	<string name="virus_scan_fail_prompt_text">有待处理事项，请查看 </string>
+	<string name="virus_scan_again_text">重新查杀</string>
+	<string name="virus_scan_report_text">查杀报告</string>
+	<string name="virus_scan_select_uninstall_apps_text">请勾选需要卸载的应用</string>
+	<string name="backup_1_title">备份恢复</string>
+	<string name="backup_1_select_text">勾选需要备份的内容</string>
+	<string name="backup_contacts_text">通讯录</string>
+	<string name="backup_sms_text">手机短信息</string>
+	<string name="backup_app_list_text">软件备份</string>
+	<string name="backup_last_scan_time">上次备份时间：</string>
+	<string name="backup_no_backup_text">无本地备份，请尝试网络恢复.</string>
+	<string name="backup_contacts_sum_text">已备份的通讯录/现有通讯录：</string>
+	<string name="backup_sms_sum_text">已备份的短信息/现有短信息：</string>
+	<string name="backup_applist_sum_text">已备份的软件列表/现有列表：</string>
+	<string name="backup_button_backup_text">一键备份</string>
+	<string name="backup_tab_backup_text">备份</string>
+	<string name="backup_tab_restore_text">恢复</string>
+	<string name="backup_restore_select_text">勾选需要恢复的内容</string>
+	<string name="backup_restore_prompt_text">注意！恢复备份将&lt;font color=&quot;#ff0000&quot;
+		size=&quot;16&quot;&gt;覆盖&lt;/font&gt;手机上现有的内容！</string>
+	<string name="virus_scan_days_ago_text"> 天前</string>
+	<string name="virus_scan_months_ago_text"> 月前</string>
+	<string name="virus_scan_hours_ago_text"> 小时前</string>
+	<string name="virus_scan_minites_ago_text"> 分钟前</string>
+	<string name="virus_scan_seconds_ago_text"> 秒前</string>
+	<string name="virus_update_network_error_text">连接网络出错!</string>
+	<string name="backup_start_backup_text">开始备份...</string>
+	<string name="backup_backing_contacts_text">正在备份通讯录,请稍候...</string>
+	<string name="backup_backing_sms_text">正在备份短信,请稍候...</string>
+	<string name="backup_backing_apps_text">正在备份应用列表,请稍候...</string>
+	<string name="backup_button_restore_text">一键恢复</string>
+	<string name="backup_start_restore_text">开始恢复...</string>
+	<string name="backup_restoring_contacts_text">正在恢复通讯录,请稍候...</string>
+	<string name="backup_restoring_sms_text">正在恢复短信,请稍候...</string>
+	<string name="backup_restoring_apps_text">正在恢复应用列表,请稍候...</string>
+	<string name="virus_update_prompt_text">正在更新病毒库，请稍候...</string>
+	<string name="backup_completed_confirm_prompt_text">备份操作已成功完成!</string>
+	<string name="restore_completed_confirm_prompt_text">恢复操作已成功完成!</string>
+	<string name="backup_has_no_date_to_back_prompt_text">没有数据可备份!</string>
+	<string name="virus_has_no_update_text">未更新过</string>
+	<string name="backup_applist_text">备份软件列表</string>
+	<string name="backup_applist_apps_sum_text">目前手机上的软件列表总数</string>
+	<string name="backup_applist_browlist_text">查看软件列表</string>
+	<string name="backup_applist_backed_sum_text">已备份的软件列表总数</string>
+	<string name="backup_applist_browlist_action_text">查看列表</string>
+	<string name="backup_applist_delback_text">如果想删除之前软件列表备份,请点击</string>
+	<string name="backup_applist_delback_action_text">删除备份</string>
+	<string name="restore_confirm_text">确定恢复选中的内容吗?</string>
+	<string name="delete_applist_backfiles_confirm_text">确定删除备份的软件列表吗?</string>
+	<string name="backup_applist_confirm_text">确定备份软件列表吗?</string>
+	<string name="backup_applist_progress_prompt_text">正在备份，请稍候...</string>
+	<string name="backup_applist_delete_progress_text">正在删除备份,请稍候...</string>
+	<string name="backup_applist_delete_confirm_text">删除备份已成功完成!</string>
+	<string name="backup_applist_loaddata_progress_text">正在加载软件列表,请稍候...</string>
+	<string name="applist_app_not_found_text">Market应用不存在，请自行从网络下载!</string>
+	<string name="backup_loading_tip_text">正在计算...</string>
+	<string name="virus_risk_level">[高风险]</string>
+	<string name="virus_warning_level">[谨慎]</string>
+	<string name="virus_update_when_scanning">正在查杀病毒,请稍后再试!</string>
+	<string name="mobile_exp_apk_text">APK安装包</string>
+	<string name="virus_scan_history_tab">历史记录</string>
+	<string name="last_time_clean_history">上次清除记录时间:</string>
+	<string name="virus_history_virusnum">发现病毒数：</string>
+	<string name="virus_history_carenum">, 谨慎使用数：</string>
+	<string name="clean_history">清除记录</string>
+	<string name="clean_history_confirm">确认清除历史记录吗?</string>
+	<string name="clean_no_history">未删除过</string>
+	<string name="button_yes">是</string>
+	<string name="button_no">否</string>
+	<string name="backup_select_content_prompt">请选择需要备份的内容!</string>
+	<string name="recover_select_content_prompt">请选择需要恢复的内容!</string>
+	<string name="recover_has_no_data_prompt">没有数据可恢复!</string>
+	<string name="cancel_backup_text">确定要取消备份?</string>
+	<string name="sdcard_unexist">没有SD卡,不能备份!</string>
+	<string name="cancel_recover_text">取消恢复, 可能导致本地数据不完整.\n确定要取消恢复?</string>
+	<string name="download_error_prompt">下载出错,请稍后重试!</string>
+	<string name="home_page">功能首页</string>
+	<string name="softmanage_select_app">请选择需要卸载的程序!</string>
+
+	<string name="install_soft">安装程序</string>
+	<string name="left_space">剩余空间</string>
+	<string name="has_use_stream">已用流量</string>
+	<string name="left_stream">剩余流量</string>
+	<string name="danger_soft">危险程序</string>
+	<string name="last_time_scan">上次扫描</string>
+	<string name="mobile_sumary">手机概况</string>
+	<string name="fuc_list">功能列表</string>
+	<string name="soft_center">软件中心</string>
+	<string name="firewall">防火墙</string>
+	<string name="g3or2g">2G/3G</string>
+	<string name="wifi">Wifi</string>
+	<string name="day_before">天前的查杀报告</string>
+	<string name="firewall_not_support">手机硬件不支持：很抱歉，由于安卓卫士目前无法支持您的手机型号、系统版本或是其他的原因，致使目前无法为您开启防火墙的功能。</string>
+	<string name="apply_rule_success">应用防火墙规则成功</string>
+	<string name="save_rule_success">保存防火墙规则成功</string>
+	<string name="apply_rule_failed">应用防火墙规则失败</string>
+	<string name="save_rule_failed">保存防火墙规则失败</string>
+	<string name="applying_rule">正在应用防火墙规则...</string>
+	<string name="saving_rule">正在保存防火墙规则...</string>
+	<string name="deleting_rule">正在禁用防火墙规则...</string>
+	<string name="delete_rule_success">成功禁用防火墙规则</string>
+	<string name="delete_rule_failed">禁用防火墙规则失败</string>
+	<string name="network_need_oval_zero">流量必须大于0</string>
+	<string name="notifyExceed">%1$s 超出套餐%2$s %3$s</string>
+	<string name="notifyExceedTitle">流量超出套餐</string>
+	<string name="black_certificate">Google 测试证书签名</string>
+	<string name="any_applications">(任何应用程序)</string>
+	<string name="root_applications">(运行root权限应用程序)</string>
+	<string name="softmanage_apk_noselect">请选择APK安装包!</string>
+	<string name="softmanage_recommend_noselect">请选择需要安装的应用!</string>
+	<string name="proce_select_app">请选择需要结束的进程!</string>
+	<string name="backup_applist_file_noexist">备份文件不存在,删除失败!</string>
+	<string name="backup_applist_delete_fail">删除备份文件失败!</string>
+	<string name="backup_applist_backfile_noexist">备份文件不存在,或已被删除!</string>
+	<string name="sdcard_noexist">SD卡不存在!</string>
+	<string name="backup_applist_noback">没有备份数据!</string>
+	<string name="cancel_download_apk">取消下载APK安装包吗?</string>
+	<string name="cancel_virus_update">取消病毒库升级吗?</string>
+
+	<string name="last_unclean_result_text">上次扫描待处理的应用：</string>
+	<string name="button_for_clean_text">一键清理</string>
+	<string name="loading_virus_history_prompt_text">正在加载数据, 请稍候...</string>
+	<string name="virus_clean_uninstalled">已卸载</string>
+
+	<string name="pending_application">待处理程序:</string>
+
+	<string name="used_memory">已用内存 : </string>
+	<string name="unuse_memory">剩余内存 : </string>
+	<string name="no_app_to_install">无可安装的应用!</string>
+	<string name="apk_install_delete_text">请选择对APK文件的处理!</string>
+	<string name="apkmanage_select_all_prompt">请点击列表或勾选安装APK安装包</string>
+	<string name="softmanage_select_text">请勾选需要卸载的应用</string>
+	<string name="softmanage_size_sort_text">按软件大小排序</string>
+	<string name="softmanage_name_sort_text">软件名称</string>
+	<string name="backup_software_list_text">软件列表</string>
+	<string name="backup_cancel_text">取消备份</string>
+	<string name="backing_up_text">正在备份...</string>
+	<string name="backup_prompt_dialog_tip_text">提醒:备份到网络需要消耗极少的网络流量.</string>
+	<string name="backup_contacts_select_text">请选择将通讯录备份到哪里？</string>
+	<string name="bakcup_prompt_dialog_button_remote">网络</string>
+	<string name="bakcup_prompt_dialog_button_local">本地</string>
+	<string name="backup_error_prompt_text">备份失败!</string>
+	<string name="bakcup_remote_network_unabailable_text">网络不可用,请稍后再试!</string>
+	<string name="backup_login_prompt_text">请输入用户名和密码</string>
+	<string name="backup_login_user_name_text">用户名：</string>
+	<string name="backup_login_password_text">密码：</string>
+	<string name="backup_login_text">登录</string>
+	<string name="backup_register_text">注册帐号</string>
+	<string name="backup_forget_password_test">忘记密码</string>
+	<string name="backup_login_user_name_empty">用户名不可为空!</string>
+	<string name="backup_login_password_empty">密码不可为空!</string>
+	<string name="backup_login_fail_prompt">登录失败,请重试!</string>
+
+	<string name="backup_fail_prompt_text">备份失败, 请重试!</string>
+	<string name="restoring_text">正在恢复...</string>
+	<string name="restore_cancel_text">取消恢复</string>
+	<string name="restore_cancel_prompt_text">恢复操作已取消!</string>
+	<string name="restore_log_cancel_prompt_text">恢复操作已取消!</string>
+	<string name="virus_cloud_scan_prompt_text">允许联网进行云查杀&lt;font
+		color=&quot;#8B8B8B&quot;&gt;&lt;small&gt;(注意:消耗极少的网络流量)&lt;/small&gt;&lt;/font&gt;</string>
+
+	<string name="remote_security">远程防盗</string>
+	<string name="remote_security_open">安卓卫士远程防盗已开启</string>
+	<string name="remote_security_close">安卓卫士远程防盗已关闭</string>
+
+	<string name="security_fuc">防盗功能</string>
+	<string name="remote_data_del">远程数据删除</string>
+	<string name="mobile_data_del">删除丢失手机数据</string>
+	<string name="remote_lock_mobile">更换SIM卡后锁定手机</string>
+	<string name="lock_lost_mobile">锁定丢失手机</string>
+	<string name="remote_gps_mobile">远程定位</string>
+	<string name="get_lost_mobile_gps">获取丢失手机的位置信息</string>
+	<string name="open">开启</string>
+	<string name="close">关闭</string>
+	<string name="update_passwd">修改密码</string>
+	<string name="click_to_update">点击修改</string>
+	<string name="safe_mobile_number">安全手机号码</string>
+	<string name="after_update_sim_to_send_mes">换SIM卡后发送短信内容</string>
+	<string name="after_update_sim_to_lock_mobile_fuc">换卡锁机功能</string>
+	<string name="after_update_sim_to_lock_mobile">换卡后将机器锁定</string>
+
+	<string name="softcenter_recommend_tab_text">推荐</string>
+	<string name="softcenter_category_tab_text">主题</string>
+	<string name="softcenter_search_tab_text">搜索</string>
+
+	<string name="showpasswd">\u0020\u0020\u0020\u0020\u0020\u0020显示密码</string>
+	<string name="input_passwd">请输入密码</string>
+	<string name="input_passwd_again">请再次输入密码</string>
+	<string name="first_open_input_passwd">首次启用远程防盗,请先设置密码</string>
+	<string name="passwd_can_notbe_null">密码不能为空</string>
+	<string name="passwd_length_canot_gt_16">密码不能大于16位</string>
+	<string name="passwd_surepasswd_same">密码和确认密码不一致</string>
+	<string name="input_corect_passwd_please">密码验证失败,请再次输入</string>
+	<string name="input_passwd_goto_kindscret">请输入密码进入远程防盗</string>
+	<string name="you_can_write_70c">您可以输入70个字</string>
+
+	<string name="input_valide_mobile">请输入有效的手机号码</string>
+	<string name="sms_lengh_gt_0">请输入1-70位字符</string>
+	<string name="after_update_sim_to_send_sms_fuc">换卡发短信功能</string>
+	<string name="after_update_sim_to_send_sms">换卡后发送设定内容到安全号码</string>
+
+	<string name="command">指令:</string>
+	<string name="command_del_data">什么是丢失手机当前号码？\n
+		如您的手机被盗并更换SIM卡时，那么更换SIM卡后发送过来的被盗短信的号码为当前号码。
+		如您的手机丢失后，还没有收到被盗短信，有可能还未被更换SIM卡，那么还是您丢失手机时SIM卡的号码，也就是之前您自己的号码为当前号码。\n
+		什么是安全手机号码？\n
+		当您的手机丢失后，必须使用安全手机号码直接编辑短信内容：
+		#ehoo_del#安卓卫士密码
+		发送到
+		丢失手机当前号码
+
+		成功发送后，会删除丢失手机中的数据（通讯录、短信、通话记录），删除成功后您的安全手机号码上将会收到一条成功回执短信。
+
+</string>
+	<string name="lostmobile_cur_num">丢失手机的当前号码</string>
+
+	<string name="command_gps_des">什么是丢失手机当前号码？\n
+		如您的手机被盗并更换SIM卡时，那么更换SIM卡后发送过来的被盗短信的号码为当前号码。
+		如您的手机丢失后，还没有收到被盗短信，有可能还未被更换SIM卡，那么还是您丢失手机时SIM卡的号码，也就是之前您自己的号码为当前号码。\n
+		什么是安全手机号码？\n
+		当您的手机丢失后，必须使用安全手机号码直接编辑短信内容：
+		#ehoo_gps#安卓卫士密码
+		发送到
+		丢失手机当前号码
+
+		成功发送后，会获得丢失手机的gps信息。</string>
+
+	<string name="lostmobile_safe_num">丢失手机的防盗卫士密码</string>
+
+	<string name="comman_del_content">#ehoo_del#远程防盗密码</string>
+	<string name="comman_gps_content">#ehoo_gps#远程防盗密码</string>
+
+	<string name="data_del_suc">数据删除成功</string>
+	<string name="sms_send_suc">短信发送成功</string>
+	<string name="sms_send_fail">短信发送失败</string>
+
+	<string name="gps_cannot_get">无法获取gps信息</string>
+
+	<string name="virus_cloud_scan_tip">...开始云查杀...</string>
+	<string name="backup_login_name_pwd_err">用户名或密码错误!</string>
+	<string name="backup_login_error_pwd">密码长度不能小于6</string>
+	<string name="backup_login_error_uname">用户名长度不能小于3或大于45</string>
+
+	<string name="sms_content">短信内容</string>
+
+	<string name="softcenter_category_1_title">装机必备</string>
+	<string name="softcenter_category_2_title">社区聊天</string>
+	<string name="softcenter_category_3_title">影音播放</string>
+	<string name="softcenter_category_4_title">火爆游戏</string>
+	<string name="softcenter_category_5_title">办公应用</string>
+	<string name="softcenter_category_6_title">新闻资讯</string>
+	<string name="softcenter_category_7_title">网络浏览</string>
+
+	<string name="account_manager">账户管理</string>
+	<string name="about_us">关于信息</string>
+	<string name="forgot_passwd">忘记密码</string>
+	<string name="request_message_now">正在请求数据,请稍候...</string>
+	<string name="login_suc">登录成功</string>
+	<string name="email">邮箱：</string>
+	<string name="register_suc">注册成功</string>
+
+	<string name="email_invalid">请输入正确的邮箱</string>
+	<string name="username_invalid">无效的用户名</string>
+	<string name="password_invalid">无效的密码</string>
+	<string name="username_can_not_less_3">请输入3位以上用户名</string>
+	<string name="username_al_exist">用户名已存在</string>
+	<string name="eamil_al_exist">邮箱已存在</string>
+	<string name="user_not_exist">账号或密码错误</string>
+	<string name="password_notlessthan4">密码的长度不能小于4</string>
+	<string name="title_for_backup_restore">备份恢复</string>
+	<string name="password_has_sendto_your_email">密码已发送到你邮箱,请查收！</string>
+	<string name="use_help">使用帮助</string>
+	<string name="online_update">在线更新</string>
+	<string name="show_upgrade_newest">已是最新版本</string>
+
+	<string name="sure_close_selected">确定关闭选中的进程吗?</string>
+	<string name="sure_close_all">确定关闭所有进程吗?</string>
+
+	<string name="sure_passwd">确认密码：</string>
+	<string name="introduct_des">《安卓卫士》是一款基于android系统的安全防护、 系统优化管理软件 ，产品拥有稳定性高、占用系统资源少、相关数据统计精细准确等特点，包含有：系统病毒云查杀、网络流量实时监控提醒、任务进程管理、软件详细信息说明及卸载、拦截垃圾短信、防止骚扰电话、在线备份联系人及短信、远程防盗设置及远程数据删除、软件的耗电排名及软件网络流量使用情况排名等功能 。 
+	\n安卓卫士一直以用户体验及交互设计为核心，在不断完善功能细节、提高软件稳定性的基础上， 给您带来最实用、最完美的安全防护功能及系统优化管理软件！
+	\n\n注意： 本版不适用于 ophone 、 乐phone 及其它非标准 Android 系统的手机。
+</string>
+
+	<string name="main_fuc_des">主功能介绍 ：</string>
+	<string name="logined_status">已登录</string>
+
+
+	<string name="recover_has_no_app_prompt">没有数据可查看!</string>
+	<string name="releasenote_title">更新内容:</string>
+
+	<string name="help_introduction">简介</string>
+	<string name="cloud_scan_network_unavailable">已进行本地查杀，由于网络不可用，不能进行云查杀或其他!</string>
+	<string name="your_mobile_maybe_lost">手机SIM卡已经被更换，此短信号码为当前对方手机号码。请保存。</string>
+	<string name="forgot_pwd_retrive">找回密码</string>
+	<string name="over_limit">超出(</string>
+
+	<string name="input_name_passwd">第一步：请输入安卓卫士账号和密码</string>
+	<string name="input_safe_mobile_number">第二步：请输入安全手机号码</string>
+	<string name="sure_filldate_message">第三步：确认设置信息</string>
+
+	<string name="setup_login_find_passwd">如忘记密码，请点击</string>
+	<string name="first_step_login_checkout">1 登录认证</string>
+	<string name="second_step_safe_mobile">2 安全号码</string>
+	<string name="three_step_setting_over">3 设置完成</string>
+	<string name="register_account">注册账号</string>
+	<string name="next_step">下一步</string>
+	<string name="update_sim_lock_mobile">\u0020\u0020\u0020\u0020\u0020\u0020换sim卡后,锁定手机</string>
+	<string name="setting_safe_mobile_number">设置安全手机号码。</string>
+	<string name="setting_safe_mobile_number_des">当您的手机被盗并更换SIM卡时，将自动发送通知短信至您的安全手机号码，让您得知对方号码。通过安全号码可以进行远程数据删除、远程定位以及主动联系对方、报警等操作。</string>
+	<string name="update_sim_lock_mobile_no_space">换SIM卡后锁定手机。</string>
+	<string name="update_sim_lock_mobile_des">当您的手机被盗并更换SIM卡时，手机会自动锁定，必须输入正确的安卓卫士密码才能解锁。</string>
+	<string name="sure_enable_remote_security">确认并点击\"完成设置\"后，防盗功能生效！</string>
+	<string name="step_over_update_sim">1、当SIM卡被更换时，将自动发送短信到您的安全手机号码 %1$s，您可以通过短信获知对方手机当前号码，进行远程数据删除，远程定位以及主动联系对方、报警等操作。</string>
+	<string name="step_over_set_lock_mobile">2、当SIM卡被更换时，将自动锁定手机，需要输入安卓卫士密码解锁。请牢记安卓卫士密码，当您自己更换SIM卡后，也需要输入密码解锁。</string>
+	<string name="step_over_noset_lock_mobile">2、您未设置换SIM卡锁定手机功能！那么手机在被更换SIM卡后将不会被锁定。</string>
+	<string name="step_over_promote">3、您可以填写有效的邮箱地址，将上述信息及如何远程数据删除、远程定位的详细教程发送至您的邮箱。（选填）</string>
+	<string name="setting_over">完成设置</string>
+
+	<string name="backup_log_tab">查看日志</string>
+	<string name="backup_cloud_prompt_text">将手机里的联系人、短信、软件列表上传到云服务器</string>
+	<string name="restore_cloud_prompt_text">从云服务器下载联系人、短信恢复到手机</string>
+	<string name="brow_applist_prompt_text">登录云服务器查看已备份的软件列表</string>
+	<string name="local_contacts_text">本地联系人 : </string>
+	<string name="remote_contacts_text">网络联系人 : </string>
+	<string name="backup_not_login_text">未登录</string>
+	<string name="clean_backlog_text">清空日志</string>
+	<string name="back_log_sum_text">共有 %1$d 条日志</string>
+	<string name="backup_action_text">开始备份</string>
+	<string name="backuping_text">正在备份</string>
+	<string name="privacy_action_text"><u>隐私保护声明</u></string>
+	<string name="restoring_text_new">正在恢复</string>
+	<string name="privacy_content_text">上海百应信息科技有限公司（后简称百应公司）作为专业的移动互联网安全服务厂商，需要在您提供一些个人信息的基础上，为您提供服务。这些信息主要包括手机号码、IMEI、通讯录等。为了有效保障您对个人信息享有的合法权利，百应公司就信息收集与使用情况进行如下说明：\n
+		1、提供的个人信息和内容\n
+		当您使用数据备份产品注册账户的时候，需要您提供手机号码或IMEI，但是我们不会把您的手机号码或IMEI与您的其他任何人信息进行匹配存储。当您选择备份这些数据时，需要将个人手机中的数据上传至百应公司的服务器进行存储备份，以保证在日后有需要时取回或者恢复数据。\n
+		2、数据备份和恢复\n
+		备份和恢复“联系人”、“手机短信息”、“本地软件列表”是选择性功能，只有在您选择使用该项服务后，百应公司才会为您提供这项服务，为保证数据安全，百应公司会对服务器采取严密的安全保护措施，百应公司会严格保护这些信息的安全，包括使用各种安全技术手段来保护这些信息不被未经授权的访问、使用或泄漏。功能使用过程中产生的流量费用由运营商收取。\n
+		3、免责声明\n
+		百应公司不会在未经您合法授权时，公开、编辑或透露在数据备份过程中所获取的上述您的有关个人信息，除非有下列情况需要：\n
+		（1）依照国家有关法律、法规规定；\n
+		（2）在紧急情况下，为维护您及公众的权益；\n
+		（3）为维护百应公司的商标权、专利权及其他任何合法权益。\n
+		（4）其他依法需要公开、编辑或透露上述信息的合法情况。\n
+		发生以下不可抗力情形，百应公司不承担任何责任，但百应公司将尽最大努力维护您的权益，并将及时通知到您：\n
+		（1）黑客攻击；\n
+		（2）电信运营商导致之重大影响；\n
+		（3）因政府管制而造成网络、网站关闭；\n
+		（4）病毒侵袭；\n
+		（5）自然灾害、战争等其他不能合理控制、不可预见或即使预见亦无法避免的事件。\n
+		如果您使用了上述百应公司提供的数据备份等服务，则表明您理解并同意上述声明，并授权百应公司接收您提供的有关个人信息，及授权百应公司存储备份您提供的有关个人信息。\n
+		根据产品的发展，百应公司可能会对该声明进行调整和修改，如果在个人信息政策方面有修改时，我们会在产品和网页中发布相关信息以便及时通知到用户。如果您选择继续使用我们的服务，即表示您同意接受这些修改。\n
+		上海百应信息科技有限公司\n
+		2011年8月
+	</string>
+	<string name="restore_action_text">开始恢复</string>
+	<string name="backup_contacts_exist_prompt_text">本地通讯录中全部联系人( %1$d)</string>
+	<string name="backup_sms_exist_prompt_text">本地所有的短信息( %1$d)</string>
+	<string name="backup_applist_exist_prompt_text">本地所有已安装软件( %1$d)</string>
+	<string name="backup_applist_download_error_text">获取网络备份数据出错, 请稍后再试.</string>
+	<string name="restore_error_prompt_text">恢复失败!</string>
+	<string name="backup_cancel_prompt_text">备份操作已取消!</string>
+	<string name="restore_prompt_text">"恢复"是将网络上云服务器内容全部恢复到本地，恢复后本地的内容将会和云服务器内容完全一致。</string>
+	<string name="backup_log_back_succ_text">成功备份：</string>
+	<string name="backup_log_contacts_text">联系人</string>
+	<string name="backup_log_ntraf_text">消耗流量：</string>
+	<string name="backup_log_back_fail_text">备份失败：</string>
+	<string name="backup_log_restore_fail_text">恢复失败：</string>
+	<string name="backup_log_restore_succ_text">成功恢复：</string>
+	<string name="backup_log_sms_text">短消息</string>
+	<string name="backup_log_fail_text">无任何数据变化</string>
+	<string name="firewall_oper_prompt_text">(选中即允许)</string>
+	<string name="backup_log_empty_text">无日志信息!</string>
+	<string name="restore_complete_prompt_text">恢复操作已完成!</string>
+
+
+
+	<string name="safe_mobile_has_set">安全手机号码已设置</string>
+	<string name="safe_mobile_has_noset">安全手机号码未设置</string>
+	<string name="mobile_setup_helpyou">手机远程防盗设置向导将帮助您设置安卓卫士远程防盗功能：</string>
+	<string name="exit_setup">退出设置</string>
+	<string name="begin_setup">开始设置</string>
+	<string name="close_security_and_clear_safemobile">关闭防盗功能并清除安全手机号码?\n(需进行身份验证)</string>
+
+
+
+
+
+	<string name="backup_complete_prompt_text">备份操作已完成!</string>
+	<string name="backup_delete_log_prompt_text">是否清空所有的备份恢复记录?</string>
+	<string name="account_man_login_prompt_text">登录安卓卫士</string>
+	<string name="account_man_login_exp_text">登录后可以使用以下功能和服务</string>
+	<string name="account_man_backup_prompt_text">在线备份恢复</string>
+	<string name="account_man_backup_exp_text">云服务器备份通讯录、短信、软件列表</string>
+	<string name="account_man_anti_theft_prompt_text">远程防盗</string>
+	<string name="account_man_anti_theft_exp_text">被盗后短信通知、远程删除资料、定位等</string>
+	<string name="account_man_logined_prompt_text">已登录，点击注销</string>
+	<string name="account_man_email_text">邮箱：</string>
+	<string name="account_man_email_edit_text">点击编辑邮箱地址</string>
+	<string name="backup_restore_norecord_prompt_text">最近无联系人备份记录</string>
+	<string name="backup_start_prompt_text">执行备份操作会覆盖云服务器上已有的备份内容,确定备份?</string>
+	<string name="account_log_off_prompt_text">确定注销本次登录吗?</string>
+
+	
+	<string name="remote_security_pop">【安卓卫士防盗提醒】</string>
+	<string name="unlock_mobile">解锁</string>
+	<string name="please_input_correct_remote_security_passwd">防盗密码错误，请重新输入</string>
+	
+	
+	
+
+	<string name="account_man_change_pass_prompt_text">更改密码</string>
+	<string name="account_man_change_pass_dialog_prompt_text">确定要更改密码吗?</string>
+	<string name="account_man_change_pass_hint_text">请输入新密码</string>
+	<string name="account_man_change_pass_hint2_text">请再次输入新密码</string>
+	<string name="account_man_change_email_hint_text">请输入新邮箱</string>
+	<string name="account_man_change_email_prompt_text">确定要更改邮箱吗?</string>
+	<string name="account_man_change_email_input_error_text">邮箱格式错误,请重新输入!</string>
+	<string name="account_man_change_email_fail_text">更改邮箱失败,请重试!</string>
+	<string name="account_man_change_email_succ_text">更改邮箱成功!</string>
+	<string name="account_man_change_pwd_succ_text">更改密码成功!</string>
+	<string name="account_man_change_pwd_fail_text">更改密码失败,请重试!</string>
+	<string name="account_man_change_pwd_input_error_text">两次输入不一致，请重新输入!</string>
+
+	<string name="send_email_suc">成功发送邮件</string>
+
+	<string name="menu_feeback">建议反馈</string>
+	<string name="feedback_type">反馈类型</string>
+	<string name="feedback_select_prompt_text">请选择</string>
+	<string name="feedback_email">请输入您的邮箱，以便与您联系（选填）</string>
+	<string name="feedback_desp">描述</string>
+	<string name="feedback_submit">提交</string>
+	<string name="feedback_type_input_prompt">请选择反馈类型</string>
+	<string name="feedback_desp_input_prompt">请输入描述信息</string>
+	<string name="feedback_succ_text">反馈成功</string>
+	<string name="feedback_fail_text">网络不可用，请检查</string>
+	
+	<string name="soft_version">软件版本 : %1$s</string>
+	
+	<string name="just_register">注册</string>
+	
+	<string name="version_allow">此版本适用于安卓平台2.0及以上版本。本软件下载、安装完全免费，使用过程中产生的数据流量费用，由运营商收取。</string>
+
+	
+	<string name="enable_sim_card">开启更换SIM卡后锁定手机功能?\n(需进行身份验证)</string>
+	<string name="unable_sim_card">关闭更换SIM卡后锁定手机功能?\n(需进行身份验证)</string>
+
+
+	<string name="account_man_obtain_email">正在获取邮箱...</string>
+	<string name="account_man_obtain_email_error">无</string>
+	<string name="send_faile">发送失败</string>
+	<string name="data_del_faile">数据删除失败</string>
+	<string name="softcenter_search_get_hotkey_text">正在获取搜索热词，请稍候...</string>
+	<string name="softcenter_search_my_installed">已安装</string>
+    <string name="softcenter_search_my_upgrade">更新</string>
+    <string name="softcenter_search_my_free">免费</string>
+    <string name="softcenter_search_my_pay">收费</string>
+	<string name="search_no_found">真抱歉，没有找到您想要的</string>
+	<string name="proc_manage_service_text">系统服务</string>
+	<string name="proc_manage_proc_text">用户进程</string>
+
+	<string name="traffic_app_monitoring">流量排名</string>
+	<string name="chiness_dun">、</string>
+	
+	
+
+	<string name="service_run_in">所属应用：</string>
+	<string name="stop_selected_services">确定关闭选中的服务吗?</string>
+	<string name="stop_all_services">确定关闭所有服务吗?</string>
+	<string name="stop_selected_services_tab">结束所选服务</string>
+	<string name="stop_all_services_tab">结束全部服务</string>
+	<string name="security_audit_privacy">隐私</string>
+	<string name="security_audit_cost">费用</string>
+	<string name="security_audit_gps">GPS</string>
+	<string name="security_audit_network">网络</string>
+	<string name="search_keyword_error">关键字无效,请重新输入!</string>
+	<string name="search_result_layout_title">搜索结果</string>
+	<string name="searching_prompt_text">正在搜索, 请稍候...</string>
+	<string name="softcenter_get_topics_prompt">正在获取主题信息, 请稍候...</string>
+
+	<string name="day_traffic">日流量</string>
+	<string name="month_traffic">月流量</string>
+	<string name="popview_show">桌面流量悬浮框显示</string>
+	<string name="search_empty_prompt_text">搜索结果为空, 请修改关键字重新搜索!</string>
+	<string name="account_manage_input_old_pass">请输入旧密码</string>
+	<string name="account_manage_input_old_pass_confirm">旧密码不能为空,请重新输入!</string>
+	<string name="account_manage_old_pass_err">旧密码错误, 修改密码失败!</string>
+	<string name="account_manage_old_pass_invalid">旧密码无效, 修改密码失败!</string>
+	<string name="account_manage_new_pass_invalid">新密码无效, 修改失败!</string>
+	<string name="account_not_exist">请输入正确的用户名和邮箱</string>
+	
+	<string name="corect_format_num">请输入正确格式的数字</string>
+	<string name="press_here_back_pwd">找回密码</string>
+	<string name="softcenter_install_cancel_text">取消下载</string>
+	<string name="upgrade_prompt_dialog_title">发现新版本</string>
+	<string name="upgrade_prompt_repeat_confirm">有新版本时提示</string>
+	<string name="installed_icon_desp_menu">图标说明</string>
+	<string name="installed_icon_desp_privacy">表示该程序可能涉及读取您的个人信息。如读取联系人数据、可能会更改手机SD卡中的内容等。</string>
+	<string name="installed_icon_desp_charge">表示该程序可能涉及要求发送短信、直接拨打电话号码</string>
+	<string name="installed_icon_desp_gps">表示该程序可能涉及取得您的位置信息。如取得（基于网络的）粗略位置，精确的（GPS）位置。</string>
+	<string name="installed_icon_desp_network">表示该程序可能涉及需要网络支持或完全的互联网访问权限。</string>
+	
+	
+	<string name="intercept_history">拦截记录</string>
+	<string name="sms_intercept">短信拦截</string>
+	<string name="phone_intercept">来电拦截</string>
+	
+	
+	<string name="black_whitelist">黑白名单</string>
+	<string name="intercept_setting">拦截设置</string>
+	<string name="black_list">黑名单</string>
+	<string name="white_list">白名单</string>
+
+	<string name="account_register_phone_number">手机号:</string>
+	<string name="account_register_hint_text">必填</string>
+	<string name="account_register_hint_optional_text">选填</string>
+	<string name="account_register_phone_error">请输入正确的手机号!</string>
+	<string name="account_change_phone">更改手机号</string>
+	<string name="account_edit_phone">请输入新手机号</string>
+	<string name="account_change_phone_succ">修改手机号成功!</string>
+	<string name="account_change_phone_error">手机号无效，修改失败!</string>
+	<string name="account_register_error_no103">用户名或密码错误，注册失败!</string>
+	<string name="account_register_error_no113">请求类型无效，注册失败!</string>
+	<string name="account_register_error_no114">手机号无效，注册失败!</string>
+	<string name="account_register_error_no121">邮箱地址无效，注册失败!</string>
+	<string name="account_register_error_no112">注册失败!</string>
+
+	<string name="black_list_num">黑名单号码数量:</string>
+	<string name="white_list_num">白名单号码数量:</string>
+	<string name="black_list_explain">以下红色表示已开启拦截，灰色表示未开启。</string>
+	<string name="add_black_list">添加黑名单</string>
+	<string name="add_white_list">添加白名单</string>
+	<string name="edit">编辑</string>
+	<string name="more">更多</string>
+	<string name="manually_add">手动添加</string>
+	<string name="add_from_mobile_contact">从手机联系人添加</string>
+	<string name="add_from_sim">从SIM卡联系人添加</string>
+	<string name="add_from_log">从通话记录添加</string>
+	<string name="add_from_sms">从短信列表添加</string>
+	<string name="add_black_area">添加黑名单地区</string>
+	<string name="add_white_area">添加白名单地区</string>
+	
+	<string name="intercept_phone">\u0020\u0020\u0020\u0020\u0020\u0020拦截电话</string>
+	<string name="intercept_sms">\u0020\u0020\u0020\u0020\u0020\u0020拦截短信</string>
+	
+	<string name="input_mobile_as_rule">请输入11位的手机号或以区号为开头的固话号码</string>
+	<string name="number">号码 :</string>
+	<string name="remark">备注 :</string>
+
+	<string name="select_intercept_model">选择拦截模式</string>
+	<string name="default_model">当前模式：</string>
+	<string name="phone_intercept_treat">选择来电拦截处理方式</string>
+	<string name="intercept_keywords">自定义拦截关键字</string>
+	<string name="intercept_keywords_prompt">仅限于短信关键字拦截</string>
+	<string name="notify_intercept">通知拦截信息</string>
+	<string name="notify_intercept_text">拦截发生时在系统任务栏提示</string>
+	<string name="nodisturb_at_night">夜间免打扰模式</string>
+	<string name="current_status">当前状态:</string>
+	<string name="defaults">默认</string>
+	<string name="return_busy_sound">返回忙音</string>
+	<string name="contacts_exist">共 %1$d 个手机联系人</string>
+	<string name="load_from_sim_error">SIM卡不可用!</string>
+	<string name="sms_contacts_exist">共 %1$d 个短信联系人</string>
+	<string name="sim_contacts_exist">共 %1$d 个SIM卡联系人</string>
+	<string name="call_log_contacts_exist">共 %1$d 个通话记录联系人</string>
+	<string name="edit_black_list">编辑黑名单</string>
+
+	<string name="add_list_no_select">请选择需要加入的联系人</string>
+	<string name="add_blacklist_from_region_prompt">编辑黑名单地区</string>
+	<string name="add_blacklist_from_region_desp">请输入地区中文名称或区号如[上海市]或[021]</string>
+	<string name="add_whitelist_from_region_prompt">编辑白名单地区</string>
+	<string name="add_list_from_region_code_error">请输入有效的区号!</string>
+	<string name="add_list_from_region_code_unexist">该城市没有相应的区号，请重新输入!</string>
+	<string name="add_list_complete">添加完成!</string>
+
+	<string name="area_text">地区 ： %1$s</string>
+    <string name="code_text">区号 ： %1$s</string>
+    <string name="sure_del_the_list">确定删除该名单吗？</string>
+    <string name="add_list_from_region_empty_prompt">输入不能为空!</string>
+    <string name="dial_phone_num">呼叫号码%1$s</string>
+
+    <string name="edit_white_list">编辑白名单</string>
+
+    <string name="intercept_treat_select1">返回忙音</string>
+    <string name="intercept_treat_select2">关闭铃声、关闭震动</string>
+    <string name="intercept_treat_select3">返回已关机</string>
+    <string name="intercept_treat_select4">返回已停机</string>
+    <string name="intercept_treat_select5">返回空号</string>
+	<string name="intercept_treat_dialog_title">拦截处理方式设置</string>
+	<string name="intercept_mode_setting_title">拦截模式设置</string>
+	<string name="intercept_time_setting_title">拦截时间设置</string>
+	<string name="intercept_time_setting_time">拦截时间</string>
+	<string name="intercept_time_setting_day">星期设定</string>
+	<string name="intercept_time_setting_start_time">从&lt;font color=&quot;#64BD45&quot;&gt;%1$s&lt;/font&gt;</string>
+	<string name="intercept_time_setting_end_time">到&lt;font color=&quot;#64BD45&quot;&gt;%1$s&lt;/font&gt;</string>
+	<string name="intercept_time_setting_day_start">周</string>
+	<string name="intercept_time_setting_work_day">工作日</string>
+	<string name="intercept_time_setting_rest_day">休息日</string>
+	<string name="intercept_time_setting_day_separator">、</string>
+	<string name="intercept_time_setting_dialog_title">拦截时间设置</string>
+	<string name="intercept_time_setting_from">从</string>
+	<string name="intercept_time_setting_to">到</string>
+	<string name="intercept_time_setting_start_time_error">请输入有效的开始时间!</string>
+	<string name="intercept_time_setting_end_time_error">请输入有效的截止时间!</string>
+	<string name="intercept_time_setting_end_equals_start">开始时间和截止时间不能相同,请重设!</string>
+	<string name="intercept_day_setting_dialog_title">星期设置</string>
+	<string name="intercept_history_menu_delete_text">批量删除</string>
+	<string name="intercept_history_menu_add_text">批量加入黑名单</string>
+	<string name="intercept_history_menu_recover_sms_text">批量恢复</string>
+	<string name="intercept_black_white_list_menu_text">全部删除</string>
+
+	<string name="insert_sim_to_update_status">插入sim卡方可更改状态</string>
+
+
+	<string name="input_valid_number">请输入有效的号码!</string>
+	<string name="enable_nodisturb_mode">免打扰模式</string>
+	<string name="disable_nodisturb_mode">免打扰模式</string>
+	<string name="all_weekly_day">全部</string>
+	<string name="nodisturb_start_time">设定开始时间</string>
+	<string name="nodisturb_end_time">设定结束时间</string>
+	<string name="select_sms_to_recover">请选择需要恢复的内容!</string>
+	<string name="select_content_to_delete">请选择需要删除的内容!</string>
+	<string name="select_phones_to_addlist">请选择需要添加的号码!</string>
+	<string name="confirm_to_clear_list">确定要全部删除吗?</string>
+	<string name="add_region_code_unexist">该区号不存在!</string>
+	<string name="sms_block_num">短信拦截数量：</string>
+	<string name="phone_block_num">来电拦截数量：</string>
+	<string name="number_already_exist">该号码已存在</string>
+	<string name="anti_spam_title">骚扰拦截</string>
+	<string name="back_to_inbox">恢复到短信收件箱</string>
+	<string name="add_phonenum_to_blacklist">添加  %1$s 到黑名单</string>
+	<string name="add_phonenum_to_whitelist">添加  %1$s 到白名单</string>
+	<string name="save_phonenum_as_contact">保存 %1$s 为联系人</string>
+	<string name="call_phonenum">呼叫 %1$s</string>
+	<string name="back_sms_to_phone">给 %1$s 发短信</string>
+	<string name="confirm_to_restore_sms">确定恢复选中的短信吗?</string>
+	<string name="confirm_to_delete_history">确定删除选中的记录吗?</string>
+	<string name="confirm_add_selected_to_blacklist">确定将选中的号码添加到黑名单吗?</string>
+	<string name="phone_number_not_empty">号码不能为空!</string>
+	<string name="area_code_format">格式:XX省XX市</string>
+
+	<string name="all_exist_when_addlist">添加的号码已存在!</string>
+	<string name="add_as_blacklist">加入黑名单</string>
+	<string name="sure_del_log">确定删除该记录吗?</string>
+	<string name="sure_back_this_sms">确定恢复该短信吗?</string>
+	<string name="area_existed">该地区已存在!</string>
+	<string name="area_code_existed">该区号已存在!</string>
+	<string name="send_sms_phone_num">发短信到 %1$s</string>
+	<string name="install_scanning">正在扫描新安装的应用...</string>
+	<string name="install_scan_soft">新安装应用: %s</string>
+	<string name="install_scan_trojan">“%s”是木马软件,建议立即删除</string>
+	<string name="install_scan_warn">“%s”存在风险,建议查看处理</string>
+    <string name="install_scan_clean">“%s”未发现安全风险</string>
+    <string name="uninstall_btn">卸载</string>
+    <string name="uninstall_cancel">取消</string>
+	<string name="virus_desp_title">病毒描述</string>
+	<string name="send_pwd_to_safe_phone">忘记密码</string>
+	<string name="safe_mobile_number_unexist">安全手机号码未设置或已被清除</string>
+	<string name="sms_send_pwd_to_safe_number">已将新密码发到您设置的安全手机号码，请查收！此密码将作为当前远程防盗密码，如需修改，请重新开启远程防盗功能来设置。</string>
+	<string name="cancel_installed_scan_clean">确定不清除已发现的病毒？</string>
+	<string name="sim_card_abssent">SIM卡不存在,无法将新密码发送到安全手机号码!</string>
+	<string name="intercept_key_word_text">拦截关键字设置</string>
+	<string name="intercept_key_word_desp">设置您所需拦截短信的关键字</string>
+	<string name="intercept_activity_title">关键字设置</string>
+	<string name="intercept_add_text">添加</string>
+	<string name="intercept_keyword_exist">关键字已存在，请重新输入!</string>
+	<string name="intercept_keyword_hint">请输入您要拦截的关键字</string>
+	<string name="allow_autostart_sum">已允许 &lt;font color=&quot;#64BD45&quot;&gt;&lt;big&gt;%d&lt;/big&gt;&lt;/font&gt; 个开机自启动软件</string>
+	<string name="auto_start_manage_action">一键加速</string>
+	<string name="auto_start_disable">禁止</string>
+	<string name="auto_start_enable">允许</string>
+	<string name="start_time_text">开机用时   &lt;font color=&quot;#64BD45&quot;&gt;&lt;big&gt;%s&lt;/big&gt;&lt;/font&gt; 秒</string>
+	<string name="start_manage_title">开机加速</string>
+	<string name="start_manage_loading_text">正在扫描启动项，请稍候...</string>
+	<string name="start_manage_enable_tab">已允许</string>
+	<string name="start_manage_disable_tab">已禁止</string>
+	<string name="start_manage_disable_auto_start_sum">已禁止 &lt;font color=&quot;#64BD45&quot;&gt;&lt;big&gt;%d&lt;/big&gt;&lt;/font&gt; 个开机自启动软件</string>
+	<string name="start_manage_prompt_text">优化开机启动可能导致您所选择的软件无法正常运行.如果您在优化后碰到问题,恢复这些软件的开机自启动功能即可。</string>
+	<string name="start_manage_prompt_cb_text">不再提醒</string>
+	<string name="start_manage_norooted_prompt">没有root权限，无法完成该操作!</string>
+	<string name="start_manage_enable_prompt">开启该程序的开机启动会影响您的开机速度, 建议不要开启。</string>
+	<string name="start_manage_enable_prompt_button_ok">开启</string>
+	<string name="start_manage_no_start_time">无开机时间记录!</string>
+	<string name="start_manage_no_enabled">无需要优化的开机启动程序!</string>
+	<string name="start_manage_enabling_text">正在开启，请稍候...</string>
+	<string name="start_manage_disabling_text">正在优化，请稍候...</string>
+	<string name="start_manage_fail_prompt">操作失败,请检查是否具有root权限!</string>
+	<string name="list_has_more">更多</string>
+	<string name="confirm_delete_keyword">确定要删除该关键字吗?</string>
+	<string name="softcenter_get_category_prompt">正在获取分类信息, 请稍候...</string>
+	<string name="loading_text">更多</string>
+	<string name="mobile_examine">手机体检</string>
+	<string name="mobile_examine_fuc_title">性能检测报告</string>
+	<string name="current_perm_fenshu">当前性能分数：</string>
+	<string name="scan_title_text">正在扫描：</string>
+	<string name="mobile_exam_optimize_text">一键优化</string>
+	<string name="danger_item_text">危险项(%d)</string>
+	<string name="unoptimized_item_text">待优化项(%d)</string>
+	<string name="optimized_item_text">已优化项(%d)</string>
+	<string name="safe_item_text">安全项(%d)</string>
+	<string name="mobile_exam_result_danger_prompt">发现%d个安全隐患，请及时处理</string>
+	<string name="mobile_exam_result_safe_prompt">您的手机安全状况良好，请保持</string>
+	<string name="safe_desp_for_nettraffic_monitor">检查是否开启流量监控</string>
+	<string name="danger_desp_for_nettraffic_monitor">未开启流量监控</string>
+	<string name="mobile_exam_action_enabled">已开启</string>
+	<string name="mobile_exam_action_enable">开启</string>
+	<string name="safe_desp_for_autostart_onboot">检查开机自启动项</string>
+	<string name="danger_desp_for_autostart_onboot">有%d个开机自启动项待优化</string>
+	<string name="mobile_exam_action_complete">完成</string>
+	<string name="mobile_exam_action_exam">检查</string>
+	<string name="mobile_exam_action_optimize">优化</string>
+	<string name="safe_desp_for_enable_security_service">检查是否开启安全服务</string>
+	<string name="danger_desp_for_enable_security_service">未开启安全服务</string>
+	<string name="safe_desp_for_cache_clear">清理缓存垃圾文件</string>
+	<string name="danger_desp_for_cache_clear">有待清理的缓存垃圾文件</string>
+	<string name="mobile_exam_action_clear">清理</string>
+	<string name="safe_desp_for_running_task">已停止任务%1$d个，释放%2$s内存</string>
+	<string name="danger_desp_for_running_task">运行任务%1$d个，占内存%2$s</string>
+	<string name="safe_desp_for_remote_security">检查是否开启手机防盗</string>
+	<string name="danger_desp_for_remote_security">未开启手机防盗</string>
+	<string name="danger_desp_for_virus_scan">已30天未进行云查杀</string>
+	<string name="mobile_exam_action_nofound">无发现</string>
+	<string name="mobile_exam_action_clean">查杀</string>
+	<string name="mobile_exam_start">开始扫描</string>
+	<string name="mobile_exam_scan_traffic_monitor">扫描流量监控...</string>
+	<string name="mobile_exam_scan_remote_security">扫描手机防盗...</string>
+	<string name="mobile_exam_scan_security_sevice">扫描安全服务...</string>
+	<string name="mobile_exam_scan_virus_scan">扫描云查杀...</string>
+	<string name="mobile_exam_scan_running_task">扫描运行的任务:</string>
+	<string name="mobile_exam_scan_cache">扫描缓存:</string>
+	<string name="mobile_exam_scan_autostart_onboot">扫描开机启动项:</string>
+	<string name="mobile_exam_result_unoptimized_prompt">发现%d个待优化项，请及时优化</string>
+	<string name="mobile_exam_optimize_uncomplete_prompt">某些待优化项需进行手工优化!</string>
+	<string name="danger_desp_for_virus_update">已30天未升级病毒库</string>
+	<string name="mobile_exam_scan_virus_update">扫描病毒库升级...</string>
+	<string name="clean_summary_text">剩余内存:%d</string>
+	<string name="mobile_exp_today_exam_result">今天体检分数:</string>
+	<string name="mobile_exp_last_exam_result">%1$d天前体检分数:</string>
+	<string name="mobile_exp_unoptimized_prompt_text">手机有待优化项，请及时处理</string>
+	<string name="mobile_exp_exam_prompt_text">建议立即体检</string>
+	<string name="mobile_exp_last_exam_prompt">手机体检报告</string>
+	<string name="mobile_exp_exam_action_prompt">全面体检</string>
+	<string name="exam_first_prompt">全面体检可以分析并优化手机当前状态</string>
+	<string name="feedback_fail_prompt">反馈失败，请稍后再试!</string>
+	<string name="exam_again_prompt">重新体检</string>
+	<string name="intercept_nodisturb_setting_title">免打扰模式设置</string>
+</resources>

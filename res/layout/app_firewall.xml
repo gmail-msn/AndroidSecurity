@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="#EEEEEE">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		
+		
+			<RelativeLayout android:layout_height="match_parent"
+				android:layout_width="wrap_content">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/home_page"
+					android:layout_marginLeft="10dp" android:gravity="center"
+					android:layout_centerVertical="true">
+
+					<TextView android:id="@+id/textView1"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:textSize="12sp"></TextView>
+					<ImageView android:src="@drawable/home_icon"
+						android:layout_height="wrap_content" android:id="@+id/home_icon"
+						android:layout_width="wrap_content"></ImageView>
+
+				</LinearLayout>
+				<TextView android:id="@+id/function_title_tv"
+					android:gravity="center" android:textColor="@color/white"
+					android:textSize="18dip" android:text="@string/firewall"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_centerInParent="true" />
+			</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/firewall_prompt_content"
+		android:layout_width="fill_parent" android:paddingLeft="5dip"
+		android:paddingRight="5dip" android:layout_height="0dip"
+		android:layout_weight="1" android:visibility="gone">
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="vertical" android:gravity="center"
+			android:layout_height="240dip" android:background="@color/white">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/firewall_not_canuse" />
+			<TextView  android:textColor="@color/light_black"
+				android:layout_marginTop="30dip" android:paddingLeft="8dip" android:lineSpacingExtra="5dip"
+				android:paddingRight="8dip" android:textSize="16dip" 
+				android:gravity="left"
+				android:text="@string/firewall_not_support" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/prompt_text"/>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/back_to_main_linear" android:visibility="gone"
+		android:background="@layout/linear_bg_selector" android:gravity="center"
+		 android:layout_width="fill_parent"
+		android:paddingTop="3dip" android:paddingBottom="3dip"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<TextView android:background="@drawable/defin_tab_icon2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:text="@string/fuc_list" android:textColor="@color/light_green"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+
+	<LinearLayout android:id="@+id/firewall_main_content"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="45dp"
+			android:orientation="horizontal">
+			<ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/icon_yunxu"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:text="@string/firewall_allow_network_desc"
+				android:textColor="@color/black"
+				android:gravity="center_vertical"
+				android:paddingLeft="6dp"
+				android:textSize="13dp"/>
+			<ImageView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/icon_yunxu01"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:textColor="@color/black"
+				android:textSize="13dp"
+				android:text="@string/firewall_forbid_network_desc"
+				android:gravity="center_vertical"
+				android:padding="5dp"/>
+		</LinearLayout>
+		<ImageView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/virus_scan_line01"/>
+			
+		<RelativeLayout android:id="@+id/firewall_layout_head" 
+			android:layout_width="fill_parent"
+			android:gravity="center_vertical"
+			android:layout_height="45dip" android:paddingLeft="6dip">
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:orientation="horizontal">
+				
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:text="@string/firewall_apps_num_desc"
+					android:textColor="@color/black"
+					android:gravity="center_vertical"
+					android:paddingLeft="6dp"
+					android:textSize="13dp"/>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:id="@+id/appNumTextView"
+					android:textColor="@color/green"
+					android:textSize="13dp"
+					android:textStyle="bold"
+					android:text="0"
+					android:gravity="center_vertical"
+					android:padding="5dp"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center_horizontal" android:layout_height="fill_parent"
+				android:orientation="vertical" android:layout_marginRight="20dip"
+				android:layout_toLeftOf="@+id/wifiHead">
+				<TextView android:layout_width="wrap_content"
+					android:textColor="@color/light_black" 
+					android:layout_height="fill_parent"
+					android:id="@+id/img_spacer" 
+					android:textSize="13dip" 
+					android:gravity="center_vertical"
+					android:text="@string/g3or2g"
+					android:clickable="false"></TextView>
+				<!-- <ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/img_3g"
+					android:src="@drawable/eth_3g" android:clickable="false"></ImageView> -->
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:gravity="center_horizontal" android:layout_height="fill_parent"
+				android:layout_alignParentRight="true"
+				android:id="@+id/wifiHead"
+				android:orientation="vertical" android:layout_marginRight="18dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="fill_parent" 
+					android:textSize="13dip"
+					android:text="@string/wifi" 
+					android:textColor="@color/light_black"
+					android:gravity="center_vertical"
+					android:clickable="false"></TextView>
+				<!-- <ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/img_wifi"
+					android:src="@drawable/eth_wifi" android:clickable="false"></ImageView> -->
+			</LinearLayout>
+
+
+			<!-- <LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/firewall_status_layout" android:gravity="right|center_vertical">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/img_wifi"
+					android:src="@drawable/firewall_icon" android:clickable="false"></ImageView>
+				<LinearLayout android:layout_width="wrap_content" android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:gravity="center_horizontal" android:layout_marginLeft="5dp">
+					<TextView android:id="@+id/label_mode" android:text="TextView" android:layout_width="wrap_content" android:textColor="#000000" android:layout_height="wrap_content" android:clickable="true"></TextView>
+					<TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:textColor="@color/black" android:layout_height="wrap_content" android:text="@string/firewall_oper_prompt_text" android:gravity="center"></TextView>
+				</LinearLayout>
+			</LinearLayout> -->
+		</RelativeLayout>
+		<LinearLayout android:layout_width="fill_parent"
+				android:gravity="center_horizontal" android:layout_height="wrap_content">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_marginTop="30dip"
+				android:layout_marginBottom="30dip"
+				android:gravity="center_horizontal" 
+				android:layout_centerHorizontal="true"
+				android:layout_height="wrap_content" android:id="@+id/img_nosupport"
+				android:src="@drawable/not_support" android:clickable="false"></ImageView>
+		</LinearLayout>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/text_no_root"
+			android:layout_marginLeft="8dp" android:textColor="#000000"
+			android:text="@string/firewall_noroot" android:visibility="gone"></TextView>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight="1"
+			android:paddingTop="6dip" android:isScrollContainer="true" android:paddingLeft="5dip" android:paddingRight="5dip">
+			<ListView android:layout_width="fill_parent"
+				android:divider="@null" android:scrollbars="none"
+				android:layout_height="fill_parent" android:cacheColorHint="#00000000"
+				android:id="@+id/listview" />
+		</LinearLayout>
+
+		<LinearLayout  android:id="@+id/bottom" android:background="@color/black"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal"></LinearLayout>
+		<!-- <LinearLayout android:id="@+id/firewall_layout3"
+			android:background="#101010" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<LinearLayout android:id="@+id/save_rule_linear"
+				android:layout_weight="1" android:background="@layout/linear_bg_selector"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingTop="3dip" android:paddingBottom="3dip"
+				android:orientation="vertical" android:gravity="center">
+				<TextView android:id="@+id/mobile_exp_icon_tv"
+					android:background="@drawable/firewall_save_rule"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/saveRuleTextView" android:text="@string/app_firewall_save_rule"
+					android:textColor="@color/light_green" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/switchText_linear"
+				android:background="@layout/linear_bg_selector" android:gravity="center"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:paddingTop="3dip" android:paddingBottom="3dip"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<TextView android:background="@drawable/close_proess_bg"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/switchTextView"
+					android:textColor="@color/light_green" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout> -->
+	</LinearLayout>
+</LinearLayout>

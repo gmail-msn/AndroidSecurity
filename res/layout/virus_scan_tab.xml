@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#EEEEEE">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent"
+			android:background="#6CBD45" android:layout_height="40dip"
+			android:gravity="center_horizontal">
+			<RelativeLayout android:layout_height="match_parent"
+				android:layout_width="wrap_content">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/home_page"
+					android:layout_marginLeft="10dp" android:gravity="center"
+					android:layout_centerVertical="true">
+
+					<ImageView android:src="@drawable/home_icon"
+						android:layout_height="wrap_content" android:id="@+id/home_icon"
+						android:layout_width="wrap_content"></ImageView>
+
+				</LinearLayout>
+				<TextView android:id="@+id/function_title_tv"
+					android:gravity="center" android:textColor="@color/white"
+					android:textSize="18dip" android:text="@string/virus_scan_title"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_centerInParent="true" />
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight="1">
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="5dip" android:background="#eeeeee" />
+		</LinearLayout>
+		<TabWidget android:id="@android:id/tabs" android:visibility="gone"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:background="@color/black" android:layout_width="match_parent"
+			android:layout_gravity="bottom">
+			<LinearLayout android:id="@+id/virus_scan_linear"
+				android:background="@drawable/linear_focuse" android:gravity="center"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_height="50dip" android:orientation="vertical"
+				android:focusable="true">
+				<TextView android:background="@drawable/virus_scan_icon01"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/use_fuc_tv" android:text="@string/virus_scan_title"
+					android:textColor="#5B983E" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/virus_update_linear"
+				android:background="@drawable/linear_unfocuse" android:gravity="center"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_height="50dip" android:orientation="vertical">
+				<TextView android:background="@drawable/virus_scan_icon02"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/use_fuc_tv" android:text="@string/update_virus"
+					android:textColor="#5B983E" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/virus_history_linear"
+				android:background="@drawable/linear_unfocuse" android:gravity="center"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_height="50dip" android:orientation="vertical">
+				<TextView android:background="@drawable/icon09"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/use_fuc_tv" android:text="@string/virus_scan_history_tab"
+					android:textColor="#5B983E" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</TabHost>

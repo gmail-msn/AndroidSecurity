@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingLeft="36dip" android:paddingBottom="8dip"
+	android:paddingTop="8dip">
+	<TextView android:id="@+id/category_text" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textStyle="bold" android:textSize="16sp"
+		android:layout_weight="1" />
+	<TextView android:id="@+id/count_text" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="15sp" android:layout_weight="1" android:textStyle="italic" />
+</LinearLayout>

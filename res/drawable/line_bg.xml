@@ -1,0 +1,4 @@
+<?xml version ="1.0" encoding ="utf-8" ?>
+<bitmap xmlns:android ="http://schemas.android.com/apk/res/android"
+   android:src ="@drawable/virus_scan_line01"
+   android:tileMode ="repeat" />

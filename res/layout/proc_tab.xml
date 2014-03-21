@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#EEEEEE">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:background="#6CBD45" android:layout_height="40dip">
+			<RelativeLayout android:layout_height="match_parent"
+				android:layout_width="wrap_content">
+				<LinearLayout android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/home_page"
+					android:layout_marginLeft="10dp" android:gravity="center"
+					android:layout_centerVertical="true">
+					<TextView android:id="@+id/textView1"
+						android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:textSize="12sp"></TextView>
+					<ImageView android:src="@drawable/home_icon"
+						android:layout_height="wrap_content" android:id="@+id/home_icon"
+						android:layout_width="wrap_content"></ImageView>
+				</LinearLayout>
+				<TextView android:id="@+id/function_title_tv"
+					android:gravity="center" android:textColor="@color/white"
+					android:textSize="18dip" android:text="@string/task_manager"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_centerInParent="true" />
+			</RelativeLayout>
+		</LinearLayout>
+
+
+		<TabWidget android:id="@android:id/tabs" android:visibility="gone"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:background="@drawable/softcenter_tab_bg">
+			<LinearLayout android:layout_weight="1"
+				android:layout_width="fill_parent" android:paddingTop="7dip"
+				android:gravity="center" android:orientation="horizontal"
+				android:background="@drawable/softcenter_tab_on" android:id="@+id/proc_tab_linear" android:layout_height="35dp">
+				<TextView android:textColor="#5B983E" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/proc_tab_icon" android:layout_marginRight="3dp"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:text="@string/proc_manage_proc_text" android:textSize="16sp"/>
+			</LinearLayout>
+			<LinearLayout android:gravity="center"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:paddingTop="3dip" android:orientation="horizontal"
+				android:id="@+id/service_tab_linear" android:background="@drawable/softcenter_tab_bg" android:layout_height="35dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/services_tab_icon" android:layout_marginRight="3dp"/>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:text="@string/proc_manage_service_text" android:textSize="16sp"/>
+			</LinearLayout>
+
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="0dip" android:layout_weight="1">
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="5dip" android:background="#eeeeee" />
+		</RelativeLayout>
+	</LinearLayout>
+
+</TabHost>

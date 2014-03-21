@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="counterTypes">
+		<item>总使用流量</item>
+		<item>月使用流量</item>
+		<item>上个月</item>
+		<item>每周</item>
+		<item>上一日</item>
+		<item>单日</item>
+	</string-array>
+	<!-- <string-array name="fuc_list_string"> <item>病毒查杀</item> <item>流量监控</item> 
+		<item>防火墙</item> <item>任务管理</item> <item>软件管理</item> <item>通话管理</item> <item>远程防盗</item> 
+		<item>隐私保护</item> <item>扣费扫描</item> <item>备份恢复</item> <item>设置中心</item> </string-array> -->
+
+	<string-array name="fuc_list_string">
+	    <item>流量监控</item>
+	    <item>骚扰拦截</item>
+		<item>病毒查杀</item>
+		<item>软件管理</item>
+		<item>任务管理</item>
+		<item>耗电排名</item>
+		<item>备份恢复</item>
+		<item>远程防盗</item>
+		<item>缓存清理</item>
+		<item>开机加速</item>
+		<item>手机体检</item>
+		<item>防火墙</item>
+
+		<!-- <item>设置中心</item> -->
+	</string-array>
+
+
+	<string-array name="help_title">
+		<item>骚扰拦截</item>
+		<item>远程防盗</item>
+		<item>备份恢复</item>
+		<item>病毒查杀</item>
+		<item>流量监控</item>
+		<item>软件管理</item>
+		<item>任务管理</item>
+		<item>耗电排名</item>
+		<item>缓存清理</item>
+		<item>开机加速</item>
+		<item>手机体检</item>
+		<item>防火墙</item>
+	</string-array>
+
+
+	<string-array name="help_content">
+		<item>智能拦截垃圾短信，或根据自定义拦截规则、以及设定的黑、白名单，在设定的时间段内自动拦截垃圾短信，礼貌拒绝来电。</item>
+		<item>手机丢失时，如被更换手机SIM卡，便会锁定手机并自动发送短信到安全手机号码，便可得知对方的手机号码信息。另外还可以通过远程数据删除功能清空丢失手机上的相关联系人、短信息、通话记录等。
+		</item>
+		<item>可以将联系人、短信及已安装软件列表信息在线备份到云服务器免费加密存储。以便在需要恢复的手机设备上，安全地从云服务器恢复联系人、短信。同时还可以备份手机里现有的软件列表，更换手机后可以很方便的重新下载恢复之前已安装的软件。
+		</item>
+
+		<item>一键查杀所有病毒，让手机里的病毒无处藏身，强大的在线云查杀功能，更能及时、精准地查杀并清除手机病毒。</item>
+		<item>针对每一个应用程序的上网流量进行实时统计，3G/2G 付费流量及 WIFI 流量分开显示。清晰查看出每日、每月已用的上网流量及剩余流量数据及百分比，并会根据设置的流量额度进行流量预警提醒。
+		</item>
+		<item>在软件管理中可以查看已安装的软件数量、 版本、 大小及软件权限的详细信息。 并且可以非常便捷地一键卸载删除。 其中 APK 管理功能能够快速扫描、 安装、 删除已存在的 APK 安装包。</item>
+		<item>方便快捷的查看并管理系统里正在运行的软件进程及系统服务进程，轻松结束所选或全部进程，释放系统内存，加快手机运行速度。</item>
+		<item>统计每个进程的耗电比率、用电时间等信息，并会根据耗电比率依次排序。</item>
+		<item>清理软件运行时产生在手机内存里的缓存文件。快速扫描手机中占缓存的程序，一键清理应用程序缓存文件、数据文件或搜索、浏览器等缓存，获得更多的数据存储空间。</item>
+		<item>扫描系统在开机时自动启动的程序，禁止不必要的开机启动项，节省系统开机时间，一键加速让系统自动调整启动项，使开机时间更加迅速。</item>
+		<item>全面检查手机健康状况，一键优化对缓存文件，安全防护等内容进行逐项检测，得出系统评分和详细体检报告。清除所有危险隐患，让手机运行更加安全。</item>
+		<item>防火墙能够限制应用程序访问网络，选择性禁止某个或多个程序联网，3G和WIFI网络可设置任一开启或关闭，所有的流量都在您掌控之中。需要root权限。</item>
+	</string-array>
+
+
+
+	<string-array name="counterLastMonth">
+		<item>最后一月</item>
+		<item>前一个月</item>
+	</string-array>
+
+	<string-array name="counterSingleDay">
+		<item>日使用流量</item>
+		<item>昨天</item>
+		<item>2天前</item>
+		<item>3天前</item>
+		<item>4天前</item>
+		<item>5天前</item>
+		<item>6天前</item>
+		<item>7天前</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>周使用流量</item>
+		<item>14 天</item>
+		<item>30 天</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1个月</item>
+		<item>2个月</item>
+		<item>3个月</item>
+		<item>4个月</item>
+		<item>5个月</item>
+		<item>6个月</item>
+		<item>7个月</item>
+		<item>8个月</item>
+		<item>9个月</item>
+		<item>10个月</item>
+		<item>11个月</item>
+		<item>12个月</item>
+	</string-array>
+<!-- 
+	<string-array name="counterWeeklyStart">
+		<item>星期日</item>
+		<item>星期一</item>
+		<item>星期二</item>
+		<item>星期三</item>
+		<item>星期四</item>
+		<item>星期五</item>
+		<item>星期六</item>
+	</string-array>
+ -->
+	<string-array name="counterWeekly">
+		<item>1星期</item>
+		<item>2星期</item>
+		<item>3星期</item>
+		<item>4星期</item>
+	</string-array>
+	<string-array name="feeback_list_string">
+		<item>通用</item>
+		<item>病毒查杀</item>
+		<item>流量监控</item>		
+		<item>骚扰拦截</item>		
+		<item>任务管理</item>
+		<item>软件管理</item>
+		<item>备份恢复</item>
+		<item>远程防盗</item>
+		<item>账号问题</item>
+		<item>软件问题</item>
+		<item>升级问题</item>
+		<item>缓存清理</item>
+		<item>开机加速</item>
+		<item>手机体检</item>
+		<item>防火墙</item>
+		<item>其他</item>
+	</string-array>
+	<string-array name="intercept_mode_name">
+		<item>关闭</item>
+		<item>默认模式</item>
+		<item>联系人模式</item>
+		<item>白名单模式</item>
+		<item>全部接受</item>
+		<item>全部拦截</item>
+		<item>拦截全部来电</item>
+	</string-array>
+	<string-array name="intercept_mode_desp">
+		<item>关闭夜间免打扰</item>
+		<item>接受白名单和联系人、拦截黑名单、陌生号码不拦截</item>
+		<item>只接受联系人、白名单的信息和来电</item>
+		<item>只接受白名单的来电和短信</item>
+		<item>关闭拦截，接受所有的信息和来电</item>
+		<item>拦截所有的信息和来电，慎用!</item>
+		<item>拦截所有来电</item>
+	</string-array>
+	<string-array name="intercept_tream_mode">
+		<item>返回忙音</item>
+	    <item>关闭铃声、关闭振动</item>
+	    <item>返回已关机</item>
+	    <item>返回已停机</item>
+	    <item>返回空号</item>
+	</string-array>
+	<string-array name="nodisturb_day_unit">
+		<item>一</item>
+		<item>二</item>
+		<item>三</item>
+		<item>四</item>
+		<item>五</item>
+		<item>六</item>
+		<item>日</item>
+	</string-array>
+	<string-array name="intercept_day_setting">		
+		<item>星期一</item>
+		<item>星期二</item>
+		<item>星期三</item>
+		<item>星期四</item>
+		<item>星期五</item>
+		<item>星期六</item>
+		<item>星期日</item>
+	</string-array>
+
+</resources>

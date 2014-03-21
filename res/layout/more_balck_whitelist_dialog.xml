@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingTop="0dip">
+
+	<LinearLayout android:layout_width="300dip"
+		android:background="@color/white" android:layout_height="wrap_content"
+		android:orientation="vertical" android:paddingBottom="5dip">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:id="@+id/linearLayout1"
+				android:background="#6CBD45" android:gravity="center"
+				android:layout_height="40dp" android:layout_width="fill_parent">
+				<ImageView android:id="@+id/imageView1"
+					android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+					android:layout_width="wrap_content" android:src="@drawable/soft_prompt_dialog_icon"
+					android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+				<TextView android:id="@+id/title_text_tv"
+					android:textColor="@color/white" android:text="@string/softmanage_prompt_dialog_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+
+			<Button android:id="@+id/button_cancel" 
+				 android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:layout_marginRight="8dip"
+				android:background="@drawable/icon_close"
+				android:layout_centerVertical="true" android:layout_width="wrap_content"></Button>
+
+
+		</RelativeLayout>
+		<ListView android:layout_width="fill_parent"
+			android:layout_height="0dip" android:cacheColorHint="#00000000"
+			android:divider="@null" android:paddingLeft="5dip"
+			android:paddingRight="5dip" android:id="@+id/listproc"
+			android:layout_weight="1"></ListView>
+	</LinearLayout>
+</LinearLayout>

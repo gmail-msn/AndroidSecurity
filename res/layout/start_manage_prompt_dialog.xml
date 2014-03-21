@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:background="@drawable/tanchu">
+
+	<View android:layout_width="310dip" android:layout_height="0dip"
+		 />
+
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:gravity="center" android:layout_width="fill_parent" android:layout_height="60dp">
+		<ImageView android:id="@+id/imageView1"
+			android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+			android:layout_width="wrap_content" android:src="@drawable/soft_prompt_dialog_icon"
+			android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+		<TextView android:id="@+id/textView1" android:textColor="@color/white"
+			android:text="@string/softmanage_prompt_dialog_title"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:gravity="center_horizontal" android:layout_weight="1"
+		android:layout_width="match_parent" android:layout_height="130dp" android:paddingBottom="10dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="@color/black" android:id="@+id/prompt_text" android:layout_weight="1"
+			android:layout_width="match_parent" android:text="@string/start_manage_enable_prompt" android:gravity="left" android:padding="5dp"></TextView>
+		<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+			android:layout_height="1dp" android:layout_marginTop="6dp"></View>
+		<LinearLayout android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:layout_gravity="center_horizontal"
+			android:layout_marginTop="6dp" android:layout_marginBottom="5dp"
+			android:layout_width="match_parent">
+			<Button android:id="@+id/button_ok"
+				android:padding="5dp" android:textColor="@color/white"
+
+				android:layout_marginBottom="2dp" android:layout_height="wrap_content"
+				android:background="@drawable/button_bg_selector"
+				android:layout_width="100dip" android:text="@string/start_manage_enable_prompt_button_ok"></Button>
+			<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+				android:padding="5dp" android:layout_marginLeft="10dp"
+				android:textColor="@color/white" android:layout_marginBottom="2dp"
+				android:layout_height="wrap_content" android:background="@drawable/button_bg_selector"
+				android:layout_width="100dip"></Button>
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

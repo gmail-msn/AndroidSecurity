@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="#EEEEEE" android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center_horizontal" android:orientation="vertical"
+		android:layout_height="wrap_content">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="40dp" android:background="#6CBD45">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/home_page"
+				android:layout_marginLeft="10dp" android:gravity="center"
+				android:layout_centerVertical="true">
+
+				<TextView android:id="@+id/textView1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:textSize="12sp"></TextView>
+
+				<ImageView android:src="@drawable/home_icon"
+					android:layout_height="wrap_content" android:id="@+id/home_icon"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+			<TextView android:id="@+id/backup_1_title_tv"
+				android:gravity="center" android:textSize="18dip"
+				android:layout_width="fill_parent" android:textColor="@color/white"
+				android:layout_centerInParent="true" android:layout_height="wrap_content" android:text="@string/backup_tab_restore_text"></TextView>
+		</RelativeLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:gravity="right">
+			<LinearLayout android:layout_width="fill_parent"
+				android:gravity="right" android:layout_weight="1"
+				android:layout_height="wrap_content">
+
+				<TextView android:layout_width="wrap_content"
+					android:textColor="@color/light_black" android:layout_marginRight="5dip"
+					android:layout_height="wrap_content" android:text="@string/all_select" />
+				<CheckBox android:id="@+id/select_al_cb"
+					android:layout_width="40dip" android:layout_marginLeft="10dip"
+					android:layout_height="40dip" android:focusable="false"
+					android:padding="5dip" android:textColor="@color/black"
+					android:background="@null"
+					android:button="@drawable/checkbox_button" />
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:background="@color/white">
+		<LinearLayout android:isScrollContainer="true"
+			android:layout_width="match_parent" android:background="@color/white"
+			android:orientation="vertical" android:layout_height="match_parent"
+			android:scrollbars="vertical">
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:id="@+id/restore_contacts_out_linear" android:layout_height="70dp" android:gravity="center_vertical">
+				<LinearLayout android:layout_weight="1"
+					android:padding="5dp" android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" android:layout_width="match_parent">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/tongxunlu"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:layout_weight="1"
+						android:orientation="vertical">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:gravity="center_vertical">
+							<TextView android:layout_width="wrap_content"
+								android:text="@string/backup_contacts_text"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:layout_marginRight="5dp"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:layout_marginRight="2dp"
+								android:textColor="#646464" android:textSize="13sp" android:id="@+id/backup_contacts_exist_text" android:text="@string/backup_contacts_exist_prompt_text"></TextView>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="right|center_vertical">
+					<CheckBox android:background="@null" android:button="@drawable/checkbox_button"
+						android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/restore_contacts_cb"></CheckBox>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_width="match_parent"
+				android:orientation="horizontal" android:layout_marginBottom="5dp" android:layout_marginTop="5dp" android:id="@+id/restore_sms_out_linear" android:gravity="center_vertical" android:layout_height="70dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_weight="1" android:padding="5dp"
+					android:layout_height="wrap_content">
+					<LinearLayout android:layout_height="match_parent"
+						android:layout_width="wrap_content" android:gravity="center">
+						<ImageView android:layout_height="wrap_content"
+							android:layout_width="wrap_content" android:layout_marginRight="5dp"
+							android:layout_gravity="center_vertical" android:src="@drawable/messages"></ImageView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_weight="1" android:orientation="vertical"
+						android:layout_height="wrap_content">
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent" android:gravity="center_vertical">
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="16sp"
+								android:textColor="@color/black" android:text="@string/backup_sms_text"
+								android:layout_marginRight="5dp"></TextView>
+						</LinearLayout>
+						<LinearLayout android:layout_height="wrap_content"
+							android:layout_width="match_parent">
+							<TextView android:layout_width="wrap_content"
+								android:textColor="#646464"
+								android:layout_height="wrap_content" android:layout_marginRight="2dp"
+								android:textSize="13sp" android:id="@+id/backup_sms_exist_text" android:text="@string/backup_sms_exist_prompt_text"></TextView>
+
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout android:gravity="center"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical">
+					<CheckBox android:background="@null" android:button="@drawable/checkbox_button"
+						android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/restore_sms_cb"></CheckBox>
+				</LinearLayout>
+			</LinearLayout>
+			<View android:layout_width="match_parent" android:background="@drawable/virus_scan_line01"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:layout_weight="1" android:layout_marginTop="15dp" android:gravity="center" android:layout_marginBottom="5dp">
+				<TextView android:id="@+id/privacy_text"
+					android:gravity="center" android:textColor="@color/black"
+					android:textSize="20sp" android:text="@string/privacy_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:orientation="vertical" android:layout_marginTop="10dp" android:visibility="gone" android:id="@+id/restore_progress_linear">
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:padding="5dp">
+					<TextView android:gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content"
+						android:textColor="#646464" android:id="@+id/restoring_text" android:text="@string/restoring_text_new"></TextView>
+					<TextView android:text="(0%)" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#646464" android:id="@+id/restore_progress_text"></TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:padding="5dp">
+					<ProgressBar android:layout_width="match_parent"
+						style="?android:attr/progressBarStyleHorizontal"
+						android:layout_height="11dp" android:max="100"
+						android:progressDrawable="@drawable/progress_bar" android:id="@+id/restore_progress"></ProgressBar>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:gravity="center"
+				android:orientation="vertical" android:layout_marginTop="5dp">
+				<LinearLayout android:gravity="center" android:layout_height="wrap_content" android:background="@drawable/button_bg_selector" android:id="@+id/restore_action_linear" android:layout_width="100dp" android:padding="5dp">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:src="@drawable/icon_huifu01"></ImageView>
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="@color/white"
+						android:text="@string/restore_action_text" android:layout_marginLeft="3dp"></TextView>
+				</LinearLayout>
+				<LinearLayout android:gravity="center"
+						android:layout_height="wrap_content" android:background="@drawable/button_bg_selector" android:visibility="gone" android:id="@+id/restore_cancel_linear" android:layout_width="100dp" android:padding="5dp">
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:src="@drawable/virus_scan_icon07"></ImageView>
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:textColor="@color/white"
+							android:text="@string/restore_cancel_text" android:layout_marginLeft="3dp"></TextView>
+					</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

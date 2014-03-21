@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.kindroid.security" android:versionCode="31"
+	android:versionName="1.8.3">
+	<supports-screens
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:resizeable="true"
+            android:anyDensity="true" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.DEVICE_POWER" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.WRITE_SMS" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+	<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+	<uses-permission android:name="android.permission.MOVE_PACKAGE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />
+	<uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+	<uses-permission android:name="android.permission.USE_SIP" />
+	<uses-permission android:name="android.permission.PERFORM_CDMA_PROVISIONING" />
+	<uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+	<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+
+
+	<application android:name="com.kindroid.security.util.KindroidSecurityApplication"
+		android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true">
+		<activity android:name=".ui.DefenderTabMain"
+			
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ui.FirewallActivity" android:label="@string/app_name" 
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"> 
+			</activity>
+		<activity android:name=".ui.ProcessManagerActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".ui.AboutUsActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".ui.MobileExpActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".ui.UseFucActivity" android:label="@string/app_name"			
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".ui.NetTrafficTabMain"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".ui.LoginActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+
+		<activity android:name=".ui.HelpActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name=".ui.ForgotPwdActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name=".ui.RegisterActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name=".ui.NetTrafficSummary"
+			android:screenOrientation="portrait">
+
+		</activity>
+		<activity android:name=".ui.NetTrafficSettings"
+			android:screenOrientation="portrait">
+
+		</activity>
+		<activity android:name=".ui.RemoteSecurityTabActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity android:name=".ui.RemoteSecurityActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<!-- <activity android:name=".ui.RemoteSecurityDetailSettingActivity" android:configChanges="keyboardHidden|orientation" 
+			/> -->
+		<activity android:name=".ui.RemoteDelDataActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+		<activity android:name=".ui.RemoteGpsActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+		<!-- <activity android:name=".ui.TempActivity" android:configChanges="keyboardHidden|orientation"> 
+			</activity> -->
+		<activity android:name=".ui.NetTrafficSettingsDialog"
+			android:screenOrientation="portrait" android:theme="@style/Theme.CustomDialog">
+		</activity>
+		<service android:name=".service.NetTrafficService" />
+		<service android:name=".service.NotificationService" />
+		<service android:name=".service.DownloadService" />
+		<service android:name=".service.AppTrafficService" />
+		<receiver android:name=".service.OnBootReceiver">
+			<intent-filter android:priority="2147483647">
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".service.SendSmsReciver">
+			<intent-filter>
+				<action android:name="sms_send_myaction" />
+				<action android:name="sms_send_del_action" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".service.OnAlarmReceiver" />
+		<activity android:name=".ui.ApksManageListActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.InstalledAppsListActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<!-- <activity android:name=".ui.RecommendAppsListActivity" android:screenOrientation="portrait" 
+			android:configChanges="keyboardHidden|orientation"></activity> -->
+		<activity android:name=".ui.RecommendAppDetail"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.SoftManageTabActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.VirusScanTabActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.VirusScanFirstActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.BackupTabActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.BackupActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.RestoreActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name="com.kindroid.security.ui.AppBackupActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.VirusHistoryActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.AppBackupDetailActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.VirusCleanActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.SoftCenterTabActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.SoftCenterRecommendActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.SoftCenterTopicsActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.SoftCenterSearchActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.SoftCenterTopicListActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+
+		<activity android:name=".ui.RemoteSecuritySetupWizardActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+
+		<activity android:name=".ui.RemoteSecuritySetupActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+
+		<activity android:name=".ui.AccountManageLoginedActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+
+		<activity android:name=".ui.AccountManageActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+
+		<activity android:name=".ui.NetTrafficAppTabMain"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"></activity>
+
+
+
+
+		<service android:name=".service.LocakMobileService" />
+
+		<activity android:name=".ui.BackupRestoreActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.AppEngActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.BacklogActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.PrivacyActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.FeedbackActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+
+		<activity android:name=".ui.TaskManageTabActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.ServiceManageActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.SearchResultListActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+		<activity android:name=".ui.BlockTabMain"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.InterceptHistory"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.InterceptBlackWhiteList"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.InterceptSetting"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+		<activity android:name=".ui.InterceptHistorySms"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.InterceptBlackList"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.InterceptWhiteList"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.AddBlackWhiteListActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<receiver android:name=".service.ConnectChangeReciver">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".service.PkgInstallMonitor">
+			<intent-filter android:priority="2147483647">
+				<action android:name="android.intent.action.PACKAGE_ADDED" />
+				<data android:scheme="package" />
+			</intent-filter>
+			<intent-filter android:priority="2147483647">
+				<action android:name="android.intent.action.PACKAGE_REPLACED" />
+				<data android:scheme="package" />
+			</intent-filter>
+			<intent-filter android:priority="2147483647">
+				<action android:name="android.intent.action.PACKAGE_REMOVED" />
+				<data android:scheme="package" />
+			</intent-filter>
+		</receiver>
+		<activity android:name=".ui.AboutAuditIconActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.TopicAdClickListActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.AddListFromContactsActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+
+		<activity android:name=".ui.InterceptHistoryPhone"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+		<activity android:name=".ui.InterceptModeSettingListActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.InterceptTimeSettingActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+		<activity android:name=".ui.NoDisturbModeSettingListActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.AppEngBlockActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<service android:label="PkgInstallMonitorService"
+			android:name=".service.PkgInstallMonitorService" android:exported="true"></service>
+		<activity android:theme="@style/dialogActivity" android:name=".ui.NewInstalledPkgWarn"
+			android:excludeFromRecents="true" android:launchMode="singleInstance"
+			android:configChanges="keyboardHidden|orientation" />
+		<activity android:name=".ui.InstallScanCleanActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<service android:name=".service.UpdateProbService"></service>
+		<activity android:name=".ui.KeywordSettingActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.CacheClearActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".ui.KeywordSettingActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.StartManageActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.SoftCenterCategoryListActivity"
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar"></activity>
+		<activity android:name=".ui.MobileExamActivity" android:theme="@android:style/Theme.NoTitleBar"		
+			android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"></activity>
+		<service android:name=".service.MemMonitorService"></service>
+
+	</application>
+	<uses-sdk android:minSdkVersion="5" />
+
+</manifest> 

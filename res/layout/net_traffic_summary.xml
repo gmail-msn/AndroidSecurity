@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:fillViewport="true"
+	android:paddingLeft="10dp" android:paddingRight="10dp"
+	android:paddingBottom="10dp">
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="9dp"
+		android:paddingLeft="3dip" android:orientation="horizontal"
+		android:paddingBottom="4dip" android:gravity="center_vertical">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+			android:src="@drawable/firewall_icon" />
+		<TextView android:id="@+id/enable_net_traffic_tv"
+		
+			android:layout_marginLeft="20dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:textColor="@color/black" />
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:fillViewport="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical"
+			android:background="@color/white">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="15dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+					android:gravity="center_vertical|center_horizontal"
+					android:orientation="vertical" android:layout_marginLeft="5dp">
+					<TextView android:layout_width="wrap_content"
+						android:text="@string/g3or2g" android:textColor="@color/black"
+						android:textSize="14sp" android:layout_height="wrap_content" />
+					<ImageView android:layout_width="wrap_content"
+						android:layout_marginTop="5dp" android:src="@drawable/eth_3g"
+						android:layout_height="wrap_content" />
+				</LinearLayout>
+				<TextView android:text="@string/net_traffice_cell_today_title"
+					android:textColor="@color/black" android:textSize="20sp"
+					android:textStyle="bold" android:layout_centerInParent="true"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</RelativeLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:gravity="center_horizontal">
+				<TextView android:id="@+id/todayCellularTraffic"
+					android:textColor="@color/red" android:textSize="24sp"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:text="@string/net_traffice_unit"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:text="@string/net_traffice_month_used"
+					android:layout_marginLeft="5dp" android:textColor="@color/black"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficUsed"
+					android:textSize="20sp" android:textColor="@color/green"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficUsedUnit"
+					android:text="@string/net_traffice_unit" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<TextView android:text="@string/softmanage_memory_available"
+					android:layout_marginLeft="2dp" android:textColor="@color/black"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficRemainder"
+					android:textSize="20sp" android:textColor="@color/green"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficRemainderUnit"
+					android:text="@string/net_traffice_unit" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<TextView android:id="@+id/net_traffic_month_remainder_des_tv"
+					android:text="@string/net_traffice_month_remaider_percent"
+					android:textColor="@color/black" android:textStyle="bold"
+					android:layout_marginLeft="2dp" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficRemainderPercent"
+					android:text="40%" android:textColor="@color/green"
+					android:textSize="20sp" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:text="@string/net_traffice_month_remaider_suffix"
+					android:textColor="@color/black" android:textStyle="bold"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<ProgressBar android:id="@+id/todayCellularProgress"
+				android:layout_margin="5dp" android:max="100"
+				android:progressDrawable="@drawable/progress_bar_2" style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="fill_parent" android:layout_height="11dip" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:text="@string/net_traffice_cell_month_limit"
+					android:layout_marginLeft="5dp" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/monthCellularLimit"
+					android:textColor="@color/green" android:textSize="20sp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:text="@string/net_traffice_unit"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="15dp">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+					android:gravity="center_vertical|center_horizontal"
+					android:orientation="vertical" android:layout_marginLeft="5dp">
+					<TextView android:layout_width="wrap_content"
+						android:text="@string/wifi" android:textColor="@color/black"
+						android:textSize="14sp" android:layout_height="wrap_content" />
+					<ImageView android:layout_width="wrap_content"
+						android:layout_marginTop="5dp" android:src="@drawable/eth_wifi"
+						android:layout_height="wrap_content" />
+				</LinearLayout>
+				<TextView android:text="@string/net_traffice_wifi_today_title"
+					android:textColor="@color/black" android:textSize="20sp"
+					android:textStyle="bold" android:layout_centerInParent="true"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</RelativeLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal"
+				android:gravity="center_horizontal">
+				<TextView android:id="@+id/todayWiFiTraffic"
+					android:textColor="@color/red" android:textSize="24sp"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:text="@string/net_traffice_unit"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:text="@string/net_traffice_month_used"
+					android:layout_marginLeft="5dp" android:textColor="@color/black"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/monthWifiTrafficUsed"
+					android:textSize="20sp" android:textColor="@color/green"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficUsedUnit"
+					android:text="@string/net_traffice_unit" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<TextView android:text="@string/net_traffice_wifi_total"
+					android:layout_marginLeft="5dp" android:textColor="@color/black"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/allWifiTrafficUsed"
+					android:textSize="20sp" android:textColor="@color/green"
+					android:textStyle="bold" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficRemainderUnit"
+					android:text="@string/net_traffice_unit" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:text="@string/net_traffice_wifi_month_bill"
+					android:textColor="@color/black" android:layout_marginLeft="5dp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/bill_day" android:textSize="20sp"
+					android:textColor="@color/green" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:text="@string/day" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<TextView android:id="@+id/net_traffic_health"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

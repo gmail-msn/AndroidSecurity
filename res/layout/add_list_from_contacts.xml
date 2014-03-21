@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="@color/linear_focuse">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="#6CBD45" android:layout_height="40dip">
+		<RelativeLayout android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			<TextView android:gravity="center" android:textColor="@color/white"
+				android:textSize="18dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_centerInParent="true" android:text="@string/add_white_list" android:id="@+id/activity_title_tv"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:gravity="center_vertical" android:padding="6dp">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="3dip" android:textColor="@color/light_black"
+				android:layout_height="wrap_content" android:id="@+id/contacts_sum" android:text="@string/contacts_exist"/>
+
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp">
+			<LinearLayout android:id="@+id/add_list_linear"
+			android:layout_width="wrap_content"
+			android:background="@drawable/button_bg_selector"
+			android:layout_height="wrap_content" android:padding="5dip" android:gravity="left|center_vertical">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/add_white_icon" />
+			<TextView android:layout_width="wrap_content" android:singleLine="true"
+				android:layout_marginLeft="3dip" android:textColor="@color/white"
+				android:layout_height="wrap_content" android:text="@string/add_white_list" android:id="@+id/add_list_action_tv"/>
+		</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<ImageView android:src="@drawable/virus_scan_line01"
+		android:layout_width="match_parent" android:layout_height="1dp"></ImageView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingLeft="5dip" android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" android:gravity="center_vertical">
+
+		<LinearLayout android:layout_weight="1"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+		</LinearLayout>
+		<LinearLayout android:gravity="right"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp">
+
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/light_black" android:layout_marginRight="5dip"
+				android:layout_height="wrap_content" android:text="@string/all_select" />
+			<CheckBox android:id="@+id/select_al_cb"
+				android:layout_marginLeft="10dip" android:layout_height="40dip"
+				android:focusable="false" android:padding="5dip" android:textColor="@color/black"
+				android:text="      " android:background="@null" android:button="@drawable/checkbox_button"
+				android:layout_width="40dip" android:gravity="center"/>
+
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" android:padding="5dp">
+		<ListView android:layout_width="fill_parent"
+			android:cacheColorHint="#00000000" android:divider="@null"
+			android:id="@id/android:list" android:layout_height="wrap_content"/>
+
+
+		<LinearLayout android:layout_width="match_parent"
+			android:orientation="vertical" android:padding="12dp"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:visibility="gone"
+			android:id="@+id/loading_linear" android:layout_centerInParent="true">
+			<RelativeLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:layout_gravity="center_horizontal"
+				android:layout_weight="1" android:layout_marginTop="10dp">
+				<LinearLayout android:gravity="center"
+					android:layout_centerInParent="true" android:layout_height="wrap_content"
+					android:id="@+id/linearLayout2" android:layout_width="match_parent">
+					<TextView android:id="@+id/prompt_dialog_text"
+						android:text="@string/softmanage_scan_installed_text"
+						android:textColor="@color/black" android:layout_width="wrap_content"
+						android:gravity="center" android:layout_height="wrap_content"></TextView>
+					<TextView android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp" android:layout_height="wrap_content"
+						android:id="@+id/prompt_progress_text" android:visibility="gone"
+						android:textColor="@color/green" android:textSize="16sp"></TextView>
+				</LinearLayout>
+			</RelativeLayout>
+
+
+
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_marginTop="10dp" android:paddingTop="5dip">
+
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_one" android:layout_width="13dip"
+						android:layout_centerInParent="true" android:visibility="invisible"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_one_copy"
+						android:layout_width="17dip" android:layout_height="17dip"
+						android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_two" android:layout_width="13dip"
+						android:layout_centerInParent="true" android:layout_height="13dip"
+						android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_two_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_three"
+						android:layout_centerInParent="true" android:layout_width="13dip"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_three_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_four"
+						android:layout_width="13dip" android:layout_centerInParent="true"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_four_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+				<RelativeLayout android:layout_width="17dip"
+					android:layout_marginLeft="10dip" android:layout_height="17dip">
+					<ImageView android:id="@+id/pr_five"
+						android:layout_width="13dip" android:layout_centerInParent="true"
+						android:layout_height="13dip" android:background="@drawable/loading_unfocus" />
+					<ImageView android:id="@+id/pr_five_copy"
+						android:visibility="invisible" android:layout_width="17dip"
+						android:layout_height="17dip" android:background="@drawable/loading_focus" />
+
+				</RelativeLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

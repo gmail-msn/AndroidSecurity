@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:gravity="center">
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/soft_prompt_dialog_icon"></ImageView>
+		<TextView android:layout_height="wrap_content" android:text="@string/softmanage_prompt_dialog_title"
+			android:layout_width="wrap_content" android:textColor="@color/white"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="15dp" android:paddingTop="15dp">
+		<TextView android:id="@+id/prompt_text" android:text="@string/virus_scan_cancel_prompt_text" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textColor="@color/black"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:padding="5dp"
+		android:gravity="center">
+		<TextView android:layout_weight="1"
+			android:layout_marginRight="5dp" android:background="@drawable/button_bg_green"
+			android:gravity="center" android:text="@android:string/ok"
+			android:id="@+id/button_ok"
+			android:layout_height="wrap_content" android:textColor="@color/white" android:layout_width="match_parent"></TextView>
+		<TextView android:layout_weight="1" android:background="@drawable/button_bg_green"
+			android:gravity="center" android:id="@+id/button_cancel" android:text="@android:string/cancel"
+			android:layout_height="wrap_content" android:textColor="@color/white" android:layout_width="match_parent"></TextView>
+	</LinearLayout>
+
+</LinearLayout>

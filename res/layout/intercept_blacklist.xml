@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="#EEEEEE">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:duplicateParentState="false" android:paddingLeft="5dp" android:paddingRight="5dp">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:layout_marginTop="5dip" android:paddingLeft="5dip">
+
+			<TextView android:id="@+id/list_num_lab_tv"
+				android:textColor="@color/black" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="5dip"
+				android:singleLine="true"></TextView>
+			<TextView android:id="@+id/list_num_tv"
+				android:layout_width="wrap_content" android:layout_toRightOf="@id/list_num_lab_tv"
+				android:textSize="20dip" android:textColor="@color/green"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:singleLine="true"></TextView>
+
+			<LinearLayout android:id="@+id/add_list_linear"
+				android:layout_alignParentRight="true" android:layout_width="wrap_content"
+				android:background="@drawable/button_bg_selector"
+				android:layout_height="wrap_content" android:padding="5dip"
+				android:gravity="left|top">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginTop="5dip"
+					android:src="@drawable/add_white_icon" />
+				<TextView android:id="@+id/add_list_tv"
+					android:layout_width="wrap_content" android:singleLine="true"
+					android:layout_marginLeft="3dip" android:textColor="@color/white"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</RelativeLayout>
+		<TextView android:id="@+id/introdct_tv" android:layout_width="fill_parent"
+			android:singleLine="true" android:layout_marginTop="8dip"
+			android:layout_marginLeft="5dip" android:textColor="@color/black"
+			android:layout_height="wrap_content" />
+
+
+		<ListView android:layout_width="fill_parent"
+			android:layout_marginTop="8dip" android:cacheColorHint="#00000000"
+			android:divider="@null" android:scrollbars="none" android:id="@+id/black_listview"
+			android:layout_weight="1" android:layout_height="match_parent" />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/intercept_black_white_list_menu" android:layout_alignParentBottom="true" android:visibility="gone">
+		<LinearLayout android:layout_weight="1"
+			android:orientation="vertical" android:gravity="center"
+			android:background="@drawable/menu_item_focuse"
+			android:layout_height="match_parent" android:layout_width="0dp">
+			<ImageView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/intercept_menu_shanchu"></ImageView>
+			<TextView android:textColor="@color/white"
+				android:layout_marginTop="2dp" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_marginBottom="2dp"
+				android:text="@string/intercept_black_white_list_menu_text"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

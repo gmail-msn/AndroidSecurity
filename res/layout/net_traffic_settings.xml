@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:paddingLeft="10dp" android:paddingRight="10dp"
+	android:paddingBottom="10dp">
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="9dp"
+		android:paddingLeft="3dip" android:orientation="horizontal"
+		android:paddingBottom="4dip" android:gravity="center_vertical">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+			android:src="@drawable/firewall_icon" />
+		<TextView android:id="@+id/enable_net_traffic_tv"
+			android:text="@string/net_traffice_settings_enable"
+			android:layout_marginLeft="20dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:textColor="@color/black" />
+	</RelativeLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:scrollbars="none" android:layout_height="fill_parent"
+		android:fillViewport="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical"
+			android:background="@color/white">
+			<LinearLayout android:layout_width="fill_parent"
+				android:id="@+id/modifyCellularLimit" android:layout_height="60dp"
+				android:orientation="horizontal" android:gravity="center_vertical"
+				android:paddingTop="15dip" android:paddingRight="5dip">
+				<TextView android:text="@string/net_traffice_settings_limit"
+					android:textSize="18sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/cellularSettingsLimit"
+					android:layout_width="wrap_content" android:textSize="20sp"
+					android:textColor="@color/green" android:textStyle="bold"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/todayCellularTrafficUsedUnit"
+					android:text="@string/net_traffice_unit" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				<ImageView android:src="@drawable/arrow"
+					android:layout_marginLeft="20dp" android:layout_marginRight="5dp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+			</LinearLayout>
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:paddingRight="5dip" android:id="@+id/calDayLayout"
+				android:layout_height="50dp" android:orientation="horizontal"
+				android:gravity="center_vertical" android:visibility="gone">
+				<TextView android:text="@string/net_traffice_settings_month_cal_day"
+					android:textSize="18sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/cellularCalDay"
+					android:layout_width="wrap_content" android:textSize="20sp"
+					android:textColor="@color/green" android:textStyle="bold"
+					android:layout_height="wrap_content" />
+				<TextView android:text="@string/day" android:textColor="@color/black"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+				<ImageView android:layout_height="wrap_content"
+					android:id="@+id/ImageView01" android:layout_marginLeft="20dp"
+					android:src="@drawable/arrow" android:layout_marginRight="5dp"
+					android:layout_width="wrap_content"></ImageView>
+			</LinearLayout>
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="gone"/>
+			<LinearLayout android:layout_width="fill_parent"
+				android:paddingRight="5dip" android:layout_height="50dp"
+				android:id="@+id/leftMonthLayout" android:orientation="horizontal"
+				android:gravity="center_vertical">
+				<TextView android:text="@string/net_traffice_settings_adjust_used"
+					android:textSize="18sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/adjustCellularTrafficUsed"
+					android:layout_width="wrap_content" android:textSize="20sp"
+					android:textColor="@color/green" android:textStyle="bold"
+					android:layout_height="wrap_content" />
+				<TextView android:text="@string/net_traffice_unit"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<ImageView android:src="@drawable/arrow"
+					android:layout_marginLeft="20dp" android:layout_marginRight="5dp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:paddingRight="5dip" android:id="@+id/clearDataLayout"
+				android:layout_height="50dp" android:orientation="horizontal"
+				android:gravity="center_vertical">
+				<TextView android:text="@string/net_traffice_settings_clear_data"
+					android:textSize="18sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<ImageView android:src="@drawable/arrow"
+					android:layout_marginLeft="20dp" android:layout_marginRight="5dp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+
+
+
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+
+			<LinearLayout android:layout_width="fill_parent" android:paddingRight="5dip"
+				android:id="@+id/traffic_monter_linear" android:layout_height="50dp"
+				android:orientation="horizontal" android:gravity="center_vertical">
+				<TextView android:text="@string/network_stream"
+					android:textSize="18sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/traffic_enable_cb"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/checkbox_false" />
+			</LinearLayout>
+
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+
+			<LinearLayout android:layout_width="fill_parent" android:paddingRight="5dip"
+				android:id="@+id/popView_linear" android:layout_height="50dp"
+				android:orientation="horizontal" android:gravity="center_vertical">
+				<TextView android:text="@string/popview_show" android:singleLine="true"
+					android:textSize="18sp" android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+				<TextView android:id="@+id/popview_cb"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/checkbox_false" />
+			</LinearLayout>
+			<ImageView android:background="@drawable/sp_line"
+				android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="50dp" android:orientation="horizontal"
+				android:gravity="center_vertical|center_horizontal">
+				<TextView android:id="@+id/lastClearDate"
+					android:layout_width="wrap_content" android:textColor="@color/black"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
